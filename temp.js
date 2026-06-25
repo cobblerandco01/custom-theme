@@ -32,7 +32,7 @@ var engoAutoComplate = {
         vertical: true,
         verticalSwiping: true,
         focusOnSelect: true,
-        
+        {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
         prevArrow: '<button type="button" class="slick-brand-prev fa fa-angle-left"></button>',
         nextArrow: '<button type="button" class="slick-brand-next fa fa-angle-down"></button>',
 
@@ -74,7 +74,7 @@ var engoAutoComplate = {
             price            = product.price,
             handle           = product.handle,
             image            = product.featured_image,
-            template         = '<div class="img_left"> <a href="/products/'+ handle +'"> <img loading="lazy" width="" height="" src="' + image + '" class="img-responsive" alt="'+title+'"> </a> </div> <div class="info_right position-absolute"> <a class="product-title" href="/products/'+ handle +'">'+title+'</a> <p class="price-product"><span class="price">'+ Shopify.formatMoney(price, window.money_format) +'</span></p> <div class="product-icon-action"> <div class="add-to-cart"> <a href="/products/'+ handle +'"><span>Buy now</span></a> </div> </div> </div>';       
+            template         = '<div class="img_left"> <a href="/products/'+ handle +'"> <img loading="lazy" width="" height="" src="' + image + '" class="img-responsive" alt="'+title+'"> </a> </div> <div class="info_right position-absolute"> <a class="product-title" href="/products/'+ handle +'">'+title+'</a> <p class="price-product">{% if settings.enable_catalog_mode == false %}<span class="price">'+ Shopify.formatMoney(price, window.money_format) +'</span>{% endif %}</p> <div class="product-icon-action"> <div class="add-to-cart"> <a href="/products/'+ handle +'"><span>Buy now</span></a> </div> </div> </div>';       
             jQuery('.engoj-recently-'+handle).html(template);
       }
     });
@@ -96,7 +96,7 @@ var engoAutoComplate = {
         url: ajaxUrl,
         beforeSend: function() {
           result_wrapper.show();
-          result_element.html('<p class="col-12"><svg xml:space="preserve" style="enable-background:new 0 0 50 50;margin-top: -1px;" viewBox="0 0 24 30" height="20px" width="21px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1"><rect opacity="0.2" fill="#000" height="8" width="3" y="10" x="0"><animate repeatCount="indefinite" dur="0.6s" begin="0s" values="0.2; 1; .2" attributeType="XML" attributeName="opacity"/><animate repeatCount="indefinite" dur="0.6s" begin="0s" values="10; 20; 10" attributeType="XML" attributeName="height"/><animate repeatCount="indefinite" dur="0.6s" begin="0s" values="10; 5; 10" attributeType="XML" attributeName="y"/></rect><rect opacity="0.2" fill="#000" height="8" width="3" y="10" x="8">      <animate repeatCount="indefinite" dur="0.6s" begin="0.15s" values="0.2; 1; .2" attributeType="XML" attributeName="opacity"/><animate repeatCount="indefinite" dur="0.6s" begin="0.15s" values="10; 20; 10" attributeType="XML" attributeName="height"/><animate repeatCount="indefinite" dur="0.6s" begin="0.15s" values="10; 5; 10" attributeType="XML" attributeName="y"/></rect><rect opacity="0.2" fill="#000" height="8" width="3" y="10" x="16"><animate repeatCount="indefinite" dur="0.6s" begin="0.3s" values="0.2; 1; .2" attributeType="XML" attributeName="opacity"/><animate repeatCount="indefinite" dur="0.6s" begin="0.3s" values="10; 20; 10" attributeType="XML" attributeName="height"/><animate repeatCount="indefinite" dur="0.6s" begin="0.3s" values="10; 5; 10" attributeType="XML" attributeName="y"/></rect></svg> Loading...</p>');
+          result_element.html('<p class="col-12"><svg xml:space="preserve" style="enable-background:new 0 0 50 50;margin-top: -1px;" viewBox="0 0 24 30" height="20px" width="21px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1"><rect opacity="0.2" fill="#000" height="8" width="3" y="10" x="0"><animate repeatCount="indefinite" dur="0.6s" begin="0s" values="0.2; 1; .2" attributeType="XML" attributeName="opacity"/><animate repeatCount="indefinite" dur="0.6s" begin="0s" values="10; 20; 10" attributeType="XML" attributeName="height"/><animate repeatCount="indefinite" dur="0.6s" begin="0s" values="10; 5; 10" attributeType="XML" attributeName="y"/></rect><rect opacity="0.2" fill="#000" height="8" width="3" y="10" x="8">      <animate repeatCount="indefinite" dur="0.6s" begin="0.15s" values="0.2; 1; .2" attributeType="XML" attributeName="opacity"/><animate repeatCount="indefinite" dur="0.6s" begin="0.15s" values="10; 20; 10" attributeType="XML" attributeName="height"/><animate repeatCount="indefinite" dur="0.6s" begin="0.15s" values="10; 5; 10" attributeType="XML" attributeName="y"/></rect><rect opacity="0.2" fill="#000" height="8" width="3" y="10" x="16"><animate repeatCount="indefinite" dur="0.6s" begin="0.3s" values="0.2; 1; .2" attributeType="XML" attributeName="opacity"/><animate repeatCount="indefinite" dur="0.6s" begin="0.3s" values="10; 20; 10" attributeType="XML" attributeName="height"/><animate repeatCount="indefinite" dur="0.6s" begin="0.3s" values="10; 5; 10" attributeType="XML" attributeName="y"/></rect></svg> {{ 'general.search.loading' | t }}</p>');
         },
         complete:function(){
         },
@@ -112,7 +112,7 @@ var engoAutoComplate = {
                   handle           = item.handle,
                   image            = item.featured_image,
                   compare_price    = item.compare_at_price  ? '<s class="price-old">' + Shopify.formatMoney(item.compare_at_price, window.money_format) + '</s>' : "",
-                  sold_out	       = item.available          ? "" : "<span class='item-sold-out'>Sold out</span> ",
+                  sold_out	       = item.available          ? "" : "<span class='item-sold-out'>{{ 'general.search.sold_out' | t }}</span> ",
                   price            = item.available          ? item.price : item.out_stock_nofication,
                   hightlight     = title.replace(new RegExp('(' + keyword + ')', 'gi'), '<span class="hightlight">$1</span>'),
                   template         = '<div class="col-lg-4 col-sm-6 col-md-6"><ul class="prod_sidebar"><li class="product_info">'
@@ -134,7 +134,7 @@ var engoAutoComplate = {
            
             }
           }else{
-            result_element.html('<p class="col-12">No result found for your search.</p>');
+            result_element.html('<p class="col-12">{{ 'general.search.no_result' | t }}</p>');
              $('.js_productSearchResults').show();
           }
        }     
@@ -164,7 +164,7 @@ var engoAutoComplate = {
         if( keyword.length >= 2 ){
             self.ajaxProductItems( search_element ,result_wrapper, result_element );
         }else{
-            result_element.html('<p class="col-12">You must enter at least 2 characters.</p>');
+            result_element.html('<p class="col-12">{{ 'general.search.required_2charters' | t }}</p>');
         } 
       },300);       
     }); 
@@ -207,7 +207,7 @@ jQuery(document).ready(function($) {
       arrows:true,
       infinite: false,
       speed: 300,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       autoplay:false,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -224,7 +224,7 @@ jQuery(document).ready(function($) {
       infinite: true,
       speed: 300,
       autoplay:false,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       slidesToShow: 4,
       slidesToScroll: 1,
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right"></i></button>',
@@ -265,7 +265,7 @@ jQuery(document).ready(function($) {
       autoplay:false,
       slidesToShow: 3,
       slidesToScroll: 2,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       nextArrow:'<button type="button" class="next-slide"><svg version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="500px" viewBox="0 0 1000 500" xml:space="preserve"> <g id="Forma_1_1_"> <g id="Forma_1"> <path fill-rule="evenodd" clip-rule="evenodd" d="M834.107,232.981L618.365,17.218c-9.3-9.624-24.779-9.624-34.405,0 c-9.299,9.303-9.299,24.778,0,34.059l174.447,174.441H182.759c-13.42,0.021-24.086,10.686-24.086,24.108 c0,13.417,10.666,24.436,24.086,24.436h575.648L583.96,448.375c-9.299,9.63-9.299,25.12,0,34.401 c9.626,9.632,25.128,9.632,34.405,0l215.742-215.742C843.733,257.739,843.733,242.263,834.107,232.981z"/> </g> </g> <g id="Forma_1_copy_1_"> </g> </svg></button>',
       prevArrow:'<button type="button" class="prev-slide"><svg version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="500px" viewBox="0 0 1000 500" xml:space="preserve"> <g id="Forma_1_1_"> </g> <g id="Forma_1_copy_1_"> <g id="Forma_1_copy"> <path fill-rule="evenodd" clip-rule="evenodd" d="M811.881,225.728H245.96L417.457,51.275c9.143-9.269,9.143-24.751,0-34.055 c-9.463-9.627-24.679-9.627-33.821,0l-212.1,215.762c-9.462,9.282-9.462,24.765,0,34.054l212.1,215.742 c9.12,9.627,24.358,9.627,33.821,0c9.143-9.276,9.143-24.772,0-34.4L245.96,274.265h565.921c13.192,0,23.68-11.014,23.68-24.434 C835.561,236.411,825.073,225.749,811.881,225.728z"/> </g> </g> </svg></button>',
       responsive: [
@@ -302,7 +302,7 @@ jQuery(document).ready(function($) {
       dot: false,
       fade: false,
       infinite: false,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       asNavFor: '.js_prod_sub'
     });
     $('.js_prod_sub').slick({
@@ -315,7 +315,7 @@ jQuery(document).ready(function($) {
       vertical: true,
       verticalSwiping: true,
       focusOnSelect: true,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i></button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -353,7 +353,7 @@ jQuery(document).ready(function($) {
       arrows: false,
       dot: false,
       fade: true,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       infinite: false,
       asNavFor: '.js_prod_sub2'
     });
@@ -363,7 +363,7 @@ jQuery(document).ready(function($) {
       asNavFor: '.js_prod_main2',
       dots: false,
       arrows: true,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i></button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right"></i></button>',
       infinite: false,
@@ -399,7 +399,7 @@ jQuery(document).ready(function($) {
       arrows: false,
       dot: false,
       fade: false,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       infinite: false
     });
 
@@ -614,7 +614,7 @@ jQuery(document).ready(function($) {
       autoplay:false,
       slidesToShow: 5,
       slidesToScroll: 1,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i> </button>',
       nextArrow:'<button type="button" class="next-slide"> <i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -649,7 +649,7 @@ jQuery(document).ready(function($) {
       infinite: false,
       speed: 300,
       autoplay:false,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       slidesToShow: 3,
       slidesToScroll: 1,
       responsive: [
@@ -687,7 +687,7 @@ jQuery(document).ready(function($) {
       autoplay:false,
       slidesToShow: 3,
       slidesToScroll: 2,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i></button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -725,7 +725,7 @@ jQuery(document).ready(function($) {
       autoplay:false,
       slidesToShow: 6,
       slidesToScroll: 1,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i></button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -761,7 +761,7 @@ jQuery(document).ready(function($) {
       autoplay:false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      
+      {% if settings.enable_rtl_mode %}rtl: true{% endif %}
     });
 
   }
@@ -788,7 +788,7 @@ jQuery(document).ready(function($) {
       slidesToShow: 3,
       slidesToScroll: 1,
       arrows: false,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       dots: true,
       prevArrow: '<button class="testimonial-arrow arrow-prev"><i class="fa fa-angle-left"></i></button>',
       nextArrow: '<button class="testimonial-arrow arrow-next"><i class="fa fa-angle-right"></i></button>',
@@ -817,7 +817,7 @@ jQuery(document).ready(function($) {
       slidesToScroll: 1,
       infinite: false,
       arrows: false,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       dots: true,
       prevArrow: '<button class="testimonial-arrow arrow-prev"><i class="fa fa-angle-left"></i></button>',
       nextArrow: '<button class="testimonial-arrow arrow-next"><i class="fa fa-angle-right"></i></button>',
@@ -852,7 +852,7 @@ jQuery(document).ready(function($) {
       nextArrow: '<button type="button" class="slick-brand-next fa fa-angle-right"></button>',
       infinite: false,
       vertical: true,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       verticalSwiping: true,
       focusOnSelect: true
     });
@@ -869,7 +869,7 @@ jQuery(document).ready(function($) {
       slidesToScroll: 3,
       autoplay: true,
       autoplaySpeed: 2000,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i> </button>',
       nextArrow:'<button type="button" class="next-slide"> <i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -942,7 +942,7 @@ jQuery(document).ready(function($) {
       autoplay:false,
       slidesToShow: 3,
       slidesToScroll: 1,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       nextArrow:'<button type="button" class="next-slide"><svg version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="500px" viewBox="0 0 1000 500" xml:space="preserve"> <g id="Forma_1_1_"> <g id="Forma_1"> <path fill-rule="evenodd" clip-rule="evenodd" d="M834.107,232.981L618.365,17.218c-9.3-9.624-24.779-9.624-34.405,0 c-9.299,9.303-9.299,24.778,0,34.059l174.447,174.441H182.759c-13.42,0.021-24.086,10.686-24.086,24.108 c0,13.417,10.666,24.436,24.086,24.436h575.648L583.96,448.375c-9.299,9.63-9.299,25.12,0,34.401 c9.626,9.632,25.128,9.632,34.405,0l215.742-215.742C843.733,257.739,843.733,242.263,834.107,232.981z"/> </g> </g> <g id="Forma_1_copy_1_"> </g> </svg></button>',
       prevArrow:'<button type="button" class="prev-slide"><svg version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1000px" height="500px" viewBox="0 0 1000 500" xml:space="preserve"> <g id="Forma_1_1_"> </g> <g id="Forma_1_copy_1_"> <g id="Forma_1_copy"> <path fill-rule="evenodd" clip-rule="evenodd" d="M811.881,225.728H245.96L417.457,51.275c9.143-9.269,9.143-24.751,0-34.055 c-9.463-9.627-24.679-9.627-33.821,0l-212.1,215.762c-9.462,9.282-9.462,24.765,0,34.054l212.1,215.742 c9.12,9.627,24.358,9.627,33.821,0c9.143-9.276,9.143-24.772,0-34.4L245.96,274.265h565.921c13.192,0,23.68-11.014,23.68-24.434 C835.561,236.411,825.073,225.749,811.881,225.728z"/> </g> </g> </svg></button>',
       responsive: [
@@ -988,7 +988,7 @@ jQuery(document).ready(function($) {
       slidesToScroll: 3,
       autoplay: true,
       autoplaySpeed: 2000,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right" aria-hidden="true"></i></button>', 
       responsive: [
@@ -1027,7 +1027,7 @@ jQuery(document).ready(function($) {
       autoplay:false,
       slidesToShow: 3,
       slidesToScroll: 1,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i></button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -1058,7 +1058,7 @@ jQuery(document).ready(function($) {
       autoplaySpeed: 3500,
       dots: true,
       arrows: false,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide slick-arrow"><i class="fa fa-angle-left"></i> </button>',
       nextArrow:'<button type="button" class="next-slide slick-arrow"><i class="fa fa-angle-right"></i></button>', 
       responsive: [
@@ -1091,7 +1091,7 @@ jQuery(document).ready(function($) {
       autoplaySpeed: 3500,
       dots: true,
       arrows: false,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide slick-arrow"><i class="fa fa-angle-left"></i> </button>',
       nextArrow:'<button type="button" class="next-slide slick-arrow"><i class="fa fa-angle-right"></i></button>', 
       responsive: [
@@ -1117,7 +1117,7 @@ jQuery(document).ready(function($) {
       autoplay:false,
       slidesToShow: 3,
       slidesToScroll: 1,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i></button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -1179,7 +1179,7 @@ jQuery(document).ready(function($) {
       slidesToScroll: 1,
       dots: true,
       arrows: false,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i> </button>',
       nextArrow:'<button type="button" class="next-slide"> <i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -1220,7 +1220,7 @@ jQuery(document).ready(function($) {
       slidesToScroll: 3,
       dots: true,
       arrows: true,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i> </button>',
       nextArrow:'<button type="button" class="next-slide"> <i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -1253,7 +1253,7 @@ jQuery(document).ready(function($) {
       dots: false,
       arrows: true,
       autoplay: false,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i> </button>',
       nextArrow:'<button type="button" class="next-slide"> <i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -1305,7 +1305,7 @@ jQuery(document).ready(function($) {
       dots: true,
       arrows: false,
       autoplay: false,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i> </button>',
       nextArrow:'<button type="button" class="next-slide"> <i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -1357,7 +1357,7 @@ jQuery(document).ready(function($) {
       dots: true,
       arrows: false,
       autoplay: false,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i> </button>',
       nextArrow:'<button type="button" class="next-slide"> <i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -1409,7 +1409,7 @@ jQuery(document).ready(function($) {
       speed: 300,
       slidesToShow: 6,
       slidesToScroll: 1,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i></button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -1443,7 +1443,7 @@ jQuery(document).ready(function($) {
       autoplay: false,
       slidesToShow: 3,
       slidesToScroll: 1,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve"> <g> <g> <path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8 c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712 L143.492,221.863z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg></button>',
       nextArrow:'<button type="button" class="next-slide"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M390.965,241.681l-242.001-236c-7.907-7.711-20.57-7.553-28.282,0.355c-7.712,7.908-7.553,20.57,0.355,28.282L348.353,256 L121.037,477.681c-7.908,7.712-8.067,20.374-0.355,28.282c7.713,7.91,20.375,8.065,28.281,0.355l242.001-236 C394.823,266.555,397,261.391,397,256S394.823,245.445,390.965,241.681z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg></button>', 
       responsive: [
@@ -1478,7 +1478,7 @@ jQuery(document).ready(function($) {
       autoplay:true,
       slidesToShow: 2,
       slidesToScroll: 1,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve"> <g> <g> <path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8 c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712 L143.492,221.863z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg></button>',
       nextArrow:'<button type="button" class="next-slide"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M390.965,241.681l-242.001-236c-7.907-7.711-20.57-7.553-28.282,0.355c-7.712,7.908-7.553,20.57,0.355,28.282L348.353,256 L121.037,477.681c-7.908,7.712-8.067,20.374-0.355,28.282c7.713,7.91,20.375,8.065,28.281,0.355l242.001-236 C394.823,266.555,397,261.391,397,256S394.823,245.445,390.965,241.681z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg></button>', 
       responsive: [
@@ -1514,7 +1514,7 @@ jQuery(document).ready(function($) {
       autoplay:true,
       slidesToShow: 4,
       slidesToScroll: 1,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i></button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -1549,7 +1549,7 @@ jQuery(document).ready(function($) {
       autoplay:true,
       slidesToShow: 3,
       slidesToScroll: 1,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i></button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -1584,7 +1584,7 @@ function slidebanner11(){
       arrows: true,
       fade : true,
       adaptiveHeight: true,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i> </button>',
       nextArrow:'<button type="button" class="next-slide"> <i class="fa fa-angle-right"></i></button>',
       responsive: [
@@ -1623,7 +1623,7 @@ function slidebanner11(){
       arrows: false,
       fade : true,
       adaptiveHeight: true,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-long-arrow-left"></i> </button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-long-arrow-right"></i></button>', 
       responsive: [
@@ -1661,7 +1661,7 @@ function slidebanner11(){
       autoplaySpeed: 3500,
       dots: false,
       arrows: true,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i> </button>',
       nextArrow:'<button type="button" class="next-slide"> <i class="fa fa-angle-right"></i></button>',
       fade: true, 
@@ -1704,7 +1704,7 @@ function slidebanner11(){
       autoplaySpeed: 3500,
       dots: true,
       arrows: true,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left"></i></button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right"></i></button>',
       fade: true, 
@@ -1744,7 +1744,7 @@ function slidebanner11(){
       infinite: true,
       dots: false,
       arrows: true,
-      
+      {% if settings.enable_rtl_mode %}rtl: true,{% endif %}
       prevArrow:'<button type="button" class="prev-slide"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
       nextArrow:'<button type="button" class="next-slide"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
       fade: false, 
@@ -2073,8 +2073,10 @@ jQuery(document).ready(function($) {
 
 
   function popup(){
+    // Newsletter popup disabled
   }
   function cookiepopup(){
+    // Newsletter popup disabled — remove any leftover popup elements
     $('.jsengo_popup').remove();
   }
 
@@ -2135,7 +2137,7 @@ jQuery(document).ready(function($) {
         jQuery('.jsclose_cookie').click(function(e) {
           e.preventDefault();
           jQuery('.jscookie_popup').hide(); 
-          jQuery.cookie('cookie_popup', '1', {expires: 1, path:'/', domain: '' });
+          jQuery.cookie('cookie_popup', '1', {expires: 1, path:'/', domain: '{{ shop.url }}' });
                                              });
         });
       } else {
@@ -2148,10 +2150,10 @@ jQuery(document).ready(function($) {
   totop();
   jslogindestop();
   jscalllogindestop();
-  // popup disabled
-  // cookiepopup disabled
-  // popup2 disabled
-  // cookiepopup2 disabled
+  // popup() disabled — newsletter modal removed
+  // cookiepopup() disabled — newsletter modal removed
+  // popup2() disabled — newsletter modal removed
+  // cookiepopup2() disabled — newsletter modal removed
   menumobile();
   jsBackLogin();
   mobilescroll();

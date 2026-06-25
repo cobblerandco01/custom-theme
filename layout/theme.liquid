@@ -23,9 +23,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="{{ settings.m_primary_color }}">
   {% if settings.favicon != blank %}
-  <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32, height: 32 }}" type="image/png">
+  <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32, height: 32 }}&v={{ 'now' | date: '%s' }}" type="image/png">
+  <link rel="icon" href="{{ settings.favicon | image_url: width: 32, height: 32 }}&v={{ 'now' | date: '%s' }}" type="image/png">
   {% else %}
-  <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png">
+  <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}&v={{ 'now' | date: '%s' }}" type="image/png">
+  <link rel="icon" href="{{ 'favicon.png' | asset_url }}&v={{ 'now' | date: '%s' }}" type="image/png">
   {% endif %}
 
 
@@ -60,6 +62,14 @@
       overflow: hidden;
       max-height: 100vh;
     }
+    .slick-side-h1:not(.slick-initialized) .animated,
+    .slick-side-h2:not(.slick-initialized) .animated,
+    .slick-side-h3:not(.slick-initialized) .animated,
+    .slick-side-h4:not(.slick-initialized) .animated,
+    .slick-side-h5:not(.slick-initialized) .animated {
+      opacity: 0 !important;
+      visibility: hidden !important;
+    }
   </style>
   <link rel="stylesheet" href="{{ 'jquery.fancybox.min.css' | asset_url }}" media="nope!" onload="this.media='all'">
   {{ 'style-main.scss.css' | asset_url | stylesheet_tag }}
@@ -71,7 +81,7 @@
   <!-- Header hook for plugins ================================================== -->
   {{ content_for_header }}
   {% include 'oldIE-js' %}
-  <script src="{{ 'jquery-3.5.0.min.js' | asset_url }}" type="text/javascript" async></script>
+  <script src="{{ 'jquery-3.5.0.min.js' | asset_url }}" type="text/javascript"></script>
   <script src="{{ 'api.jquery.js' | shopify_asset_url }}" type="text/javascript" async></script>
   <script src="{{ 'modernizr-2.8.3.min.js' | asset_url }}" type="text/javascript" async></script>
   <script src="{{ 'option_selection.js' | shopify_asset_url }}" type="text/javascript" async></script>

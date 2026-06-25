@@ -1,6 +1,22 @@
 <nav class="navbar navbar-expand-lg navbar-light p-0 text-center justify-content-between">
   <div class="collapse navbar-collapse justify-content-center">
     <ul class="navbar-nav">
+      {% assign has_nav_blocks = false %}
+      {% for block in section.blocks %}
+        {% if block.type == 'nav_link' %}
+          {% assign has_nav_blocks = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% if has_nav_blocks %}
+        {% for block in section.blocks %}
+          {% if block.type == 'nav_link' %}
+            <li class="nav-item">
+              <a href="{{ block.settings.url }}" class="delay03 relative nav-link menu_lv1">{{ block.settings.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% else %}
       {% assign main_menu = section.settings.main_menu_store %}
       {% for link in linklists[main_menu].links %}
 
@@ -343,6 +359,7 @@
       {% endif %}
 
       {% endfor %}
+      {% endif %}
     </ul>
   </div>
 </nav>
