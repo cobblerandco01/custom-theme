@@ -43,6 +43,24 @@
   {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
   {{ 'slick.css' | asset_url | stylesheet_tag }}
   {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+  <style>
+    /* Prevent Flash of Unstyled Content (FOUC) for hero sliders */
+    .slick-side-h1:not(.slick-initialized) .itemv-slide-h1:not(:first-child),
+    .slick-side-h2:not(.slick-initialized) .itemv-slide-h2:not(:first-child),
+    .slick-side-h3:not(.slick-initialized) .itemv-slide-h3:not(:first-child),
+    .slick-side-h4:not(.slick-initialized) .itemv-slide-h4:not(:first-child),
+    .slick-side-h5:not(.slick-initialized) .itemv-slide-h5:not(:first-child) {
+      display: none !important;
+    }
+    .slick-side-h1:not(.slick-initialized),
+    .slick-side-h2:not(.slick-initialized),
+    .slick-side-h3:not(.slick-initialized),
+    .slick-side-h4:not(.slick-initialized),
+    .slick-side-h5:not(.slick-initialized) {
+      overflow: hidden;
+      max-height: 100vh;
+    }
+  </style>
   <link rel="stylesheet" href="{{ 'jquery.fancybox.min.css' | asset_url }}" media="nope!" onload="this.media='all'">
   {{ 'style-main.scss.css' | asset_url | stylesheet_tag }}
   {{ 'engo-customizes.css' | asset_url | stylesheet_tag }}

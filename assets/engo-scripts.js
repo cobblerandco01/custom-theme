@@ -2073,24 +2073,11 @@ jQuery(document).ready(function($) {
 
 
   function popup(){
-    $('.jsclosepoup').on('click', function() {
-      $('.jsengo_popup').addClass('d-none');
-
-    });
+    // Newsletter popup disabled
   }
   function cookiepopup(){
-    if (!jQuery.cookie('brilliant_pop_newletter') || jQuery.cookie('brilliant_pop_newletter') == null) {    
-      $(window).on('load', function(){
-        setTimeout($('.jsengo_popup').show(), 300 * 1000);
-        jQuery('.jsclosepoup').click(function(e) {
-          e.preventDefault();
-          jQuery('.jsengo_popup').hide(); 
-          jQuery.cookie('brilliant_pop_newletter', '1', {expires: 1, path:'/', domain: '' });
-                                                        });
-        });
-      } else {
-                   $('.jsengo_popup').remove();
-    }
+    // Newsletter popup disabled — remove any leftover popup elements
+    $('.jsengo_popup').remove();
   }
 
 
@@ -2163,10 +2150,10 @@ jQuery(document).ready(function($) {
   totop();
   jslogindestop();
   jscalllogindestop();
-  popup();
-  cookiepopup();
-  popup2();
-  cookiepopup2();
+  // popup() disabled — newsletter modal removed
+  // cookiepopup() disabled — newsletter modal removed
+  // popup2() disabled — newsletter modal removed
+  // cookiepopup2() disabled — newsletter modal removed
   menumobile();
   jsBackLogin();
   mobilescroll();
