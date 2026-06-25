@@ -1,1 +1,776 @@
-{"sections":{"1657338759a3152298":{"type":"section-slideshow-v1","blocks":{"slideshow_AdYAyN":{"type":"slideshow","settings":{"select_position_content":"left","select_textalign_content":"left","block_title_top1":"Style Destination","color_block_title_top1":"#e5e5e5","font_size_top1":18,"fonts_sub_1":"","effect_title1":"bounce","block_title_top":"Basic Collection","color_block_title_top":"#010101","font_size_title_top":80,"fonts_title_top":"","effect_title":"bounce","block_title_top2":"Style Destination","color_block_title_top2":"#e5e5e5","font_size_top2":20,"fonts_sub_2":"","effect_title2":"bounce","block_buton":"Shop now","color_block_button":"#ffffff","font_size_button":14,"fonts_button":"","color_hover_button":"#ffffff","color_hover_text":"#000000","block_url":"shopify:\/\/collections\/all","effect_title3":"bounce","ena_slide_video":false,"url_ytb_video":"","block_banerimage":"shopify:\/\/shop_images\/hero-web-2.webp","block_banerimage_mb":"shopify:\/\/shop_images\/hero-mob-1.webp"}},"1657338759a74dae0b-0":{"type":"slideshow","settings":{"select_position_content":"left","select_textalign_content":"left","block_title_top1":"SUGGESTIONS FOR YOU","color_block_title_top1":"#303030","font_size_top1":18,"fonts_sub_1":"","effect_title1":"rubberBand","block_title_top":"sneakers collection","color_block_title_top":"#000000","font_size_title_top":80,"fonts_title_top":"","effect_title":"bounce","block_title_top2":"All shoes are carefully handcrafted.","color_block_title_top2":"#303030","font_size_top2":20,"fonts_sub_2":"","effect_title2":"bounce","block_buton":"SHOP NOW","color_block_button":"#000000","font_size_button":14,"fonts_button":"","color_hover_button":"#000000","color_hover_text":"#ffffff","block_url":"shopify:\/\/collections\/all","effect_title3":"bounce","ena_slide_video":false,"url_ytb_video":"","block_banerimage":"shopify:\/\/shop_images\/hero-web-1_142dcbe1-dcb5-45aa-9df4-eb12ce0ebab4.webp","block_banerimage_mb":"shopify:\/\/shop_images\/hero-mob-2_96cc9b47-4d7d-4995-8a61-fc8c46e51c89.webp"}},"1657338759a74dae0b-1":{"type":"slideshow","settings":{"select_position_content":"left","select_textalign_content":"left","block_title_top1":"SUGGESTIONS FOR YOU","color_block_title_top1":"#303030","font_size_top1":18,"fonts_sub_1":"","effect_title1":"bounce","block_title_top":"Basic Collection","color_block_title_top":"#000000","font_size_title_top":80,"fonts_title_top":"","effect_title":"bounce","block_title_top2":"All shoes are carefully handcrafted.","color_block_title_top2":"#303030","font_size_top2":20,"fonts_sub_2":"","effect_title2":"bounce","block_buton":"SHOP NOW","color_block_button":"#000000","font_size_button":14,"fonts_button":"","color_hover_button":"#000000","color_hover_text":"#ffffff","block_url":"shopify:\/\/collections\/all","effect_title3":"bounce","ena_slide_video":false,"url_ytb_video":"","block_banerimage":"shopify:\/\/shop_images\/hero-web-3.webp","block_banerimage_mb":"shopify:\/\/shop_images\/hero-mob-3_3b0de4d2-7f5d-4ee4-94f7-0612b2c413de.webp"}}},"block_order":["slideshow_AdYAyN","1657338759a74dae0b-0","1657338759a74dae0b-1"],"settings":{"margin_top":"","margin_bottom":""}},"165733199271724ac1":{"type":"section-banner-v5","settings":{"ena_padding_top":true,"ena_container":false,"select_pos":"left","margin_top":"","margin_bottom":"","bg_banner":"#eef5fa","title_banner":"Sport Shoes","color_title":"#000000","sub_title_banner":"Sports shoes are shoes used in sports activities or used when exercising to improve health. Now, sports shoes are also used in daily activities such as going to work, school, going out, ... because of its convenience and fashion. It is no coincidence that sports shoes are created and used every time you exercise or exercise.","color_sub_title":"#000000","button_banner":"SHOP NOW","color_btn":"#ffffff","bg_btn":"#000000","color_btn_hover":"#000000","url_banner":"shopify:\/\/collections\/all","img_banner_right":"shopify:\/\/shop_images\/hero-mob-2.webp"}},"16573387805329719b":{"type":"section-product-v3","settings":{"title_heading":"Best Seller","color_title":"#222222","sub_title":"Best Seller Product This Week!","color_sub_title":"#666666","select_collection":"bestsellers","products_limit":8,"margin_top":"","margin_bottom":""}},"1657338808c94fcad3":{"type":"section-banner-v5","settings":{"ena_padding_top":true,"ena_container":false,"select_pos":"right","margin_top":"","margin_bottom":"","bg_banner":"#eef5fa","title_banner":"Shoe Collection","color_title":"#000000","sub_title_banner":"Sports shoes are shoes used in sports activities or used when exercising to improve health. Now, sports shoes are also used in daily activities such as going to work, school, going out, ... because of its convenience and fashion. It is no coincidence that sports shoes are created and used every time you exercise or exercise.","color_sub_title":"#000000","button_banner":"SHOP NOW","color_btn":"#ffffff","bg_btn":"#000000","color_btn_hover":"#000000","url_banner":"shopify:\/\/collections\/all","img_banner_right":"shopify:\/\/shop_images\/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp"}},"1657338962051bf203":{"type":"section-product-v1","settings":{"title_heading":"Hot Deal","color_title":"#222222","sub-title1":"Don't Miss Today's Featured Deals","select_collection":"new-arrivals","products_limit":3,"margin_top":"","margin_bottom":""}},"section_service_v1_4VQzzh":{"type":"section-service-v1","blocks":{"service_fVeNCe":{"type":"service","settings":{"block_title":"24\/7 FRIENDLY SUPPORT","color_title":"#fff","block_content":"Our support team always ready for you<br> to 7 days a week","color_content":"#fff"}},"service_nXTXJz":{"type":"service","settings":{"block_title":"FREE SHIPPING","color_title":"#fff","block_content":"Free worldwide shipping on all area <br>order above $100","color_content":"#fff"}},"service_Xjxmrt":{"type":"service","settings":{"block_title":"7 DAYS EASY RETURN","color_title":"#fff","block_content":"Product any fault within 7 days for an<br> immediately exchange.","color_content":"#fff"}},"service_N3nYPk":{"type":"service","settings":{"block_title":"QUALITY GUARANTEED","color_title":"#fff","block_content":"If your product aren't perfect, return<br> them for a full refund","color_content":"#fff"}}},"block_order":["service_fVeNCe","service_nXTXJz","service_Xjxmrt","service_N3nYPk"],"name":"SERVICE BOX","settings":{"margin_top":"","margin_bottom":"","bg_section":"#ff0000"}},"section_info_v1_XgWQ7C":{"type":"section-info-v1","blocks":{"info_M4rhBK":{"type":"Info","settings":{"img_content_left":"shopify:\/\/shop_images\/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp","mini_title_left":"Fresh","color_mini_title":"#000","color_hover_mini_title":"#000","mini_des_left":"This is example content","color_mini_des":"#222"}},"info_AezcQA":{"type":"Info","settings":{"img_content_left":"shopify:\/\/shop_images\/hero-mob-3_3b0de4d2-7f5d-4ee4-94f7-0612b2c413de.webp","mini_title_left":"Fresh","color_mini_title":"#000","color_hover_mini_title":"#000","mini_des_left":"This is example content","color_mini_des":"#222"}},"info_gPcnqP":{"type":"Info","disabled":true,"settings":{"mini_title_left":"Fresh","color_mini_title":"#000","color_hover_mini_title":"#000","mini_des_left":"This is example content","color_mini_des":"#222"}},"info_2_mch8KN":{"type":"Info-2","settings":{"banner_url":"shopify:\/\/collections\/all","img_content_right":"shopify:\/\/shop_images\/hero-mob-2_96cc9b47-4d7d-4995-8a61-fc8c46e51c89.webp","mini_title_right":"Fresh","color_mini_title":"#000","color_hover_mini_title":"#000","mini_des_right":"This is example content","color_mini_des":"#222"}},"info_2_8ec4fz":{"type":"Info-2","settings":{"banner_url":"shopify:\/\/collections\/all","img_content_right":"shopify:\/\/shop_images\/hero-mob-4_e7b098b7-aaf9-4ed8-a2f3-12ba16322a2f.webp","mini_title_right":"Fresh","color_mini_title":"#000","color_hover_mini_title":"#000","mini_des_right":"This is example content","color_mini_des":"#222"}},"info_2_yq8XGe":{"type":"Info-2","disabled":true,"settings":{"banner_url":"shopify:\/\/collections\/all","mini_title_right":"Fresh","color_mini_title":"#000","color_hover_mini_title":"#000","mini_des_right":"This is example content","color_mini_des":"#222"}}},"block_order":["info_M4rhBK","info_AezcQA","info_gPcnqP","info_2_mch8KN","info_2_8ec4fz","info_2_yq8XGe"],"name":"INFO V1","settings":{"style_bg":"color","bg_img":"shopify:\/\/shop_images\/hero-mob-2_96cc9b47-4d7d-4995-8a61-fc8c46e51c89.webp","bg_color":"#f2f2f2","section_sub_title":"Food Is Always Fresh","section_title":"We Grow Best Food","banner_img":"shopify:\/\/shop_images\/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp","margin_top":"","margin_bottom":"65"}},"section_service_v2_Qiwpty":{"type":"section-service-v2","blocks":{"service_gKkFbQ":{"type":"service","settings":{"block_number":"1","block_title":"SHIPPING & RETURN","block_content":"If your glasses aren't , return them within 30 days"}},"service_R3DG6t":{"type":"service","settings":{"block_number":"1","block_title":"SHIPPING & RETURN","block_content":"If your glasses aren't , return them within 30 days"}},"service_4nbdrb":{"type":"service","settings":{"block_number":"1","block_title":"SHIPPING & RETURN","block_content":"If your glasses aren't , return them within 30 days for a full refund."}},"service_AR3Q3P":{"type":"service","disabled":true,"settings":{"block_number":"1","block_title":"FREE SHIPPING","block_content":"For all order over $99"}},"service_qFxjL9":{"type":"service","disabled":true,"settings":{"block_number":"2","block_title":"DELIVERY ON TIME","block_content":"Definition and measurement"}},"service_dAGT6n":{"type":"service","disabled":true,"settings":{"block_number":"3","block_title":"SECURE PAMENT","block_content":"100% secure payment"}}},"block_order":["service_gKkFbQ","service_R3DG6t","service_4nbdrb","service_AR3Q3P","service_qFxjL9","service_dAGT6n"],"disabled":true,"name":"SERVICE V2","settings":{"bg_img":"shopify:\/\/shop_images\/hero-web-2.webp","margin_top":"120","margin_bottom":""}},"reviews_EbHWjG":{"type":"reviews","blocks":{"review_HWe4BV":{"type":"review","settings":{"image":"shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg","title":"Testimonial name","job":"Ann Smith","stars":5,"text":"<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...<\/p>"}},"review_U9mL3G":{"type":"review","settings":{"image":"shopify:\/\/shop_images\/chef-selection.png","title":"Testimonial name","job":"Ann Smith","stars":5,"text":"<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...<\/p>"}},"review_BFdiqA":{"type":"review","settings":{"image":"shopify:\/\/shop_images\/chef-selection.png","title":"Testimonial name","job":"Ann Smith","stars":5,"text":"<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...<\/p>"}},"review_AhjBGB":{"type":"review","settings":{"image":"shopify:\/\/shop_images\/chef-selection.png","title":"Testimonial name","job":"Ann Smith","stars":5,"text":"<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...<\/p>"}},"review_JbFGPU":{"type":"review","settings":{"image":"shopify:\/\/shop_images\/chef-selection.png","title":"Testimonial name","job":"Ann Smith","stars":5,"text":"<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...<\/p>"}}},"block_order":["review_HWe4BV","review_U9mL3G","review_BFdiqA","review_AhjBGB","review_JbFGPU"],"name":"Testimonials","settings":{"title":"Testimonials"}},"165734272602bf9687":{"type":"section-blog-v1","disabled":true,"settings":{"margin_top":"","margin_bottom":"","section_title":"Our Blogs","color_title":"#222222","select_blog":"news","blogs_limit":3,"enable_category":true,"enable_date":true,"enable_title":true,"enable_excerpt":true,"ena_btn_readmore":true}},"about_template_dPqq9d":{"type":"about-template","blocks":{"introduce_QGGaYd":{"type":"introduce","settings":{"image_intro":"shopify:\/\/shop_images\/hero-mob-3_3b0de4d2-7f5d-4ee4-94f7-0612b2c413de.webp","title_intro":"Dummy Title","des_intro":"Dummy Description For the Cobbler and Co Show Brand based in Zirakpur Punjab","content_intro":"This is the Content area of the Cobbler and Co Shopify Website , here the content will be about the brand and details of the products will be there , later the content will come."}},"service_84Xm4a":{"type":"service","settings":{"block_icon_svg":"","block_title":"FREE SHIPPING & RETURN","block_content":"If your Shoes aren't perfect, return them within 30 days for a full refund. We'll even pay shipping."}}},"block_order":["introduce_QGGaYd","service_84Xm4a"],"name":"About Us","settings":{"enable_intro":true,"enable_s_servicebox":true,"bg_image":"shopify:\/\/shop_images\/hero-web-1.webp","title_servicebox":"Reasons to shop with us","enable_insta":false,"title_icon":"icon-icon-intagram","title_content":"Instagram Feed","des":"Get Update & Emails From Us","ins_userid":"3672948962","ins_access_token":"3672948962.0f64772.430edb7f711e4665b59777c54d1ed9ce","ins_limit_number":"6","item_icon":"fa fa-instagram"}},"page_instagram_Px9gQr":{"type":"page-instagram","blocks":{"slide_lookbook_mdgfry":{"type":"slide_lookbook","settings":{"bg_breadcrumb":"shopify:\/\/shop_images\/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp","top_position1":"","left_position1":"","select_product1":"","top_popup1":"","left_popup1":"","right_popup1":"","bottom_popup1":"","top_position2":"","left_position2":"","select_product2":"","top_popup2":"","left_popup2":"","right_popup2":"","bottom_popup2":"","top_position3":"","left_position3":"","select_product3":"","top_popup3":"","left_popup3":"","right_popup3":"","bottom_popup3":"","top_position4":"","left_position4":"","select_product4":"","top_popup4":"","left_popup4":"","right_popup4":"","bottom_popup4":"","top_position5":"","left_position5":"","select_product5":"","top_popup5":"","left_popup5":"","right_popup5":"","bottom_popup5":""}},"slide_lookbook_MNYriW":{"type":"slide_lookbook","settings":{"bg_breadcrumb":"shopify:\/\/shop_images\/hero-mob-2_96cc9b47-4d7d-4995-8a61-fc8c46e51c89.webp","top_position1":"","left_position1":"","select_product1":"","top_popup1":"","left_popup1":"","right_popup1":"","bottom_popup1":"","top_position2":"","left_position2":"","select_product2":"","top_popup2":"","left_popup2":"","right_popup2":"","bottom_popup2":"","top_position3":"","left_position3":"","select_product3":"","top_popup3":"","left_popup3":"","right_popup3":"","bottom_popup3":"","top_position4":"","left_position4":"","select_product4":"","top_popup4":"","left_popup4":"","right_popup4":"","bottom_popup4":"","top_position5":"","left_position5":"","select_product5":"","top_popup5":"","left_popup5":"","right_popup5":"","bottom_popup5":""}},"slide_lookbook_QdVtEJ":{"type":"slide_lookbook","settings":{"bg_breadcrumb":"shopify:\/\/shop_images\/hero-mob-3_3b0de4d2-7f5d-4ee4-94f7-0612b2c413de.webp","top_position1":"","left_position1":"","select_product1":"shoe-4","top_popup1":"","left_popup1":"","right_popup1":"","bottom_popup1":"","top_position2":"","left_position2":"","select_product2":"shoe-1","top_popup2":"","left_popup2":"","right_popup2":"","bottom_popup2":"","top_position3":"","left_position3":"","select_product3":"shoe-3","top_popup3":"","left_popup3":"","right_popup3":"","bottom_popup3":"","top_position4":"","left_position4":"","select_product4":"shoe-2","top_popup4":"","left_popup4":"","right_popup4":"","bottom_popup4":"","top_position5":"","left_position5":"","select_product5":"","top_popup5":"","left_popup5":"","right_popup5":"","bottom_popup5":""}},"slide_lookbook_UeYwBQ":{"type":"slide_lookbook","settings":{"bg_breadcrumb":"shopify:\/\/shop_images\/hero-mob-4_e7b098b7-aaf9-4ed8-a2f3-12ba16322a2f.webp","top_position1":"","left_position1":"","select_product1":"","top_popup1":"","left_popup1":"","right_popup1":"","bottom_popup1":"","top_position2":"","left_position2":"","select_product2":"","top_popup2":"","left_popup2":"","right_popup2":"","bottom_popup2":"","top_position3":"","left_position3":"","select_product3":"","top_popup3":"","left_popup3":"","right_popup3":"","bottom_popup3":"","top_position4":"","left_position4":"","select_product4":"","top_popup4":"","left_popup4":"","right_popup4":"","bottom_popup4":"","top_position5":"","left_position5":"","select_product5":"","top_popup5":"","left_popup5":"","right_popup5":"","bottom_popup5":""}}},"block_order":["slide_lookbook_mdgfry","slide_lookbook_MNYriW","slide_lookbook_QdVtEJ","slide_lookbook_UeYwBQ"],"disabled":true,"name":"Instagram Page","settings":{"img_heading":"shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg","image_per":"image_per_4"}},"rich_text_g8bdCY":{"type":"rich-text","disabled":true,"name":"Rich text","settings":{"rich_icon_svg":"","section_title":"Talk about your brand"}},"17823692078188a59f":{"type":"_blocks","blocks":{"ai_gen_block_65e3d05_bFKnwV":{"type":"ai_gen_block_65e3d05","settings":{"brand_image":"shopify:\/\/shop_images\/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp","image_width":40,"image_border_radius":8,"brand_title":"About our brand","brand_description":"We are passionate about creating quality products that inspire and delight our customers. Our journey began with a simple idea and has grown into a brand that values craftsmanship, sustainability, and innovation.","title_font_size":32,"description_font_size":16,"title_spacing":16,"content_vertical_alignment":"center","content_padding":32,"content_border_radius":8,"title_color":"#111111","description_color":"#555555","content_background_color":"#ffffff","gap":32,"desktop_width_percent":100},"blocks":{}}},"block_order":["ai_gen_block_65e3d05_bFKnwV"],"settings":{}}},"order":["1657338759a3152298","165733199271724ac1","16573387805329719b","1657338808c94fcad3","1657338962051bf203","section_service_v1_4VQzzh","section_info_v1_XgWQ7C","section_service_v2_Qiwpty","reviews_EbHWjG","165734272602bf9687","about_template_dPqq9d","page_instagram_Px9gQr","rich_text_g8bdCY","17823692078188a59f"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1657338759a3152298": {
+      "type": "section-slideshow-v1",
+      "blocks": {
+        "slideshow_AdYAyN": {
+          "type": "slideshow",
+          "settings": {
+            "select_position_content": "left",
+            "select_textalign_content": "left",
+            "block_title_top1": "Style Destination",
+            "color_block_title_top1": "#e5e5e5",
+            "font_size_top1": 18,
+            "fonts_sub_1": "",
+            "effect_title1": "bounce",
+            "block_title_top": "Basic Collection",
+            "color_block_title_top": "#010101",
+            "font_size_title_top": 80,
+            "fonts_title_top": "",
+            "effect_title": "bounce",
+            "block_title_top2": "Style Destination",
+            "color_block_title_top2": "#e5e5e5",
+            "font_size_top2": 20,
+            "fonts_sub_2": "",
+            "effect_title2": "bounce",
+            "block_buton": "Shop now",
+            "color_block_button": "#ffffff",
+            "font_size_button": 14,
+            "fonts_button": "",
+            "color_hover_button": "#ffffff",
+            "color_hover_text": "#000000",
+            "block_url": "shopify://collections/all",
+            "effect_title3": "bounce",
+            "ena_slide_video": false,
+            "url_ytb_video": "",
+            "block_banerimage": "shopify://shop_images/hero-web-2.webp",
+            "block_banerimage_mb": "shopify://shop_images/hero-mob-1.webp"
+          }
+        },
+        "1657338759a74dae0b-0": {
+          "type": "slideshow",
+          "settings": {
+            "select_position_content": "left",
+            "select_textalign_content": "left",
+            "block_title_top1": "SUGGESTIONS FOR YOU",
+            "color_block_title_top1": "#FFFFFF",
+            "font_size_top1": 18,
+            "fonts_sub_1": "",
+            "effect_title1": "rubberBand",
+            "block_title_top": "sneakers collection",
+            "color_block_title_top": "#C9C9C9",
+            "font_size_title_top": 80,
+            "fonts_title_top": "",
+            "effect_title": "bounce",
+            "block_title_top2": "All shoes are carefully handcrafted.",
+            "color_block_title_top2": "#D6D6D6",
+            "font_size_top2": 20,
+            "fonts_sub_2": "",
+            "effect_title2": "rubberBand",
+            "block_buton": "SHOP NOW",
+            "color_block_button": "#000000",
+            "font_size_button": 14,
+            "fonts_button": "",
+            "color_hover_button": "#000000",
+            "color_hover_text": "#ffffff",
+            "block_url": "shopify://collections/all",
+            "effect_title3": "rubberBand",
+            "ena_slide_video": false,
+            "url_ytb_video": "",
+            "block_banerimage": "shopify://shop_images/hero-web-1_142dcbe1-dcb5-45aa-9df4-eb12ce0ebab4.webp",
+            "block_banerimage_mb": "shopify://shop_images/hero-mob-2_96cc9b47-4d7d-4995-8a61-fc8c46e51c89.webp"
+          }
+        },
+        "1657338759a74dae0b-1": {
+          "type": "slideshow",
+          "settings": {
+            "select_position_content": "left",
+            "select_textalign_content": "left",
+            "block_title_top1": "SUGGESTIONS FOR YOU",
+            "color_block_title_top1": "#303030",
+            "font_size_top1": 18,
+            "fonts_sub_1": "",
+            "effect_title1": "bounce",
+            "block_title_top": "Basic Collection",
+            "color_block_title_top": "#000000",
+            "font_size_title_top": 80,
+            "fonts_title_top": "",
+            "effect_title": "bounce",
+            "block_title_top2": "All shoes are carefully handcrafted.",
+            "color_block_title_top2": "#303030",
+            "font_size_top2": 20,
+            "fonts_sub_2": "",
+            "effect_title2": "bounce",
+            "block_buton": "SHOP NOW",
+            "color_block_button": "#000000",
+            "font_size_button": 14,
+            "fonts_button": "",
+            "color_hover_button": "#000000",
+            "color_hover_text": "#ffffff",
+            "block_url": "shopify://collections/all",
+            "effect_title3": "bounce",
+            "ena_slide_video": false,
+            "url_ytb_video": "",
+            "block_banerimage": "shopify://shop_images/hero-web-3.webp",
+            "block_banerimage_mb": "shopify://shop_images/hero-mob-3_3b0de4d2-7f5d-4ee4-94f7-0612b2c413de.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow_AdYAyN",
+        "1657338759a74dae0b-0",
+        "1657338759a74dae0b-1"
+      ],
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    },
+    "165733199271724ac1": {
+      "type": "section-banner-v5",
+      "settings": {
+        "ena_padding_top": true,
+        "ena_container": false,
+        "select_pos": "left",
+        "margin_top": "",
+        "margin_bottom": "",
+        "bg_banner": "#eef5fa",
+        "title_banner": "Sport Shoes",
+        "color_title": "#000000",
+        "sub_title_banner": "Sports shoes are shoes used in sports activities or used when exercising to improve health. Now, sports shoes are also used in daily activities such as going to work, school, going out, ... because of its convenience and fashion. It is no coincidence that sports shoes are created and used every time you exercise or exercise.",
+        "color_sub_title": "#000000",
+        "button_banner": "SHOP NOW",
+        "color_btn": "#ffffff",
+        "bg_btn": "#000000",
+        "color_btn_hover": "#000000",
+        "url_banner": "shopify://collections/all",
+        "img_banner_right": "shopify://shop_images/hero-mob-2.webp"
+      }
+    },
+    "16573387805329719b": {
+      "type": "section-product-v3",
+      "settings": {
+        "title_heading": "Best Seller",
+        "color_title": "#222222",
+        "sub_title": "Best Seller Product This Week!",
+        "color_sub_title": "#666666",
+        "select_collection": "bestsellers",
+        "products_limit": 8,
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    },
+    "1657338808c94fcad3": {
+      "type": "section-banner-v5",
+      "settings": {
+        "ena_padding_top": true,
+        "ena_container": false,
+        "select_pos": "right",
+        "margin_top": "",
+        "margin_bottom": "",
+        "bg_banner": "#eef5fa",
+        "title_banner": "Shoe Collection",
+        "color_title": "#000000",
+        "sub_title_banner": "Sports shoes are shoes used in sports activities or used when exercising to improve health. Now, sports shoes are also used in daily activities such as going to work, school, going out, ... because of its convenience and fashion. It is no coincidence that sports shoes are created and used every time you exercise or exercise.",
+        "color_sub_title": "#000000",
+        "button_banner": "SHOP NOW",
+        "color_btn": "#ffffff",
+        "bg_btn": "#000000",
+        "color_btn_hover": "#000000",
+        "url_banner": "shopify://collections/all",
+        "img_banner_right": "shopify://shop_images/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp"
+      }
+    },
+    "1657338962051bf203": {
+      "type": "section-product-v1",
+      "settings": {
+        "title_heading": "Hot Deal",
+        "color_title": "#222222",
+        "sub-title1": "Don't Miss Today's Featured Deals",
+        "select_collection": "new-arrivals",
+        "products_limit": 3,
+        "margin_top": "",
+        "margin_bottom": ""
+      }
+    },
+    "section_service_v1_4VQzzh": {
+      "type": "section-service-v1",
+      "blocks": {
+        "service_fVeNCe": {
+          "type": "service",
+          "settings": {
+            "block_title": "24/7 FRIENDLY SUPPORT",
+            "color_title": "#fff",
+            "block_content": "Our support team always ready for you<br> to 7 days a week",
+            "color_content": "#fff"
+          }
+        },
+        "service_nXTXJz": {
+          "type": "service",
+          "settings": {
+            "block_title": "FREE SHIPPING",
+            "color_title": "#fff",
+            "block_content": "Free worldwide shipping on all area <br>order above $100",
+            "color_content": "#fff"
+          }
+        },
+        "service_Xjxmrt": {
+          "type": "service",
+          "settings": {
+            "block_title": "7 DAYS EASY RETURN",
+            "color_title": "#fff",
+            "block_content": "Product any fault within 7 days for an<br> immediately exchange.",
+            "color_content": "#fff"
+          }
+        },
+        "service_N3nYPk": {
+          "type": "service",
+          "settings": {
+            "block_title": "QUALITY GUARANTEED",
+            "color_title": "#fff",
+            "block_content": "If your product aren't perfect, return<br> them for a full refund",
+            "color_content": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "service_fVeNCe",
+        "service_nXTXJz",
+        "service_Xjxmrt",
+        "service_N3nYPk"
+      ],
+      "name": "SERVICE BOX",
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": "",
+        "bg_section": "#ff0000"
+      }
+    },
+    "section_info_v1_XgWQ7C": {
+      "type": "section-info-v1",
+      "blocks": {
+        "info_M4rhBK": {
+          "type": "Info",
+          "settings": {
+            "img_content_left": "shopify://shop_images/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp",
+            "mini_title_left": "Fresh",
+            "color_mini_title": "#000",
+            "color_hover_mini_title": "#000",
+            "mini_des_left": "This is example content",
+            "color_mini_des": "#222"
+          }
+        },
+        "info_AezcQA": {
+          "type": "Info",
+          "settings": {
+            "img_content_left": "shopify://shop_images/hero-mob-3_3b0de4d2-7f5d-4ee4-94f7-0612b2c413de.webp",
+            "mini_title_left": "Fresh",
+            "color_mini_title": "#000",
+            "color_hover_mini_title": "#000",
+            "mini_des_left": "This is example content",
+            "color_mini_des": "#222"
+          }
+        },
+        "info_gPcnqP": {
+          "type": "Info",
+          "disabled": true,
+          "settings": {
+            "mini_title_left": "Fresh",
+            "color_mini_title": "#000",
+            "color_hover_mini_title": "#000",
+            "mini_des_left": "This is example content",
+            "color_mini_des": "#222"
+          }
+        },
+        "info_2_mch8KN": {
+          "type": "Info-2",
+          "settings": {
+            "banner_url": "shopify://collections/all",
+            "img_content_right": "shopify://shop_images/hero-mob-2_96cc9b47-4d7d-4995-8a61-fc8c46e51c89.webp",
+            "mini_title_right": "Fresh",
+            "color_mini_title": "#000",
+            "color_hover_mini_title": "#000",
+            "mini_des_right": "This is example content",
+            "color_mini_des": "#222"
+          }
+        },
+        "info_2_8ec4fz": {
+          "type": "Info-2",
+          "settings": {
+            "banner_url": "shopify://collections/all",
+            "img_content_right": "shopify://shop_images/hero-mob-4_e7b098b7-aaf9-4ed8-a2f3-12ba16322a2f.webp",
+            "mini_title_right": "Fresh",
+            "color_mini_title": "#000",
+            "color_hover_mini_title": "#000",
+            "mini_des_right": "This is example content",
+            "color_mini_des": "#222"
+          }
+        },
+        "info_2_yq8XGe": {
+          "type": "Info-2",
+          "disabled": true,
+          "settings": {
+            "banner_url": "shopify://collections/all",
+            "mini_title_right": "Fresh",
+            "color_mini_title": "#000",
+            "color_hover_mini_title": "#000",
+            "mini_des_right": "This is example content",
+            "color_mini_des": "#222"
+          }
+        }
+      },
+      "block_order": [
+        "info_M4rhBK",
+        "info_AezcQA",
+        "info_gPcnqP",
+        "info_2_mch8KN",
+        "info_2_8ec4fz",
+        "info_2_yq8XGe"
+      ],
+      "name": "INFO V1",
+      "settings": {
+        "style_bg": "color",
+        "bg_img": "shopify://shop_images/hero-mob-2_96cc9b47-4d7d-4995-8a61-fc8c46e51c89.webp",
+        "bg_color": "#f2f2f2",
+        "section_sub_title": "Food Is Always Fresh",
+        "section_title": "We Grow Best Food",
+        "banner_img": "shopify://shop_images/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp",
+        "margin_top": "",
+        "margin_bottom": "65"
+      }
+    },
+    "section_service_v2_Qiwpty": {
+      "type": "section-service-v2",
+      "blocks": {
+        "service_gKkFbQ": {
+          "type": "service",
+          "settings": {
+            "block_number": "1",
+            "block_title": "SHIPPING & RETURN",
+            "block_content": "If your glasses aren't , return them within 30 days"
+          }
+        },
+        "service_R3DG6t": {
+          "type": "service",
+          "settings": {
+            "block_number": "1",
+            "block_title": "SHIPPING & RETURN",
+            "block_content": "If your glasses aren't , return them within 30 days"
+          }
+        },
+        "service_4nbdrb": {
+          "type": "service",
+          "settings": {
+            "block_number": "1",
+            "block_title": "SHIPPING & RETURN",
+            "block_content": "If your glasses aren't , return them within 30 days for a full refund."
+          }
+        },
+        "service_AR3Q3P": {
+          "type": "service",
+          "disabled": true,
+          "settings": {
+            "block_number": "1",
+            "block_title": "FREE SHIPPING",
+            "block_content": "For all order over $99"
+          }
+        },
+        "service_qFxjL9": {
+          "type": "service",
+          "disabled": true,
+          "settings": {
+            "block_number": "2",
+            "block_title": "DELIVERY ON TIME",
+            "block_content": "Definition and measurement"
+          }
+        },
+        "service_dAGT6n": {
+          "type": "service",
+          "disabled": true,
+          "settings": {
+            "block_number": "3",
+            "block_title": "SECURE PAMENT",
+            "block_content": "100% secure payment"
+          }
+        }
+      },
+      "block_order": [
+        "service_gKkFbQ",
+        "service_R3DG6t",
+        "service_4nbdrb",
+        "service_AR3Q3P",
+        "service_qFxjL9",
+        "service_dAGT6n"
+      ],
+      "disabled": true,
+      "name": "SERVICE V2",
+      "settings": {
+        "bg_img": "shopify://shop_images/hero-web-2.webp",
+        "margin_top": "120",
+        "margin_bottom": ""
+      }
+    },
+    "reviews_EbHWjG": {
+      "type": "reviews",
+      "blocks": {
+        "review_HWe4BV": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/green-and-white-marbled-coloring.jpg",
+            "title": "Testimonial name",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+          }
+        },
+        "review_U9mL3G": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/chef-selection.png",
+            "title": "Testimonial name",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+          }
+        },
+        "review_BFdiqA": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/chef-selection.png",
+            "title": "Testimonial name",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+          }
+        },
+        "review_AhjBGB": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/chef-selection.png",
+            "title": "Testimonial name",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+          }
+        },
+        "review_JbFGPU": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/chef-selection.png",
+            "title": "Testimonial name",
+            "job": "Ann Smith",
+            "stars": 5,
+            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+          }
+        }
+      },
+      "block_order": [
+        "review_HWe4BV",
+        "review_U9mL3G",
+        "review_BFdiqA",
+        "review_AhjBGB",
+        "review_JbFGPU"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "title": "Testimonials"
+      }
+    },
+    "165734272602bf9687": {
+      "type": "section-blog-v1",
+      "disabled": true,
+      "settings": {
+        "margin_top": "",
+        "margin_bottom": "",
+        "section_title": "Our Blogs",
+        "color_title": "#222222",
+        "select_blog": "news",
+        "blogs_limit": 3,
+        "enable_category": true,
+        "enable_date": true,
+        "enable_title": true,
+        "enable_excerpt": true,
+        "ena_btn_readmore": true
+      }
+    },
+    "about_template_dPqq9d": {
+      "type": "about-template",
+      "blocks": {
+        "introduce_QGGaYd": {
+          "type": "introduce",
+          "settings": {
+            "image_intro": "shopify://shop_images/hero-mob-3_3b0de4d2-7f5d-4ee4-94f7-0612b2c413de.webp",
+            "title_intro": "Dummy Title",
+            "des_intro": "Dummy Description For the Cobbler and Co Show Brand based in Zirakpur Punjab",
+            "content_intro": "This is the Content area of the Cobbler and Co Shopify Website , here the content will be about the brand and details of the products will be there , later the content will come."
+          }
+        },
+        "service_84Xm4a": {
+          "type": "service",
+          "settings": {
+            "block_icon_svg": "",
+            "block_title": "FREE SHIPPING & RETURN",
+            "block_content": "If your Shoes aren't perfect, return them within 30 days for a full refund. We'll even pay shipping."
+          }
+        }
+      },
+      "block_order": [
+        "introduce_QGGaYd",
+        "service_84Xm4a"
+      ],
+      "name": "About Us",
+      "settings": {
+        "enable_intro": true,
+        "enable_s_servicebox": true,
+        "bg_image": "shopify://shop_images/hero-web-1.webp",
+        "title_servicebox": "Reasons to shop with us",
+        "enable_insta": false,
+        "title_icon": "icon-icon-intagram",
+        "title_content": "Instagram Feed",
+        "des": "Get Update & Emails From Us",
+        "ins_userid": "3672948962",
+        "ins_access_token": "3672948962.0f64772.430edb7f711e4665b59777c54d1ed9ce",
+        "ins_limit_number": "6",
+        "item_icon": "fa fa-instagram"
+      }
+    },
+    "page_instagram_Px9gQr": {
+      "type": "page-instagram",
+      "blocks": {
+        "slide_lookbook_mdgfry": {
+          "type": "slide_lookbook",
+          "settings": {
+            "bg_breadcrumb": "shopify://shop_images/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp",
+            "top_position1": "",
+            "left_position1": "",
+            "select_product1": "",
+            "top_popup1": "",
+            "left_popup1": "",
+            "right_popup1": "",
+            "bottom_popup1": "",
+            "top_position2": "",
+            "left_position2": "",
+            "select_product2": "",
+            "top_popup2": "",
+            "left_popup2": "",
+            "right_popup2": "",
+            "bottom_popup2": "",
+            "top_position3": "",
+            "left_position3": "",
+            "select_product3": "",
+            "top_popup3": "",
+            "left_popup3": "",
+            "right_popup3": "",
+            "bottom_popup3": "",
+            "top_position4": "",
+            "left_position4": "",
+            "select_product4": "",
+            "top_popup4": "",
+            "left_popup4": "",
+            "right_popup4": "",
+            "bottom_popup4": "",
+            "top_position5": "",
+            "left_position5": "",
+            "select_product5": "",
+            "top_popup5": "",
+            "left_popup5": "",
+            "right_popup5": "",
+            "bottom_popup5": ""
+          }
+        },
+        "slide_lookbook_MNYriW": {
+          "type": "slide_lookbook",
+          "settings": {
+            "bg_breadcrumb": "shopify://shop_images/hero-mob-2_96cc9b47-4d7d-4995-8a61-fc8c46e51c89.webp",
+            "top_position1": "",
+            "left_position1": "",
+            "select_product1": "",
+            "top_popup1": "",
+            "left_popup1": "",
+            "right_popup1": "",
+            "bottom_popup1": "",
+            "top_position2": "",
+            "left_position2": "",
+            "select_product2": "",
+            "top_popup2": "",
+            "left_popup2": "",
+            "right_popup2": "",
+            "bottom_popup2": "",
+            "top_position3": "",
+            "left_position3": "",
+            "select_product3": "",
+            "top_popup3": "",
+            "left_popup3": "",
+            "right_popup3": "",
+            "bottom_popup3": "",
+            "top_position4": "",
+            "left_position4": "",
+            "select_product4": "",
+            "top_popup4": "",
+            "left_popup4": "",
+            "right_popup4": "",
+            "bottom_popup4": "",
+            "top_position5": "",
+            "left_position5": "",
+            "select_product5": "",
+            "top_popup5": "",
+            "left_popup5": "",
+            "right_popup5": "",
+            "bottom_popup5": ""
+          }
+        },
+        "slide_lookbook_QdVtEJ": {
+          "type": "slide_lookbook",
+          "settings": {
+            "bg_breadcrumb": "shopify://shop_images/hero-mob-3_3b0de4d2-7f5d-4ee4-94f7-0612b2c413de.webp",
+            "top_position1": "",
+            "left_position1": "",
+            "select_product1": "shoe-4",
+            "top_popup1": "",
+            "left_popup1": "",
+            "right_popup1": "",
+            "bottom_popup1": "",
+            "top_position2": "",
+            "left_position2": "",
+            "select_product2": "shoe-1",
+            "top_popup2": "",
+            "left_popup2": "",
+            "right_popup2": "",
+            "bottom_popup2": "",
+            "top_position3": "",
+            "left_position3": "",
+            "select_product3": "shoe-3",
+            "top_popup3": "",
+            "left_popup3": "",
+            "right_popup3": "",
+            "bottom_popup3": "",
+            "top_position4": "",
+            "left_position4": "",
+            "select_product4": "shoe-2",
+            "top_popup4": "",
+            "left_popup4": "",
+            "right_popup4": "",
+            "bottom_popup4": "",
+            "top_position5": "",
+            "left_position5": "",
+            "select_product5": "",
+            "top_popup5": "",
+            "left_popup5": "",
+            "right_popup5": "",
+            "bottom_popup5": ""
+          }
+        },
+        "slide_lookbook_UeYwBQ": {
+          "type": "slide_lookbook",
+          "settings": {
+            "bg_breadcrumb": "shopify://shop_images/hero-mob-4_e7b098b7-aaf9-4ed8-a2f3-12ba16322a2f.webp",
+            "top_position1": "",
+            "left_position1": "",
+            "select_product1": "",
+            "top_popup1": "",
+            "left_popup1": "",
+            "right_popup1": "",
+            "bottom_popup1": "",
+            "top_position2": "",
+            "left_position2": "",
+            "select_product2": "",
+            "top_popup2": "",
+            "left_popup2": "",
+            "right_popup2": "",
+            "bottom_popup2": "",
+            "top_position3": "",
+            "left_position3": "",
+            "select_product3": "",
+            "top_popup3": "",
+            "left_popup3": "",
+            "right_popup3": "",
+            "bottom_popup3": "",
+            "top_position4": "",
+            "left_position4": "",
+            "select_product4": "",
+            "top_popup4": "",
+            "left_popup4": "",
+            "right_popup4": "",
+            "bottom_popup4": "",
+            "top_position5": "",
+            "left_position5": "",
+            "select_product5": "",
+            "top_popup5": "",
+            "left_popup5": "",
+            "right_popup5": "",
+            "bottom_popup5": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_lookbook_mdgfry",
+        "slide_lookbook_MNYriW",
+        "slide_lookbook_QdVtEJ",
+        "slide_lookbook_UeYwBQ"
+      ],
+      "disabled": true,
+      "name": "Instagram Page",
+      "settings": {
+        "img_heading": "shopify://shop_images/green-and-white-marbled-coloring.jpg",
+        "image_per": "image_per_4"
+      }
+    },
+    "rich_text_g8bdCY": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "rich_icon_svg": "",
+        "section_title": "Talk about your brand"
+      }
+    },
+    "17823692078188a59f": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_65e3d05_bFKnwV": {
+          "type": "ai_gen_block_65e3d05",
+          "settings": {
+            "brand_image": "shopify://shop_images/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp",
+            "image_width": 40,
+            "image_border_radius": 8,
+            "brand_title": "About our brand",
+            "brand_description": "We are passionate about creating quality products that inspire and delight our customers. Our journey began with a simple idea and has grown into a brand that values craftsmanship, sustainability, and innovation.",
+            "title_font_size": 32,
+            "description_font_size": 16,
+            "title_spacing": 16,
+            "content_vertical_alignment": "center",
+            "content_padding": 32,
+            "content_border_radius": 8,
+            "title_color": "#111111",
+            "description_color": "#555555",
+            "content_background_color": "#ffffff",
+            "gap": 32,
+            "desktop_width_percent": 100,
+            "padding_top": 40,
+            "padding_bottom": 40
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_65e3d05_bFKnwV"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "1657338759a3152298",
+    "165733199271724ac1",
+    "16573387805329719b",
+    "1657338808c94fcad3",
+    "1657338962051bf203",
+    "section_service_v1_4VQzzh",
+    "section_info_v1_XgWQ7C",
+    "section_service_v2_Qiwpty",
+    "reviews_EbHWjG",
+    "165734272602bf9687",
+    "about_template_dPqq9d",
+    "page_instagram_Px9gQr",
+    "rich_text_g8bdCY",
+    "17823692078188a59f"
+  ]
+}
