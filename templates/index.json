@@ -52,17 +52,17 @@
             "select_position_content": "left",
             "select_textalign_content": "left",
             "block_title_top1": "SUGGESTIONS FOR YOU",
-            "color_block_title_top1": "#FFFFFF",
+            "color_block_title_top1": "#ffffff",
             "font_size_top1": 18,
             "fonts_sub_1": "",
             "effect_title1": "rubberBand",
             "block_title_top": "sneakers collection",
-            "color_block_title_top": "#FFFFFF",
+            "color_block_title_top": "#ffffff",
             "font_size_title_top": 80,
             "fonts_title_top": "",
             "effect_title": "bounce",
             "block_title_top2": "All shoes are carefully handcrafted.",
-            "color_block_title_top2": "#D6D6D6",
+            "color_block_title_top2": "#d6d6d6",
             "font_size_top2": 20,
             "fonts_sub_2": "",
             "effect_title2": "rubberBand",
@@ -242,7 +242,7 @@
       "settings": {
         "margin_top": "",
         "margin_bottom": "",
-        "bg_section": "#ff0000"
+        "bg_section": "#AAAAAA"
       }
     },
     "section_info_v1_XgWQ7C": {
@@ -252,7 +252,7 @@
           "type": "Info",
           "settings": {
             "img_content_left": "shopify://shop_images/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp",
-            "mini_title_left": "Fresh",
+            "mini_title_left": "New",
             "color_mini_title": "#000",
             "color_hover_mini_title": "#000",
             "mini_des_left": "This is example content",
@@ -263,7 +263,7 @@
           "type": "Info",
           "settings": {
             "img_content_left": "shopify://shop_images/hero-mob-3_3b0de4d2-7f5d-4ee4-94f7-0612b2c413de.webp",
-            "mini_title_left": "Fresh",
+            "mini_title_left": "New",
             "color_mini_title": "#000",
             "color_hover_mini_title": "#000",
             "mini_des_left": "This is example content",
@@ -286,7 +286,7 @@
           "settings": {
             "banner_url": "shopify://collections/all",
             "img_content_right": "shopify://shop_images/hero-mob-2_96cc9b47-4d7d-4995-8a61-fc8c46e51c89.webp",
-            "mini_title_right": "Fresh",
+            "mini_title_right": "New",
             "color_mini_title": "#000",
             "color_hover_mini_title": "#000",
             "mini_des_right": "This is example content",
@@ -298,7 +298,7 @@
           "settings": {
             "banner_url": "shopify://collections/all",
             "img_content_right": "shopify://shop_images/hero-mob-4_e7b098b7-aaf9-4ed8-a2f3-12ba16322a2f.webp",
-            "mini_title_right": "Fresh",
+            "mini_title_right": "New",
             "color_mini_title": "#000",
             "color_hover_mini_title": "#000",
             "mini_des_right": "This is example content",
@@ -331,8 +331,8 @@
         "style_bg": "color",
         "bg_img": "shopify://shop_images/hero-mob-2_96cc9b47-4d7d-4995-8a61-fc8c46e51c89.webp",
         "bg_color": "#f2f2f2",
-        "section_sub_title": "Food Is Always Fresh",
-        "section_title": "We Grow Best Food",
+        "section_sub_title": "Check the Bestsellers",
+        "section_title": "Checkout our Collection",
         "banner_img": "shopify://shop_images/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp",
         "margin_top": "",
         "margin_bottom": "65"
