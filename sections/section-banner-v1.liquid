@@ -1,0 +1,248 @@
+<div data-section-id="{{ section.id }}" data-section-type="section-banner-v1" style="{% if section.settings.margin_top != blank %}margin-top: {{section.settings.margin_top}}px;{% endif %} {% if section.settings.margin_bottom != blank %}margin-bottom: {{section.settings.margin_bottom}}px;{% endif %}">
+  <div class="section-banner-v1 mt-all {% if section.settings.enable_margin_all %} mt-all {% endif %} section-banner-v1-{{ section.id }}">
+    <div class="container container-full">
+      <div class="row ">
+        <div class="col-md-5 {% if section.settings.select_pos == 'left' %} order-lg-1 {% elsif section.settings.select_pos == 'right'%} order-lg-2  {% endif %}">
+          <div class="item-banner">
+            <div class="box-img">
+              <a href="{{ section.settings.url_banner1 }}">
+                <img loading="lazy" width="" height="" data-src="{% if section.settings.img_banner1 != blank %} {{ section.settings.img_banner1 | image_url }} {% else %} //via.placeholder.com/800x1068 {% endif %}" class="lazyload img-fluid w-100" alt="_img_banner">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 banner-center {% if section.settings.select_pos == 'left' %} order-lg-2  {% elsif section.settings.select_pos == 'right'%} order-lg-1 {% endif %}">
+          <div class="row" style="    display: flex; align-items: center;">
+            <div class="col-md-6">
+              <div class="img-banner">
+                <a href="{{ section.settings.url_banner2 }}">
+                  <img loading="lazy" width="" height="" data-src="{% if section.settings.img_banner2 != blank %} {{ section.settings.img_banner2 | image_url }} {% else %} //via.placeholder.com/650x650 {% endif %}" class="lazyload img-fluid " alt="_img_banner">
+                </a>
+                <div class="button">
+                  {% if section.settings.button_banner2 != blank %}
+                  <a href="{{ section.settings.url_banner2 }}" class="button-shop button-shop-{{ section.id }} text-center">{{ section.settings.button_banner2 }}</a>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="content-banner text-center">
+                <a href="{{ section.settings.url_banner2 }}">
+                  {% if section.settings.title_banner != blank %}
+                  <h3 class="title title-{{ section.id }}">{{ section.settings.title_banner }}</h3>
+                  {% endif %}
+                </a>
+                {% if section.settings.sub_title != blank %}
+                <p class="sub-title" style="color: {{ section.settings.color_sub_title }}">{{ section.settings.sub_title }}</p>
+                {% endif %}
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="img-banner">
+                <a href="{{ section.settings.url_banner3 }}">
+                  <img loading="lazy" width="" height="" data-src="{% if section.settings.img_banner3 != blank %} {{ section.settings.img_banner3 | image_url }} {% else %} //via.placeholder.com/650x975 {% endif %}" class="lazyload img-fluid " alt="_img_banner">
+                </a>
+                <div class="button">
+                  {% if section.settings.button_banner3 != blank %}
+                  <a href="{{ section.settings.url_banner3 }}" class="button-shop button-shop-{{ section.id }} text-center">{{ section.settings.button_banner3 }}</a>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="content-banner text-center">
+                <a href="{{ section.settings.url_banner3 }}">
+                  {% if section.settings.title_banner2 != blank %}
+                  <h3 class="title title-{{ section.id }}">{{ section.settings.title_banner2 }}</h3>
+                  {% endif %}
+                </a>
+                {% if section.settings.sub_title2 != blank %}
+                <p class="sub-title" style="color: {{ section.settings.color_sub_title }}">{{ section.settings.sub_title2 }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .section-banner-v1 .content-banner .title-{{ section.id }} {
+   color: {{ section.settings.color_title }};
+    transition: all .3s;
+  }
+  .section-banner-v1 .content-banner .title-{{ section.id }}:hover {
+   color: {{ section.settings.color_hover_title }};
+  }
+  .section-banner-v1 .button-shop:before {
+  border: 1px solid {{ block.settings.color_title }};
+  }
+  .section-banner-v1 .button-shop:hover:before {
+    border-color: {{ block.settings.color_hover_title }};
+  }
+</style>
+{% schema %}
+{
+  "name": "BANNER V1",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Space"
+    },
+    {
+      "type": "text",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "text",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "info": "Defined in pixels. Do not add the 'px' unit."
+    },
+    {
+      "type": "select",
+      "id": "select_pos",
+      "label": "Select Position Content",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Settings Banner"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_margin_all",
+      "label": "Enable Add Margin Top",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Settings Banner 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner1",
+      "label": "Image Banner 1",
+      "info": "960 x 800px recommended"
+    },
+    {
+      "type": "url",
+      "id": "url_banner1",
+      "label": "URL banner",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "Settings Banner 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner2",
+      "label": "Image Banner 2",
+      "info": "960 x 800px recommended"
+    },
+    {
+      "type": "text",
+      "id": "title_banner",
+      "label": "Title banner",
+      "default": "Clocks"
+    },
+    {
+      "type": "text",
+      "id": "sub_title",
+      "label": "Sub Title banner",
+      "default": "From $20.00"
+    },
+    {
+      "type": "text",
+      "id": "button_banner2",
+      "label": "button banner",
+      "default": "View More"
+    },
+    {
+      "type": "url",
+      "id": "url_banner2",
+      "label": "URL banner 2",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "Settings Banner 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner3",
+      "label": "Image Banner 3",
+      "info": "960 x 800px recommended"
+    },
+    {
+      "type": "text",
+      "id": "title_banner2",
+      "label": "Title banner",
+      "default": "Chair"
+    },
+    {
+      "type": "text",
+      "id": "sub_title2",
+      "label": "Sub Title banner",
+      "default": "From $19.00"
+    },
+    {
+      "type": "text",
+      "id": "button_banner3",
+      "label": "button banner",
+      "default": "View More"
+    },
+    {
+      "type": "url",
+      "id": "url_banner3",
+      "label": "URL banner 3",
+      "default": "/collections/all"
+    },
+    {
+      "type": "header",
+      "content": "Color Banner "
+    },
+    {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title",
+      "default": "#222"
+    },
+    {
+      "type": "color",
+      "id": "color_sub_title",
+      "label": "Color Sub Title",
+      "default": "#878787"
+    },
+    {
+      "type": "color",
+      "id": "color_hover_title",
+      "label": "Color Hover Title",
+      "default": "#f2f2f2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BANNER V1",
+      "category": "HOME"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
