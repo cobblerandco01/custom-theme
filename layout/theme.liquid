@@ -23,7 +23,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="{{ settings.m_primary_color }}">
   {% if settings.favicon != blank %}
-  <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+  <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32, height: 32 }}" type="image/png">
   {% else %}
   <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png">
   {% endif %}
