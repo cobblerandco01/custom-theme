@@ -745,8 +745,8 @@
             "content_background_color": "#ffffff",
             "gap": 32,
             "desktop_width_percent": 100,
-            "padding_top": 40,
-            "padding_bottom": 40
+            "padding_top": 56,
+            "padding_bottom": 56
           },
           "blocks": {}
         }
