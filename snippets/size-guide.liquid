@@ -16,7 +16,9 @@
     <div class="layout_size_guide">
       <div class="relative">
         <div class="size_guide">
-          {% if settings.addcontent_sizeguide != blank %}
+          {% if settings.enable_sizeguide_img and settings.sizeguide_img != blank %}
+            <img loading="lazy" src="{{ settings.sizeguide_img | image_url }}" class="img-fluid" alt="Size Guide">
+          {% elsif settings.addcontent_sizeguide != blank %}
               {{ settings.addcontent_sizeguide }}
           {% endif %}        
         </div>

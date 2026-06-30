@@ -194,6 +194,12 @@
                   </div>
                   {% endif %}
 
+                  {% if section.settings.show_custom_small_desc and section.settings.custom_small_desc_content != blank %}
+                  <div class="custom-small-description-box" style="margin-top: 15px; margin-bottom: 15px; padding: 10px 0;">
+                    {{ section.settings.custom_small_desc_content }}
+                  </div>
+                  {% endif %}
+
 
 
                   {% if section.settings.show_sdes %}

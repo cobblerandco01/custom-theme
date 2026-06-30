@@ -32,7 +32,13 @@
       {% if section.settings.enable_review_tab %}
       <div id="tab2" class="tab-pane">
         <div class="detail-tab-review">
-          <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
+          <div class="care-guide-content">
+            {% if settings.care_guide_content != blank %}
+              {{ settings.care_guide_content }}
+            {% else %}
+              <p>Please configure your Care Guide content in the Theme Editor.</p>
+            {% endif %}
+          </div>
         </div>
       </div>
       {% endif %}
