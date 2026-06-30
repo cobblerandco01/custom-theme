@@ -59,6 +59,8 @@
         "style_sidebar": "right",
         "show_rating": true,
         "show_sdes": true,
+        "show_custom_small_desc": false,
+        "custom_small_desc_content": "test test test",
         "show_social_share": true,
         "show_quantity": true,
         "show_sku": true,
