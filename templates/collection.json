@@ -30,9 +30,9 @@
         "btn_title": "",
         "bannerfull_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
         "color_title": "#ffffff",
-        "ena_best_seller": true,
+        "ena_best_seller": false,
         "title_heading": "BEST SELLERS",
-        "select_collection": "frontpage",
+        "select_collection": "new-arrivals",
         "products_limit": 10,
         "ena_filter": true,
         "ena_filter2": true
