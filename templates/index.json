@@ -149,9 +149,9 @@
     "16573387805329719b": {
       "type": "section-product-v3",
       "settings": {
-        "title_heading": "Best Seller",
+        "title_heading": "Most Loved",
         "color_title": "#222222",
-        "sub_title": "Best Seller Product This Week!",
+        "sub_title": "The styles our customers return to, season after season.",
         "color_sub_title": "#666666",
         "select_collection": "bestsellers",
         "products_limit": 8,
@@ -183,9 +183,9 @@
     "1657338962051bf203": {
       "type": "section-product-v1",
       "settings": {
-        "title_heading": "Hot Deal",
+        "title_heading": "Curated for You",
         "color_title": "#222222",
-        "sub-title1": "Don't Miss Today's Featured Deals",
+        "sub-title1": "A closer look at pieces defined by their craftsmanship.",
         "select_collection": "new-arrivals",
         "products_limit": 3,
         "margin_top": "",
