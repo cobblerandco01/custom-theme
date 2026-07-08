@@ -55,7 +55,7 @@
             "color_block_title_top1": "#ffffff",
             "font_size_top1": 18,
             "fonts_sub_1": "",
-            "effect_title1": "rubberBand",
+            "effect_title1": "slideInLeft",
             "block_title_top": "Formals, Perfected",
             "color_block_title_top": "#ffffff",
             "font_size_title_top": 80,
@@ -65,7 +65,7 @@
             "color_block_title_top2": "#d6d6d6",
             "font_size_top2": 20,
             "fonts_sub_2": "",
-            "effect_title2": "rubberBand",
+            "effect_title2": "slideInLeft",
             "block_buton": "SHOP NOW",
             "color_block_button": "#000000",
             "font_size_button": 14,
@@ -73,7 +73,7 @@
             "color_hover_button": "#000000",
             "color_hover_text": "#ffffff",
             "block_url": "shopify://collections/all",
-            "effect_title3": "rubberBand",
+            "effect_title3": "slideInLeft",
             "ena_slide_video": false,
             "url_ytb_video": "",
             "block_banerimage": "shopify://shop_images/hero-web-1_142dcbe1-dcb5-45aa-9df4-eb12ce0ebab4.webp",
@@ -198,36 +198,40 @@
         "service_fVeNCe": {
           "type": "service",
           "settings": {
-            "block_title": "24/7 FRIENDLY SUPPORT",
+            "img_icon": "shopify://shop_images/shipping.png",
+            "block_title": "Complimentary Shipping",
             "color_title": "#fff",
-            "block_content": "Our support team always ready for you<br> to 7 days a week",
+            "block_content": "On every order, delivered with care.",
             "color_content": "#fff"
           }
         },
         "service_nXTXJz": {
           "type": "service",
           "settings": {
-            "block_title": "FREE SHIPPING",
+            "img_icon": "shopify://shop_images/headset.png",
+            "block_title": "Personal Assistance",
             "color_title": "#fff",
-            "block_content": "Free worldwide shipping on all area <br>order above $100",
+            "block_content": "Our team is here to help, anytime.",
             "color_content": "#fff"
           }
         },
         "service_Xjxmrt": {
           "type": "service",
           "settings": {
-            "block_title": "7 DAYS EASY RETURN",
+            "img_icon": "shopify://shop_images/product-return.png",
+            "block_title": "30-Day Returns",
             "color_title": "#fff",
-            "block_content": "Product any fault within 7 days for an<br> immediately exchange.",
+            "block_content": "Not the right fit? We'll make it right.",
             "color_content": "#fff"
           }
         },
         "service_N3nYPk": {
           "type": "service",
           "settings": {
-            "block_title": "QUALITY GUARANTEED",
+            "img_icon": "shopify://shop_images/sheild.png",
+            "block_title": "Crafted to Last",
             "color_title": "#fff",
-            "block_content": "If your product aren't perfect, return<br> them for a full refund",
+            "block_content": "Every pair backed by our quality guarantee.",
             "color_content": "#fff"
           }
         }
@@ -251,11 +255,11 @@
         "info_M4rhBK": {
           "type": "Info",
           "settings": {
-            "img_content_left": "shopify://shop_images/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp",
-            "mini_title_left": "New",
+            "img_content_left": "shopify://shop_images/Ombra1.webp",
+            "mini_title_left": "Chappals & Sandals",
             "color_mini_title": "#000",
             "color_hover_mini_title": "#000",
-            "mini_des_left": "This is example content",
+            "mini_des_left": "Refined comfort for warmer days.",
             "color_mini_des": "#222"
           }
         },
@@ -263,10 +267,10 @@
           "type": "Info",
           "settings": {
             "img_content_left": "shopify://shop_images/hero-mob-3_3b0de4d2-7f5d-4ee4-94f7-0612b2c413de.webp",
-            "mini_title_left": "New",
+            "mini_title_left": "Derby",
             "color_mini_title": "#000",
             "color_hover_mini_title": "#000",
-            "mini_des_left": "This is example content",
+            "mini_des_left": "Structured elegance, built for movement.",
             "color_mini_des": "#222"
           }
         },
@@ -285,11 +289,11 @@
           "type": "Info-2",
           "settings": {
             "banner_url": "shopify://collections/all",
-            "img_content_right": "shopify://shop_images/hero-mob-2_96cc9b47-4d7d-4995-8a61-fc8c46e51c89.webp",
-            "mini_title_right": "New",
+            "img_content_right": "shopify://shop_images/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp",
+            "mini_title_right": "Loafer",
             "color_mini_title": "#000",
             "color_hover_mini_title": "#000",
-            "mini_des_right": "This is example content",
+            "mini_des_right": "Effortless slip-on sophistication.",
             "color_mini_des": "#222"
           }
         },
@@ -297,11 +301,11 @@
           "type": "Info-2",
           "settings": {
             "banner_url": "shopify://collections/all",
-            "img_content_right": "shopify://shop_images/hero-mob-4_e7b098b7-aaf9-4ed8-a2f3-12ba16322a2f.webp",
-            "mini_title_right": "New",
+            "img_content_right": "shopify://shop_images/hero-mob-4.webp",
+            "mini_title_right": "Formals / Oxfords",
             "color_mini_title": "#000",
             "color_hover_mini_title": "#000",
-            "mini_des_right": "This is example content",
+            "mini_des_right": "Timeless silhouettes for every occasion.",
             "color_mini_des": "#222"
           }
         },
@@ -416,50 +420,50 @@
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/green-and-white-marbled-coloring.jpg",
-            "title": "Testimonial name",
-            "job": "Ann Smith",
+            "title": "— Arjun M.",
+            "job": "Verified Buyer, Formals/Oxfords",
             "stars": 5,
-            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+            "text": "<p>The leather quality on my Oxfords is genuinely something else — soft yet structured, and it's only gotten better after a few wears. Worth every rupee.</p>"
           }
         },
         "review_U9mL3G": {
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/chef-selection.png",
-            "title": "Testimonial name",
-            "job": "Ann Smith",
+            "title": "— Priya S.",
+            "job": "Verified Buyer, Chappals & Sandals",
             "stars": 5,
-            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+            "text": "<p>I was skeptical about buying sandals online, but the fit was perfect and the finish looks far more premium than the price suggests. Already eyeing the loafers next.</p>"
           }
         },
         "review_BFdiqA": {
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/chef-selection.png",
-            "title": "Testimonial name",
-            "job": "Ann Smith",
-            "stars": 5,
-            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+            "title": "— Rohan K.",
+            "job": "Verified Buyer, Derby",
+            "stars": 4,
+            "text": "<p>Bought a pair of Derbys for a wedding and got so many compliments. The stitching detail is something you notice in person, not just photos.</p>"
           }
         },
         "review_AhjBGB": {
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/chef-selection.png",
-            "title": "Testimonial name",
-            "job": "Ann Smith",
+            "title": "— Sneha T.",
+            "job": "Verified Buyer, Loafer",
             "stars": 5,
-            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+            "text": "<p>Comfortable from day one, no breaking-in period like most formal shoes. Delivery took a couple extra days but the product made up for it.</p>"
           }
         },
         "review_JbFGPU": {
           "type": "review",
           "settings": {
             "image": "shopify://shop_images/chef-selection.png",
-            "title": "Testimonial name",
-            "job": "Ann Smith",
+            "title": "— Kabir A.",
+            "job": "Verified Buyer, Derby",
             "stars": 5,
-            "text": "<p>Blood bank canine teeth larynx occupational therapist oncologist optician plaque spinal tap stat strep screen violence joints symptoms x-ray...</p>"
+            "text": "<p>I've bought formal shoes from a few premium brands before, but the finishing on my Derbys stood out immediately — clean stitching, solid sole, no rough edges anywhere. Feels handmade in the best way.</p>"
           }
         }
       },
@@ -472,7 +476,7 @@
       ],
       "name": "Testimonials",
       "settings": {
-        "title": "Testimonials"
+        "title": "What Our Customers Say"
       }
     },
     "165734272602bf9687": {
@@ -499,36 +503,65 @@
           "type": "introduce",
           "settings": {
             "image_intro": "shopify://shop_images/hero-mob-3_3b0de4d2-7f5d-4ee4-94f7-0612b2c413de.webp",
-            "title_intro": "Dummy Title",
-            "des_intro": "Dummy Description For the Cobbler and Co Show Brand based in Zirakpur Punjab",
-            "content_intro": "This is the Content area of the Cobbler and Co Shopify Website , here the content will be about the brand and details of the products will be there , later the content will come."
+            "title_intro": "Made to Last, Not Just to Sell",
+            "des_intro": "",
+            "content_intro": "Cobbler and Co was founded in Zirakpur, Punjab, with a simple belief — that footwear should be made to last, not just to sell. Every pair we create passes through the hands of skilled craftsmen who bring years of traditional shoemaking expertise to modern silhouettes. From the leather we source to the stitching that holds each shoe together, nothing is rushed. This is footwear built the way it used to be — with patience, precision, and pride in every step."
           }
         },
         "service_84Xm4a": {
           "type": "service",
           "settings": {
             "block_icon_svg": "",
-            "block_title": "FREE SHIPPING & RETURN",
-            "block_content": "If your Shoes aren't perfect, return them within 30 days for a full refund. We'll even pay shipping."
+            "block_title": "Genuine Leather",
+            "block_content": "Full-grain leather, sourced and selected for quality."
+          }
+        },
+        "service_qf66iG": {
+          "type": "service",
+          "settings": {
+            "block_icon_svg": "",
+            "block_title": "Handcrafted Finish",
+            "block_content": "Every pair finished by skilled artisans, not machines."
+          }
+        },
+        "service_bnTWYj": {
+          "type": "service",
+          "settings": {
+            "block_icon_svg": "",
+            "block_title": "Complimentary Shipping",
+            "block_content": "Delivered to your door, on every order."
+          }
+        },
+        "service_6HAwDH": {
+          "type": "service",
+          "disabled": true,
+          "settings": {
+            "block_icon_svg": "",
+            "block_title": "30-Day Returns",
+            "block_content": "Not the right fit? We'll make it right."
           }
         }
       },
       "block_order": [
         "introduce_QGGaYd",
-        "service_84Xm4a"
+        "service_84Xm4a",
+        "service_qf66iG",
+        "service_bnTWYj",
+        "service_6HAwDH"
       ],
       "name": "About Us",
       "settings": {
+        "bg_breadcrumb": "shopify://shop_images/hero-web-4.webp",
         "enable_intro": true,
         "enable_s_servicebox": true,
         "bg_image": "shopify://shop_images/hero-web-1.webp",
         "title_servicebox": "Reasons to shop with us",
-        "enable_insta": false,
+        "enable_insta": true,
         "title_icon": "icon-icon-intagram",
-        "title_content": "Instagram Feed",
-        "des": "Get Update & Emails From Us",
-        "ins_userid": "3672948962",
-        "ins_access_token": "3672948962.0f64772.430edb7f711e4665b59777c54d1ed9ce",
+        "title_content": "Follow Our Journey",
+        "des": "Get updates, new arrivals, and behind-the-scenes moments — follow us on Instagram.",
+        "ins_userid": "17841400000000000",
+        "ins_access_token": "DUMMY_TOKEN_FOR_DEV_TESTING_ONLY",
         "ins_limit_number": "6",
         "item_icon": "fa fa-instagram"
       }
@@ -732,7 +765,7 @@
             "brand_image": "shopify://shop_images/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp",
             "image_width": 40,
             "image_border_radius": 8,
-            "brand_title": "About our brand",
+            "brand_title": "About our brand aa",
             "brand_description": "We are passionate about creating quality products that inspire and delight our customers. Our journey began with a simple idea and has grown into a brand that values craftsmanship, sustainability, and innovation.",
             "title_font_size": 32,
             "description_font_size": 16,
