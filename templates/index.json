@@ -9,6 +9,90 @@
  */
 {
   "sections": {
+    "17840179728aed54a2": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_1a6ff47_cPM7ni": {
+          "type": "ai_gen_block_1a6ff47",
+          "settings": {
+            "slide_height_desktop": 650,
+            "slide_height_mobile": 400,
+            "transition_speed": 1.5,
+            "enable_autoplay": true,
+            "autoplay_speed": 3,
+            "content_max_width": 850,
+            "text_color": "#ffffff",
+            "heading_size": 48,
+            "subheading_size": 18,
+            "button_bg_color": "#000000",
+            "button_bg_hover_color": "#333333",
+            "button_text_color": "#ffffff",
+            "button_text_hover_color": "#ffffff",
+            "button_font_size": 16,
+            "button_padding_vertical": 12,
+            "button_padding_horizontal": 32,
+            "button_border_radius": 4,
+            "dot_size": 12,
+            "dot_color": "#ffffff",
+            "dot_active_color": "#ffffff",
+            "show_arrows": true,
+            "arrow_size": 30,
+            "arrow_bg_color": "#A4A3A3",
+            "arrow_bg_hover_color": "#f0f0f0",
+            "arrow_color": "#000000",
+            "arrow_opacity": 0.4,
+            "slide_1_enabled": true,
+            "slide_1_image": "shopify://shop_images/hero-web-1_142dcbe1-dcb5-45aa-9df4-eb12ce0ebab4.webp",
+            "slide_1_heading": "Welcome to our store",
+            "slide_1_subheading": "Discover our amazing products",
+            "slide_1_button_label": "Shop now",
+            "slide_1_button_link": "",
+            "slide_1_overlay_color": "#000000",
+            "slide_1_overlay_opacity": 0.3,
+            "slide_1_text_alignment": "center",
+            "slide_2_enabled": true,
+            "slide_2_image": "shopify://shop_images/hero-web-2.webp",
+            "slide_2_heading": "New arrivals",
+            "slide_2_subheading": "Check out our latest collection",
+            "slide_2_button_label": "Explore",
+            "slide_2_button_link": "",
+            "slide_2_overlay_color": "#000000",
+            "slide_2_overlay_opacity": 0.3,
+            "slide_2_text_alignment": "center",
+            "slide_3_enabled": true,
+            "slide_3_image": "shopify://shop_images/hero-web-4.webp",
+            "slide_3_heading": "Special offers",
+            "slide_3_subheading": "Save big on selected items",
+            "slide_3_button_label": "Shop sale",
+            "slide_3_button_link": "",
+            "slide_3_overlay_color": "#000000",
+            "slide_3_overlay_opacity": 0.3,
+            "slide_3_text_alignment": "center",
+            "slide_4_enabled": false,
+            "slide_4_heading": "Slide 4 heading",
+            "slide_4_subheading": "Slide 4 description",
+            "slide_4_button_label": "Learn more",
+            "slide_4_button_link": "",
+            "slide_4_overlay_color": "#000000",
+            "slide_4_overlay_opacity": 0.3,
+            "slide_4_text_alignment": "center",
+            "slide_5_enabled": false,
+            "slide_5_heading": "Slide 5 heading",
+            "slide_5_subheading": "Slide 5 description",
+            "slide_5_button_label": "Learn more",
+            "slide_5_button_link": "",
+            "slide_5_overlay_color": "#000000",
+            "slide_5_overlay_opacity": 0.3,
+            "slide_5_text_alignment": "center"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_1a6ff47_cPM7ni"
+      ],
+      "settings": {}
+    },
     "1657338759a3152298": {
       "type": "section-slideshow-v1",
       "blocks": {
@@ -120,6 +204,7 @@
         "1657338759a74dae0b-0",
         "1657338759a74dae0b-1"
       ],
+      "disabled": true,
       "settings": {
         "margin_top": "",
         "margin_bottom": ""
@@ -791,6 +876,7 @@
     }
   },
   "order": [
+    "17840179728aed54a2",
     "1657338759a3152298",
     "165733199271724ac1",
     "16573387805329719b",
