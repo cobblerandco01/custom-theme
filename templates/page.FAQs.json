@@ -15,85 +15,134 @@
         "e8072367-458a-4ee7-a02e-1666e69687ee": {
           "type": "faq_left",
           "settings": {
-            "block_title_question": "How long does it take for home delivery?",
-            "block_description_question": "We use Royal mail and DHL to send most of our UK orders.Euro Car Parts reserves the right to use discretion in any circumstance where it makes more sense to use an alternative delivery method."
+            "block_title_question": "What makes Cobbler & Co. different from other leather footwear brands?",
+            "block_description_question": "Cobbler & Co. focuses on creating premium leather footwear that balances refined design and long-lasting comfort. Unlike most leather footwear that become uncomfortable after a few hours, our products are designed for extended wear without compromising on aesthetics."
           }
         },
         "560010c6-07e7-4506-bfa8-54d7e7134bfb": {
           "type": "faq_left",
           "settings": {
-            "block_title_question": "What courier do you use for deliveries?",
-            "block_description_question": "We use Royal mail and DHL to send most of our UK orders.Euro Car Parts reserves the right to use discretion in any circumstance where it makes more sense to use an alternative delivery method."
+            "block_title_question": "What type of leather do you use?",
+            "block_description_question": "We use full-grain leather, the highest quality of leather known for its durability, natural texture, and ability to age beautifully over time. This ensures every pair develops a unique character with use."
           }
         },
         "2b47292b-5af0-42b7-9263-dcca8375bf38": {
           "type": "faq_left",
           "settings": {
-            "block_title_question": "Why am I being charged for delivery on my order when it states standard delivery is free?",
-            "block_description_question": "All our delivery charges are pre-set by our courier company. We sell some oversized items which require a specialist courier company to fulfil the delivery, there is an additional charge for these. Also, our courier company consider some surcharge postcodes ‘Out of area’. There is an additional charge for these also. You can find a list of all [oversized items here] You can find a list of all"
+            "block_title_question": "Are your products really handmade?",
+            "block_description_question": "Yes. Every pair of our leather footwear is fully handmade in India by skilled craftsmen. Due to this process, slight variations may occur, these are a mark of authenticity, not defects."
           }
         },
         "0e4df55d-389a-417b-9eb9-e8e7677785b7": {
           "type": "faq_left",
           "settings": {
-            "block_title_question": "I haven’t received a dispatch email/email confirmation?",
-            "block_description_question": "Please be aware an automated email is sent to you to the given email address when your order is dispatched. Please check all folders including you junk as it will come from a noreply email address. To ensure emails reach you, add the domain eurocarparts.com to your safe senders list."
+            "block_title_question": "Will the leather soften over time?",
+            "block_description_question": "Yes. Full-grain leather naturally adapts to your foot shape with wear, becoming softer and more comfortable over time while maintaining its structure."
           }
         },
         "44022e40-d642-4f3c-9a9c-e04c0c655217": {
           "type": "faq_left",
           "settings": {
-            "block_title_question": "Why does it not tell us on the website that the parts will be delivered by the branch?",
-            "block_description_question": "Due to the delicacy of some parts we take extra care in the delivery of the item. These could include body panels and large bulky items. These are either available for collection from our branches or will be delivered to you through our branch network vehicles."
+            "block_title_question": "Is your leather Footwear comfortable for daily wear?",
+            "block_description_question": "Yes. Comfort is at the core of Cobbler & Co. Our footwear is designed to be worn for long hours, making it suitable for both daily use and occasional wear."
           }
         },
         "eafce582-832f-4fd2-b54a-aef0eb5c84c0": {
           "type": "faq_left",
           "settings": {
-            "block_title_question": "Can I collect from a local store?",
-            "block_description_question": "We offer a reserve and collect service. This is available on the checkout page. Please be aware, if the product is not available in a local store, you are unable to reserve it."
+            "block_title_question": "How do I choose the right size?",
+            "block_description_question": "We recommend selecting your regular size. For detailed guidance, refer to our size chart. If you're unsure, our support team can assist you with sizing recommendations."
           }
         },
         "63b735b9-e7bb-412f-92e5-f095b15d1129": {
           "type": "faq_left",
           "settings": {
-            "block_title_question": "Do you deliver on Weekend?",
-            "block_description_question": "No, our courier company do not offer the service to deliver on weekends currently."
+            "block_title_question": "Do your products require a break-in period?",
+            "block_description_question": "Like all high-quality leather footwear, a short break-in period may be required. However, our designs minimize discomfort during this phase."
           }
         },
         "af80f4fb-e2b9-4e48-98b9-610b4e2516ce": {
           "type": "faq_left",
           "settings": {
-            "block_title_question": "Can you confirm you have received my return?",
-            "block_description_question": "We aim to process returns within 5-7 working days of receiving them. You will be notified by email once the return is complete.We suggest you make a note of the shipping reference given when you sent the item back. This will allow you to track your parcel at every stage of delivery, including when we receive it.Should you have any queries about your return, please feel free to contact our Customer Service team via email"
+            "block_title_question": "How long does delivery take?",
+            "block_description_question": "Orders are typically delivered within 3–7 business days depending on your location within India."
           }
         },
         "9dadb2d2-1d7d-4c4f-bd7e-8936c019edc1": {
           "type": "faq_left",
           "settings": {
-            "block_title_question": "How long will it be before I get a refund?",
-            "block_description_question": "Once we receive your item(s) back, our returns department will inspect and restock the goods. Once our returns department have done this, an automated refund is generated on our system. Your outstanding refund is then processed by our accounts department back to your original payment method. This process typically takes 5-7 working days. When returning your products please remember to include your original invoice, without this it may delay your refund."
+            "block_title_question": "How can I track my order?",
+            "block_description_question": "Once your order is shipped, you will receive a tracking link via email or SMS to monitor delivery status."
           }
         },
         "2dc152aa-8924-4d86-aced-e238bc607aff": {
           "type": "faq_left",
           "settings": {
-            "block_title_question": "Who pays for return postage?",
-            "block_description_question": "If you are returning an unsuitable item for a refund we will refund the cost of the item only and not the original delivery cost.Should you be returning a faulty item for a refund we will refund both the original shipping costs and the return delivery costs."
+            "block_title_question": "Do you offer Cash on Delivery (COD)?",
+            "block_description_question": "Yes, we offer Cash on Delivery (COD) on eligible orders."
           }
         },
         "de46ba1f-efea-4af7-9391-62b7d063a532": {
           "type": "faq_left",
           "settings": {
-            "block_title_question": "Why have you not refunded the original delivery charge?",
-            "block_description_question": "If you are returning an unsuitable item for a refund we will refund the cost of the item only and not the original delivery cost. Should you be returning a faulty item for a refund we will refund both the original shipping costs and the return delivery costs."
+            "block_title_question": "Do you offer exchanges?",
+            "block_description_question": "Yes. We offer exchanges in case of size issues or product concerns. Please ensure the product is unused, tried only indoors and in original condition."
           }
         },
         "3efd28b5-2538-439b-9584-d740fda44926": {
           "type": "faq_left",
           "settings": {
-            "block_title_question": "Do you offer a VAT discount to non EU customers?",
-            "block_description_question": "Customer’s ordering from outside the European Union can contact us via telephone, live chat, or e-mail and quote the order reference number. Our customer services team will go through the process to remove the VAT off of their order."
+            "block_title_question": "Can I return my order?",
+            "block_description_question": "Returns are accepted under specific conditions. For full details, please refer to our Return & Exchange Policy."
+          }
+        },
+        "faq_left_iKzh9n": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "How long does the exchange process take?",
+            "block_description_question": "Once your request is approved, the exchange process typically takes 5–7 business days."
+          }
+        },
+        "faq_left_DciLTM": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "How should I care for my leather footwear?",
+            "block_description_question": "To maintain your premium leather footwear:\nKeep away from excessive moisture \nClean with a soft, dry cloth \nUse a leather conditioner occasionally"
+          }
+        },
+        "faq_left_GygVF8": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "Can leather footwear be worn in rain?",
+            "block_description_question": "We recommend avoiding heavy exposure to water, as it may affect the leather’s texture and durability over time."
+          }
+        },
+        "faq_left_GrtJAd": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "Why are your products priced in the premium range?",
+            "block_description_question": "Our pricing reflects:\nUse of full-grain leather \nHandmade craftsmanship in India \nFocus on comfort, durability and design \nWe aim to deliver strong price to quality value within the premium leather footwear segment."
+          }
+        },
+        "faq_left_HWwrWD": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "Do you offer discounts?",
+            "block_description_question": "We occasionally run limited offers. However, our focus remains on delivering consistent value rather than frequent discounting."
+          }
+        },
+        "faq_left_EnhAQ6": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "Where is Cobbler & Co. based?",
+            "block_description_question": "Cobbler & Co. is an Indian brand, with all products designed and handmade in India."
+          }
+        },
+        "faq_left_mNwiKr": {
+          "type": "faq_left",
+          "settings": {
+            "block_title_question": "Who is Cobbler & Co. for?",
+            "block_description_question": "Our footwear is designed for individuals who prefer minimal, refined leather footwear- those who value comfort, quality, and understated style."
           }
         }
       },
@@ -109,7 +158,14 @@
         "9dadb2d2-1d7d-4c4f-bd7e-8936c019edc1",
         "2dc152aa-8924-4d86-aced-e238bc607aff",
         "de46ba1f-efea-4af7-9391-62b7d063a532",
-        "3efd28b5-2538-439b-9584-d740fda44926"
+        "3efd28b5-2538-439b-9584-d740fda44926",
+        "faq_left_iKzh9n",
+        "faq_left_DciLTM",
+        "faq_left_GygVF8",
+        "faq_left_GrtJAd",
+        "faq_left_HWwrWD",
+        "faq_left_EnhAQ6",
+        "faq_left_mNwiKr"
       ],
       "settings": {
         "enable_slide": true,
