@@ -17,7 +17,7 @@
         "bg_breadcrumb": "shopify://shop_images/hero-web-1_142dcbe1-dcb5-45aa-9df4-eb12ce0ebab4.webp",
         "bg_color_breadcrumb": "#ffffff",
         "color_breadcrumb": "#ffffff",
-        "collection_layout": "sidebar",
+        "collection_layout": "full_width",
         "prod_per_page": 12,
         "prod_layout": "prod_grid",
         "prod_per_row": "prod_col_3",
@@ -31,11 +31,11 @@
         "bannerfull_url": "https://www.shopify.com/free-trial?ref=shopifycenter",
         "color_title": "#ffffff",
         "ena_best_seller": false,
-        "title_heading": "BEST SELLERS",
-        "select_collection": "new-arrivals",
+        "title_heading": "",
+        "select_collection": "",
         "products_limit": 10,
         "ena_filter": true,
-        "ena_filter2": true
+        "ena_filter2": false
       }
     }
   },
