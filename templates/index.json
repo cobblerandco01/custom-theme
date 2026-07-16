@@ -228,7 +228,7 @@
         "bg_btn": "#000000",
         "color_btn_hover": "#000000",
         "url_banner": "shopify://collections/all",
-        "img_banner_right": "shopify://shop_images/hero-mob-1.webp"
+        "img_banner_right": "shopify://shop_images/IMG_5146.png"
       }
     },
     "16573387805329719b": {
@@ -262,15 +262,15 @@
         "bg_btn": "#000000",
         "color_btn_hover": "#000000",
         "url_banner": "shopify://collections/all",
-        "img_banner_right": "shopify://shop_images/ombra5.webp"
+        "img_banner_right": "shopify://shop_images/IMG_5148.png"
       }
     },
     "1657338962051bf203": {
       "type": "section-product-v1",
       "settings": {
-        "title_heading": "Curated for You",
+        "title_heading": "From the Atelier",
         "color_title": "#222222",
-        "sub-title1": "A closer look at pieces defined by their craftsmanship.",
+        "sub-title1": "The pinnacle of artisan footwear.",
         "select_collection": "new-arrivals",
         "products_limit": 3,
         "margin_top": "",
