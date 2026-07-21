@@ -306,7 +306,7 @@
     "icon_sc_fv1_4": "fa fa-instagram",
     "url_sc_fv1_4": "",
     "enable_fv1_bottom": true,
-    "fv1_bottom_copyright": "<div class=\"text-copyright mb-0\">\n© Copyright 2026 |<span> All RIghts Reserved </span> \n          </div>",
+    "fv1_bottom_copyright": "<div class=\"text-copyright mb-0\">\n© Copyright 2026 |<span> All Rights Reserved </span> \n          </div>",
     "fv1_bottom_payment_img": "shopify://shop_images/payment.png",
     "fv2_main_logo": "shopify://shop_images/logo.png",
     "fv2_main_logo_maxwidth": 160,
