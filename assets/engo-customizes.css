@@ -6077,7 +6077,7 @@ a:focus,a:hover {
 }
 
 .prod_largeimg .detail-share-social .casano-social-product a {
-    color: #bcbcbc;
+    color: #000000;
     font-size: 16px;
     line-height: 16px;
     padding: 8px 8px;
@@ -6086,7 +6086,7 @@ a:focus,a:hover {
 
 .prod_largeimg .detail-share-social .casano-social-product a i {
     font-size: 16px;
-    color: #b1b1b1
+    color: #000000
 }
 
 .prod_largeimg .detail-share-social .casano-social-product a:hover i {
@@ -6332,7 +6332,7 @@ a:focus,a:hover {
 .prod_largeimg .content-page-detail .detail-info .product-price del {
     font-size: 16px;
     font-weight: 500;
-    color: #83868c;
+    color: #000000;
     margin: 0 10px 0 0;
 }
 
@@ -6502,7 +6502,7 @@ a:focus,a:hover {
   font-family: Jost;
   
     font-size: 14px;
-    color: #a8a8a8;
+    color: #000000;
     line-height: 28px;
     font-weight: 400;
     padding: 22px 0 0 0
@@ -6579,7 +6579,7 @@ a:focus,a:hover {
   
     font-size: 15px;
     font-weight: 400;
-    color: #bfbfbf;
+    color: #000000;
     text-decoration: none;
     transition: .3s
 }
@@ -6612,7 +6612,7 @@ a:focus,a:hover {
   
     font-size: 14px;
     font-weight: 400;
-    color: #bfbfbf
+    color: #000000
 }
 
 .prod_largeimg .arrows-product {
@@ -6695,7 +6695,7 @@ a:focus,a:hover {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
-    color: #83868c
+    color: #000000
 }
 
 .prod_largeimg .arrows-product .prev_prod:hover .img-prev {
@@ -6772,7 +6772,7 @@ a:focus,a:hover {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
-    color: #83868c
+    color: #000000
 }
 
 .prod_largeimg .arrows-product .next_prod:hover .img-next {
@@ -6836,7 +6836,7 @@ a:focus,a:hover {
     font-size: 15px;
     font-weight: 400;
     line-height: 28px;
-    color: #a8a8a8
+    color: #000000
 }
 
 .tab-pd-details .product-desc .info2 {
@@ -6859,7 +6859,7 @@ a:focus,a:hover {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    color: #a8a8a8;
+    color: #000000;
     width: 90%;
     padding-top: 10px;
     padding-bottom: 150px
@@ -7172,7 +7172,7 @@ a:focus,a:hover {
 }
 
 .prod_extended .detail-share-social .casano-social-product a,.product_sidebar .detail-share-social .casano-social-product a {
-    color: #bcbcbc;
+    color: #000000;
     font-size: 16px;
     line-height: 16px;
     padding: 8px 8px;
@@ -7181,7 +7181,7 @@ a:focus,a:hover {
 
 .prod_extended .detail-share-social .casano-social-product a i,.product_sidebar .detail-share-social .casano-social-product a i {
     font-size: 16px;
-    color: #b1b1b1
+    color: #000000
 }
 
 .prod_extended .detail-share-social .casano-social-product a:hover i,.product_sidebar .detail-share-social .casano-social-product a:hover i {
@@ -7400,7 +7400,7 @@ a:focus,a:hover {
 .prod_extended .content-page-detail .detail-info .product-price del,.product_sidebar .content-page-detail .detail-info .product-price del {
     font-size: 16px;
     font-weight: 500;
-    color: #83868c;
+    color: #000000;
     margin: 0 10px 0 0;
 }
 
@@ -7654,7 +7654,7 @@ a:focus,a:hover {
   
     font-size: 15px;
     font-weight: 400;
-    color: #bfbfbf;
+    color: #000000;
     text-decoration: none;
     transition: .3s
 }
@@ -7687,7 +7687,7 @@ a:focus,a:hover {
   
     font-size: 14px;
     font-weight: 400;
-    color: #bfbfbf
+    color: #000000
 }
 
 .prod_extended .content-page-detail .detail-info .detail-share-social,.product_sidebar .content-page-detail .detail-info .detail-share-social {
@@ -7741,7 +7741,7 @@ a:focus,a:hover {
 }
 
 .prod_extended .content-page-detail .detail-info .detail-share-social .casano-social-product a,.product_sidebar .content-page-detail .detail-info .detail-share-social .casano-social-product a {
-    color: #bcbcbc;
+    color: #000000;
     font-size: 16px;
     line-height: 16px;
     margin-top: 15px;
@@ -7752,7 +7752,7 @@ a:focus,a:hover {
 
 .prod_extended .content-page-detail .detail-info .detail-share-social .casano-social-product a i,.product_sidebar .content-page-detail .detail-info .detail-share-social .casano-social-product a i {
     font-size: 16px;
-    color: #b1b1b1
+    color: #000000
 }
 
 .prod_extended .content-page-detail .detail-info .detail-share-social .casano-social-product a:hover i,.product_sidebar .content-page-detail .detail-info .detail-share-social .casano-social-product a:hover i {
@@ -7907,7 +7907,7 @@ a:focus,a:hover {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
-    color: #83868c
+    color: #000000
 }
 
 .prod_extended .arrows-product .prev_prod:hover .img-prev,.product_sidebar .arrows-product .prev_prod:hover .img-prev {
@@ -7984,7 +7984,7 @@ a:focus,a:hover {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
-    color: #83868c
+    color: #000000
 }
 
 .prod_extended .arrows-product .next_prod:hover .img-next,.product_sidebar .arrows-product .next_prod:hover .img-next {
@@ -8161,7 +8161,7 @@ a:focus,a:hover {
 }
 
 .prod_sticky .detail-share-social .casano-social-product a {
-    color: #bcbcbc;
+    color: #000000;
     font-size: 16px;
     line-height: 16px;
     margin-top: 15px;
@@ -8172,7 +8172,7 @@ a:focus,a:hover {
 
 .prod_sticky .detail-share-social .casano-social-product a i {
     font-size: 16px;
-    color: #b1b1b1
+    color: #000000
 }
 
 .prod_sticky .detail-share-social .casano-social-product a:hover i {
@@ -8269,7 +8269,7 @@ a:focus,a:hover {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
-    color: #83868c
+    color: #000000
 }
 
 .prod_sticky .arrows-product .prev_prod:hover .img-prev {
@@ -8346,7 +8346,7 @@ a:focus,a:hover {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
-    color: #83868c
+    color: #000000
 }
 
 .prod_sticky .arrows-product .next_prod:hover .img-next {
@@ -8531,7 +8531,7 @@ a:focus,a:hover {
 .prod_sticky .content-page-detail .detail-info .product-price del {
     font-size: 16px;
     font-weight: 400;
-    color: #83868c;
+    color: #000000;
     margin: 0 10px 0 0;
 }
 
@@ -8700,7 +8700,7 @@ a:focus,a:hover {
   font-family: Jost;
   
     font-size: 14px;
-    color: #a8a8a8;
+    color: #000000;
     line-height: 28px;
     font-weight: 400;
     padding: 22px 0 0 0
@@ -8777,7 +8777,7 @@ a:focus,a:hover {
   
     font-size: 14px;
     font-weight: 400;
-    color: #bfbfbf;
+    color: #000000;
     text-decoration: none;
     transition: .3s
 }
@@ -8810,7 +8810,7 @@ a:focus,a:hover {
   
     font-size: 14px;
     font-weight: 400;
-    color: #bfbfbf
+    color: #000000
 }
 
 .prod_sticky .content-page-detail .detail-info .detail-share-social {
@@ -8864,7 +8864,7 @@ a:focus,a:hover {
 }
 
 .prod_sticky .content-page-detail .detail-info .detail-share-social .casano-social-product a {
-    color: #bcbcbc;
+    color: #000000;
     font-size: 16px;
     line-height: 16px;
     margin-top: 15px;
@@ -8875,7 +8875,7 @@ a:focus,a:hover {
 
 .prod_sticky .content-page-detail .detail-info .detail-share-social .casano-social-product a i {
     font-size: 16px;
-    color: #b1b1b1
+    color: #000000
 }
 
 .prod_sticky .content-page-detail .detail-info .detail-share-social .casano-social-product a:hover i {
@@ -8923,7 +8923,7 @@ a:focus,a:hover {
 }
 
 .prod_sticky .content-page-detail .content_box .content_text .text {
-    color: #a8a8a8;
+    color: #000000;
     font-size: 14px;
     
     font-family: Jost;
