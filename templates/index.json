@@ -858,7 +858,7 @@
             "title_spacing": 16,
             "content_vertical_alignment": "center",
             "content_padding": 32,
-            "content_border_radius": 8,
+            "content_border_radius": 0,
             "title_color": "#111111",
             "description_color": "#555555",
             "content_background_color": "#ffffff",
