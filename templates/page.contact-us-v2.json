@@ -66,7 +66,7 @@
         "select_style_map": "style_map",
         "link_map": "https://www.google.com/maps/@-37.6480895,144.939916,17z?hl=vi-VN",
         "enable_get_find": true,
-        "title_get_right": "Send us an message",
+        "title_get_right": "Craft Your Perfect Pair",
         "description_get_right": "",
         "enable_email": true,
         "placeholder_input_name": "Your name...",
@@ -82,7 +82,7 @@
     "newsletter_contact_v2": {
       "type": "newsletter_contact_v2",
       "settings": {
-        "title_newletter": "SIGN UP <br>FOR NEWSLETTER",
+        "title_newletter": "SIGN UP FOR NEWSLETTER",
         "color_title": "",
         "content_newletter": "Subscribe to the weekly newsletter for all the latest updates",
         "color_content": "",
