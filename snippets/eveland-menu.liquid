@@ -28,8 +28,7 @@
       {% capture megamenu_3 %}apmenuitem_title_3{% endcapture %}
       {% capture megamenu_4 %}apmenuitem_title_4{% endcapture %}
       {% capture megamenu_5 %}apmenuitem_title_5{% endcapture %}
-
-      {% if settings[megamenu_1] == item or settings[megamenu_2] == item or settings[megamenu_3] == item or settings[megamenu_4] == item or settings[megamenu_5] == item %}
+      {% if settings[megamenu_1] == item and settings.apmenuitem_enable_1 or settings[megamenu_2] == item and settings.apmenuitem_enable_2 or settings[megamenu_3] == item and settings.apmenuitem_enable_3 or settings[megamenu_4] == item and settings.apmenuitem_enable_4 or settings[megamenu_5] == item and settings.apmenuitem_enable_5 %}
       {% for i in (1..5) %}
 
       {% capture megamenu %}apmenuitem_title_{{i}}{% endcapture %}
