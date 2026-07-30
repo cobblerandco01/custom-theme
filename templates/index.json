@@ -374,7 +374,7 @@
         "info_2_mch8KN": {
           "type": "Info-2",
           "settings": {
-            "banner_url": "shopify://collections/all",
+            "banner_url": "shopify://collections",
             "img_content_right": "shopify://shop_images/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp",
             "mini_title_right": "Loafer",
             "color_mini_title": "#000",
@@ -386,7 +386,7 @@
         "info_2_8ec4fz": {
           "type": "Info-2",
           "settings": {
-            "banner_url": "shopify://collections/all",
+            "banner_url": "shopify://collections",
             "img_content_right": "shopify://shop_images/hero-mob-4.webp",
             "mini_title_right": "Formals / Oxfords",
             "color_mini_title": "#000",
