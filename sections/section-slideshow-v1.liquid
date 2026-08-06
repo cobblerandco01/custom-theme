@@ -47,7 +47,7 @@
             <div class="d-block d-md-none">
               {% if block.settings.block_banerimage_mb != blank %}
               <a href="{{ block.settings.block_url }}">
-                <img loading="lazy" width="" height="" data-src="{{ block.settings.block_banerimage_mb | image_url }}" class="lazyload img-fluid w-100" alt="_img_slide_">
+                <img loading="lazy" width="" height="" data-src="{{ block.settings.block_banerimage_mb | image_url: width: 768 }}" class="lazyload img-fluid w-100" alt="_img_slide_">
               </a>
               {% else %}
               <a href="{{ block.settings.block_url }}">

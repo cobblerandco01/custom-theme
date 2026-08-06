@@ -37,10 +37,10 @@
       <div class="col-md-4">
         <div class="img-product relative">
           <a href="{{ product.url | within: collection }}" class="engoj_find_img">
-            <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.featured_image.src | image_url }}" class="lazyload img-responsive" alt="{{ product.featured_image.alt | escape }}">
+            <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.featured_image.src | image_url: width: 450 }}" class="lazyload img-responsive" alt="{{ product.featured_image.alt | escape }}">
             {% for image in product.images %}
             {% if forloop.last %}
-            <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ image.src | image_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+            <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ image.src | image_url: width: 450 }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
             {% endif %}
             {% endfor %}
           </a>

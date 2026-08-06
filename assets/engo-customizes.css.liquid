@@ -28932,6 +28932,8 @@ a.link_active{
 }
 .section-info-v1 .mini-content .info-banner .mini-img img{
     width:85px;
+    height:85px;
+    object-fit:contain;
   }
 @media only screen and (min-width: 992px) {
   .section-info-v1 .mini-content .info-banner .content {
@@ -33480,3 +33482,30 @@ a.back-to-top:hover::before{
   }
 }
 .rtl a.back-to-top{right: auto;left:36px;}
+
+/* Fix homepage banner image & text display on mobile */
+@media (max-width: 992px) {
+  .section-banner-v5 .col-banner-6 {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .section-banner-v5 .box-img1.img-left {
+    display: block !important;
+    height: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .section-banner-v5 .box-img1 .banner-content {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: relative !important;
+    padding: 40px 20px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+}

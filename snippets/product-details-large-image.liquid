@@ -106,7 +106,7 @@
                 <div class="img_thumb js_prod_detail ">
                   {% for image in product.images %}
                   <div class="engoj-nav-item {% if section.settings.ena_zoom %}js-zoom-img zoom-image {% endif %}">
-                    <img loading="lazy"  width="" height="" class="{% if forloop.first %}engoj_img_main {% endif %}lazyload  w-100 img-fluid" data-src="{{ image.src | image_url }}" alt="{{ product.title }}"/>
+                    <img loading="lazy"  width="" height="" class="{% if forloop.first %}engoj_img_main {% endif %}lazyload  w-100 img-fluid" data-src="{{ image.src | image_url: width: 1200 }}" alt="{{ product.title }}"/>
                   </div> 
                   {% endfor %}
                 </div>
@@ -116,7 +116,7 @@
             </div>
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
 
-              <div class="detail-info" style="{% if section.settings.show_servicebox == true %} padding-left: 0px; {% endif %}">
+              <div class="detail-info" style="{% if section.section.settings.show_servicebox == true %} padding-left: 0px; {% endif %}">
                 <div class="relative">
                   <h2 class="product-title ">{{ product.title }}</h2>
                   <div class="product-price ">                      
@@ -145,20 +145,20 @@
                   {% endif %}
                   {% endif %}
 
-                  {% if settings.ena_info_sale %}
+                  {% if section.settings.ena_info_sale %}
                   <div class="list_ul_engo_full">                
-                    {{ settings.content_infosale }}
+                    {{ section.settings.content_infosale }}
                   </div>
                   {% endif %}
 
 
-                  {% if settings.ena_random_sold_item %}
-                  <p class="random_product" ><span id="random_prod"></span>  {{ settings.random_text1 }}  <span id="random_hour"></span> {{ settings.random_text2 }}</p>   
+                  {% if section.settings.ena_random_sold_item %}
+                  <p class="random_product" ><span id="random_prod"></span>  {{ section.settings.random_text1 }}  <span id="random_hour"></span> {{ section.settings.random_text2 }}</p>   
                   {% endif %}
 
-                  {% if settings.ena_countdown %}
+                  {% if section.settings.ena_countdown %}
                   <div class="count-down">
-                    <p class="text" >{{ settings.countdown_text1 }} <span id="random_sold_prod"></span> {{ settings.countdown_text2 }}</p>
+                    <p class="text" >{{ section.settings.countdown_text1 }} <span id="random_sold_prod"></span> {{ section.settings.countdown_text2 }}</p>
                     <div class="progress">
                       <div class="progress-bar progress-bar-striped progress-bar-animated"></div>
                     </div>
@@ -190,7 +190,7 @@
 
                   {% endcomment %}
 
-                  {% if settings.show_sizeguide or settings.show_question or settings.show_delivery_return %}
+                  {% if section.settings.show_sizeguide or section.settings.show_question or section.settings.show_delivery_return %}
                  	 {% include 'size-guide' %}
                   {% endif %}
 
@@ -275,12 +275,9 @@
 
                   </form>
 
-                  {% if settings.ena_random_visit %}
-                  <p class="visitor">Real time <span id="realtime_visit"></span> Visitor right now</p>
-                  {% endif %}
-                  {% if settings.trust_badge %}
+                  {% if section.settings.trust_badge %}
                   <div class="trust_bagde">
-                    <img loading="lazy"  width="" height="" data-src="{{ settings.trust_badge | image_url }}" class="lazyload" alt>
+                    <img loading="lazy"  width="" height="" data-src="{{ section.settings.trust_badge | image_url }}" class="lazyload" alt>
                   </div>
                   {% endif %}
 
@@ -336,7 +333,7 @@
               {% for image in product.images %}
               {% if forloop.first %}
               <div class="img_left">
-                <img loading="lazy" width="60" height="60" class="lazyload engoj_img_main img-fluid" data-src="{{ image.src | image_url }}" alt="{{ image.alt | escape }}" alt="{{ product.title }}"/>
+                <img loading="lazy" width="60" height="60" class="lazyload engoj_img_main img-fluid" data-src="{{ image.src | image_url: width: 1200 }}" alt="{{ image.alt | escape }}" alt="{{ product.title }}"/>
               </div>
               {% endif %}
               {% endfor %}
@@ -447,20 +444,20 @@
 {% include 'social_share-product' %}
 {% endif %}
 
-{% if settings.enable_related_product %}
+{% if section.settings.enable_related_product %}
 {% include 'related-product-new' %}
 {% endif %}
 
 
 <style>
   .list_ul_engo_full ul li{
-    color: {{ settings.color_content_infosale }}
+    color: {{ section.settings.color_content_infosale }}
   }
   .list_ul_engo_full ul li:before{
-    border-color: transparent transparent transparent {{ settings.color_content_infosale }};
+    border-color: transparent transparent transparent {{ section.settings.color_content_infosale }};
   }
   .list_ul_engo_full .title-list{
-    color: {{ settings.color_content_infosale }}
+    color: {{ section.settings.color_content_infosale }}
   }
 </style>
 
@@ -468,8 +465,8 @@
   function random(min,max){
     return Math.floor(Math.random()*(max-min+1)+min);
   }
-  {% if settings.ena_random_sold_item %}
-  var initial = random({{ settings.min_prod1 }}, {{ settings.max_prod1 }});
+  {% if section.settings.ena_random_sold_item %}
+  var initial = random({{ section.settings.min_prod1 }}, {{ section.settings.max_prod1 }});
   var count = initial;
   document.getElementById('random_prod').innerHTML = count;
   setInterval(function() {
@@ -478,19 +475,19 @@
 
     var variation = random(-5,5);
     count += variation;
-    if(count>={{ settings.max_prod1 }}){
-       count ={{ settings.max_prod1 }};
+    if(count>={{ section.settings.max_prod1 }}){
+       count ={{ section.settings.max_prod1 }};
        }
        if(count<=0){
-      count ={{ settings.max_prod1 }};
+      count ={{ section.settings.max_prod1 }};
     }
     document.getElementById('random_prod').innerHTML = count;
 
-  },{% if settings.settime_random_sold != blank %} {{settings.settime_random_sold }}000  {% else %} 5000{% endif %})
+  },{% if section.settings.settime_random_sold != blank %} {{section.settings.settime_random_sold }}000  {% else %} 5000{% endif %})
   {% endif %}  
 
-  {% if settings.ena_random_sold_item %}  
-  var initial2 = random({{ settings.min_prod2 }}, {{ settings.max_prod2 }});
+  {% if section.settings.ena_random_sold_item %}  
+  var initial2 = random({{ section.settings.min_prod2 }}, {{ section.settings.max_prod2 }});
   var count2 = initial2;
   document.getElementById('random_hour').innerHTML = count2;
   setInterval(function() {
@@ -499,57 +496,39 @@
 
     var variation2 = random(-5,5);
     count2 += variation2;
-    if(count2>={{ settings.max_prod2 }}){
-       count2 ={{ settings.max_prod2 }};
+    if(count2>={{ section.settings.max_prod2 }}){
+       count2 ={{ section.settings.max_prod2 }};
        }
        if(count2<= 0){
-      count2 ={{ settings.max_prod2 }};
+      count2 ={{ section.settings.max_prod2 }};
     }
     document.getElementById('random_hour').innerHTML = count2;
 
-  }, {% if settings.settime_random_sold != blank %} {{settings.settime_random_sold }}000  {% else %} 5000{% endif %})  
+  }, {% if section.settings.settime_random_sold != blank %} {{section.settings.settime_random_sold }}000  {% else %} 5000{% endif %})  
   {% endif %}  
 
-  {% if settings.ena_random_visit %}
-  var initial3 = random({{ settings.min_visit }}, {{ settings.max_visit }});
-  var count3 = initial3;
-  document.getElementById('realtime_visit').innerHTML = count3;
-  setInterval(function() {
-    if (count3 <= 5) { 
-      count3 +=5;}
-
-    var variation3 = random(-5,5);
-    count3 += variation3;
-    if(count3>={{ settings.max_visit }}){
-       count3 ={{ settings.max_visit }};
-       }
-       if(count3<=0){
-      count3 ={{ settings.max_visit }};
-    }
-    document.getElementById('realtime_visit').innerHTML = count3;
-
-  },{% if settings.settime_random_visitor != blank %} {{settings.settime_random_visitor }}000 {% else %} 3000 {% endif %})    
+  )    
 
   {% endif %}
 
-  {% if settings.ena_countdown %}
+  {% if section.settings.ena_countdown %}
   jQuery(document).ready(function($) {
-    var intinal4 = random(1, {{ settings.max_product }});
+    var intinal4 = random(1, {{ section.settings.max_product }});
                           var count4 = intinal4;
                           document.getElementById('random_sold_prod').innerHTML = count4;
     $('.progress-bar').css('width', function(){
-      return count4/{{ settings.max_product }}*100 + '%';
+      return count4/{{ section.settings.max_product }}*100 + '%';
     });
     setInterval(function() {
       count4 -= 1;
       if(count4 ==0){
-        count4 = {{ settings.max_product }};
+        count4 = {{ section.settings.max_product }};
       }
       document.getElementById('random_sold_prod').innerHTML = count4;
       $('.progress-bar').css('width', function(){
-        return count4/{{ settings.max_product }}*100 + '%';
+        return count4/{{ section.settings.max_product }}*100 + '%';
       });
-    }, {% if settings.settime_hurry_stock != blank %} {{settings.settime_hurry_stock }}000 {% else %}10000 {% endif %})  
+    }, {% if section.settings.settime_hurry_stock != blank %} {{section.settings.settime_hurry_stock }}000 {% else %}10000 {% endif %})  
 
   }); 
   {% endif %}

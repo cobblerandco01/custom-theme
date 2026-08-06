@@ -28,7 +28,7 @@
 <div class="item-product item-product1 engoj_grid_parent">
   <div class="product-thumb">
     <a href="{{ product.url | within: collection }}" class="product-thumb-link zoom-thumb engoj_find_img">
-      <img loading="lazy" width="" height="" data-src="{{ product.featured_image.src | image_url }}" class="lazyload" alt="{{ product.featured_image.alt | escape }}" />
+      <img loading="lazy" width="" height="" data-src="{{ product.featured_image.src | image_url: width: 450 }}" class="lazyload" alt="{{ product.featured_image.alt | escape }}" />
     </a>
     <a href="javascript:void(0)" data-id="{{ product.handle }}" class="quickview-link title12 round white engoj_btn_quickview"><i class="{{ settings.pia_quickview }}"></i></a>
     <div class="product-label">
