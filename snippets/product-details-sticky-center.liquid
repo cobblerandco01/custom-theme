@@ -1,4 +1,4 @@
-﻿{% assign on_sale = false %}
+{% assign on_sale = false %}
 {% if product.compare_at_price > product.price %}
 {% assign on_sale = true %}
 {% endif %}
@@ -207,8 +207,6 @@
                   {% endif %}
 
                   {% include 'product-key-features' %}
-                  </div> 
-                  {% endif %} 
 
                   {% comment %}
                   Setup MetaFields Editor: https://apps.shopify.com/metafields-editor
