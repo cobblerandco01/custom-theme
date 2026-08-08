@@ -1,4 +1,4 @@
-{% assign on_sale = false %}
+﻿{% assign on_sale = false %}
 {% if product.compare_at_price > product.price %}
 {% assign on_sale = true %}
 {% endif %}
@@ -218,22 +218,6 @@
 
                       </div>
                       {% endif %}
-
-
-                      
-
-                      {% if section.settings.ena_countdown %}
-                      <div class="count-down">
-                        <p class="text" >{{ section.settings.countdown_text1 }} <span id="random_sold_prod"></span> {{ section.settings.countdown_text2 }}</p>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-striped progress-bar-animated"></div>
-                        </div>
-                        {% if product.metafields.engo_countdown_prod.countdown_datetime != blank %}
-                        <div class="countdown-timer">
-                          <ul data-countdown="countdown-v1" data-date="{{ product.metafields.engo_countdown_prod.countdown_datetime }}">
-                          </ul>
-                        </div> 
-                        {% endif %}
                       </div> 
                       {% endif %}
 
@@ -572,27 +556,7 @@
     document.getElementById('random_hour').innerHTML = count2;
 
   }, {% if section.settings.settime_random_sold != blank %} {{section.settings.settime_random_sold }}000  {% else %} 5000{% endif %})  
-  {% endif %}  
-
-
-  {% if section.settings.ena_countdown %}
-  jQuery(document).ready(function($) {
-    var intinal4 = random(1, {{ section.settings.max_product }});
-                          var count4 = intinal4;
-                          document.getElementById('random_sold_prod').innerHTML = count4;
-    $('.progress-bar').css('width', function(){
-      return count4/{{ section.settings.max_product }}*100 + '%';
-    });
-    setInterval(function() {
-      count4 -= 1;
-      if(count4 ==0){
-        count4 = {{ section.settings.max_product }};
-      }
-      document.getElementById('random_sold_prod').innerHTML = count4;
-      $('.progress-bar').css('width', function(){
-        return count4/{{ section.settings.max_product }}*100 + '%';
-      });
-    }, {% if section.settings.settime_hurry_stock != blank %} {{section.settings.settime_hurry_stock }}000 {% else %}10000 {% endif %})  
+  {% endif %})  
 
   }); 
   {% endif %}
@@ -606,3 +570,4 @@
   }); 
 
 </script>
+
