@@ -416,6 +416,7 @@
         "info_2_8ec4fz",
         "info_2_yq8XGe"
       ],
+      "disabled": true,
       "name": "INFO V1",
       "settings": {
         "style_bg": "color",
@@ -426,6 +427,72 @@
         "banner_img": "shopify://shop_images/hero-mob-1_3bf62826-9f60-4482-9478-ed83d14ff793.webp",
         "margin_top": "",
         "margin_bottom": "65"
+      }
+    },
+    "section_banner_v4_cVDJce": {
+      "type": "section-banner-v4",
+      "name": "BANNER V4",
+      "settings": {
+        "margin_top": "40",
+        "margin_bottom": "40",
+        "title_banner": "Get your Fashion style",
+        "sub_title_banner": "You’ll always be in fashion with our collection of clothing",
+        "button_banner": "Shop now",
+        "img_banner": "shopify://shop_images/IMG_5146.png",
+        "button_banner2": "Women's",
+        "img_banner2": "shopify://shop_images/IMG_5148.png",
+        "button_banner3": "Men's"
+      }
+    },
+    "section_banner_v8_Q4UADi": {
+      "type": "section-banner-v8",
+      "name": "BANNER V8",
+      "settings": {
+        "img_banner1": "shopify://shop_images/IMG_5148.png",
+        "sub_title1": "WEEKLY OFFER",
+        "title_banner1": "UP TO 40% OFFALL FOR FITNESS",
+        "btn_banner1": "SHOP NOW",
+        "url_banner1": "shopify://collections/all",
+        "img_banner2": "shopify://shop_images/IMG_5146.png",
+        "sub_title2": "WEEKLY OFFER",
+        "title_banner2": "UP TO 40% OFFALL FOR FITNESS",
+        "btn_banner2": "SHOP NOW",
+        "url_banner2": "shopify://collections/all",
+        "color_top_title": "#FFFFFF",
+        "color_title": "#F9F9F9",
+        "color_btn": "#FFFFFF",
+        "color_btn_hover": "#fff",
+        "bg_btn_hover": "#DADADA",
+        "margin_top": "20",
+        "margin_bottom": "40"
+      }
+    },
+    "section_banner_v9_D6fRHd": {
+      "type": "section-banner-v9",
+      "name": "BANNER V9",
+      "settings": {
+        "img_video1": "shopify://shop_images/IMG_5146.png",
+        "url_video1": "",
+        "title_banner1": "The Decorks Candle Story",
+        "color_title_banner1": "#000",
+        "banner1_sub1": "We like to think of our wares as full sensory experiences!",
+        "color_sub1": "#000",
+        "banner1_sub2": "Light it up each day to clean your body and soul and get ready for Christmas. All our candles are made of raw beeswax and come infused with eco friendly scents or simply unscented.",
+        "color_sub2": "#797979",
+        "btn_banner1": "Discovery Now",
+        "url_banner1": "shopify://collections/all",
+        "color_btn": "#fff",
+        "bg_btn": "#cc8253",
+        "color_btn_hover": "#fff",
+        "bg_btn_hover": "#000",
+        "img_banner2": "shopify://shop_images/IMG_5150.png",
+        "content_banner2": "Handcrafted by a team of artisans.",
+        "color_content2": "#000",
+        "img_banner3": "shopify://shop_images/IMG_5148.png",
+        "content_banner3": "We use 100% soy wax derived.",
+        "color_content3": "#000",
+        "margin_top": "",
+        "margin_bottom": ""
       }
     },
     "section_service_v2_Qiwpty": {
@@ -865,7 +932,8 @@
             "gap": 32,
             "desktop_width_percent": 100,
             "padding_top": 56,
-            "padding_bottom": 56
+            "padding_bottom": 56,
+            "padding_left": 0
           },
           "blocks": {}
         },
@@ -963,6 +1031,9 @@
     "1657338962051bf203",
     "section_service_v1_4VQzzh",
     "section_info_v1_XgWQ7C",
+    "section_banner_v4_cVDJce",
+    "section_banner_v8_Q4UADi",
+    "section_banner_v9_D6fRHd",
     "section_service_v2_Qiwpty",
     "reviews_EbHWjG",
     "165734272602bf9687",
