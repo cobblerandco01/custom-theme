@@ -1,4 +1,4 @@
-﻿{% assign on_sale = false %}
+{% assign on_sale = false %}
 {% if product.compare_at_price > product.price %}
 {% assign on_sale = true %}
 {% endif %}
@@ -448,6 +448,11 @@
                   </div>
                   {% endif %}
 
+
+                  
+
+
+
                   {% comment %}
                   Setup MetaFields Editor: https://apps.shopify.com/metafields-editor
 
@@ -630,6 +635,8 @@
                   </div>
                 </div>
               </div>
+            </div>  
+            {% endif %}
 
           </div>
         </div>
@@ -777,6 +784,7 @@
 </style>
 
 <script>
+
   jQuery(document).ready(function($) {
     $('.btn-add-stickycart').on( 'click', function() {
       $('.shop-button.enj-add-to-cart-btn.engoj-btn-addtocart').click();
@@ -784,5 +792,4 @@
   }); 
 
 </script>
-
 
