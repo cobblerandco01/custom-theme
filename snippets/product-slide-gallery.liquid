@@ -1,4 +1,4 @@
-{% assign on_sale = false %}
+﻿{% assign on_sale = false %}
 {% if product.compare_at_price > product.price %}
 {% assign on_sale = true %}
 {% endif %}
@@ -458,54 +458,6 @@
 </style>
 
 <script>
-  function random(min,max){
-    return Math.floor(Math.random()*(max-min+1)+min);
-  }
-  {% if section.settings.ena_random_sold_item %}
-  var initial = random({{ section.settings.min_prod1 }}, {{ section.settings.max_prod1 }});
-  var count = initial;
-  document.getElementById('random_prod').innerHTML = count;
-  setInterval(function() {
-    if (count <= 5) { 
-      count +=5;}
-
-    var variation = random(-5,5);
-    count += variation;
-    if(count>={{ section.settings.max_prod1 }}){
-       count ={{ section.settings.max_prod1 }};
-       }
-       if(count<=0){
-      count ={{ section.settings.max_prod1 }};
-    }
-    document.getElementById('random_prod').innerHTML = count;
-
-  },{% if section.settings.settime_random_sold != blank %} {{section.settings.settime_random_sold}}000  {% else %} 5000{% endif %})
-  {% endif %}  
-
-  {% if section.settings.ena_random_sold_item %}  
-  var initial2 = random({{ section.settings.min_prod2 }}, {{ section.settings.max_prod2 }});
-  var count2 = initial2;
-  document.getElementById('random_hour').innerHTML = count2;
-  setInterval(function() {
-    if (count2 <= 5) { 
-      count2 +=5;}
-
-    var variation2 = random(-5,5);
-    count2 += variation2;
-    if(count2>={{ section.settings.max_prod2 }}){
-       count2 ={{ section.settings.max_prod2 }};
-       }
-       if(count2<= 0){
-      count2 ={{ section.settings.max_prod2 }};
-    }
-    document.getElementById('random_hour').innerHTML = count2;
-
-  }, {% if section.settings.settime_random_sold != blank %} {{section.settings.settime_random_sold}}000  {% else %} 5000{% endif %})  
-  {% endif %})  
-
-  }); 
-  {% endif %}
-
   jQuery(document).ready(function($) {
     $('.btn-add-stickycart').on( 'click', function() {
       $('.shop-button.enj-add-to-cart-btn.engoj-btn-addtocart').click();
@@ -513,4 +465,5 @@
   }); 
 
 </script>
+
 
