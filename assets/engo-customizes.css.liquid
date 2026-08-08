@@ -21377,11 +21377,11 @@ a.link_active{
 
 @media (max-width: 575.98px) {
     .section-slideshow-v1 .info-sideh1 .picture-slideshow {
-        height:450px
+        height: 100vh
     }
 
     .section-slideshow-v1 .info-sideh1 .picture-slideshow img {
-        height: 450px;
+        height: 100vh;
         object-fit: cover
     }
 
@@ -21416,16 +21416,16 @@ a.link_active{
 
 @media (min-width: 576px) and (max-width:767.98px) {
     .section-slideshow-v1 .info-sideh1 .picture-slideshow {
-        height:450px
+        height: 100vh
     }
 
     .section-slideshow-v1 .info-sideh1 .picture-slideshow img {
-        height: 450px;
+        height: 100vh;
         object-fit: cover
     }
 
     .section-slideshow-v1 .info-sideh1 .picture-slideshow video {
-        height: 450px
+        height: 100vh
     }
 
     .section-slideshow-v1 .info-sideh1 .box-content .box-title .titlebig,.section-slideshow-v1 .info-sideh1 .box-content-center .box-title .titlebig,.section-slideshow-v1 .info-sideh1 .box-content-right .box-title .titlebig {
@@ -28867,6 +28867,11 @@ a.link_active{
 .section-info-v1 .mini-content {
   padding-top: 40px;
 }
+@media (min-width: 992px) {
+  .section-info-v1 .mini-content {
+    align-items: center;
+  }
+}
 .section-info-v1 .mini-content .mini-title {
 
   {% if settings.font_type == 'google_fonts' %}
@@ -28930,11 +28935,21 @@ a.link_active{
     text-align: left;
   }
 }
-.section-info-v1 .mini-content .info-banner .mini-img img{
-    width:85px;
-    height:85px;
-    object-fit:contain;
-  }
+.section-info-v1 .mini-content .info-banner .mini-img {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.section-info-v1 .mini-content .info-banner .mini-img img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+}
 @media only screen and (min-width: 992px) {
   .section-info-v1 .mini-content .info-banner .content {
     width: calc(100% - 100px);
@@ -33508,4 +33523,14 @@ a.back-to-top:hover::before{
     text-align: center !important;
     width: 100% !important;
   }
+}
+
+/* Make Shopify "Buy it Now" button full width */
+.shopify-payment-button,
+.shopify-payment-button__button,
+.shopify-payment-button__button--unbranded,
+.shopify-payment-button [data-testid="Html-render-wrapper"],
+.shopify-payment-button iframe {
+  width: 100% !important;
+  display: block !important;
 }

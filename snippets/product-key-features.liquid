@@ -1,0 +1,35 @@
+{% if section.settings.enable_key_features %}
+<div class="product-key-features-container" style="margin-top: 10px; margin-bottom: 25px;">
+  {% if section.settings.key_features_heading != blank %}
+    <h4 class="key-features-heading" style="font-size: 15px; font-weight: 600; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; color: #222;">
+      {{ section.settings.key_features_heading }}
+    </h4>
+  {% endif %}
+  <div class="key-features-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px 12px;">
+    {% if section.settings.kf_title_1 != blank %}
+      <div class="key-feature-item" style="display: flex; align-items: center; gap: 10px;">
+        <span class="key-feature-icon" style="font-size: 20px; display: inline-flex; align-items: center; justify-content: center;">{{ section.settings.kf_icon_1 }}</span>
+        <span class="key-feature-title" style="font-size: 14px; font-weight: 500; color: #333;">{{ section.settings.kf_title_1 }}</span>
+      </div>
+    {% endif %}
+    {% if section.settings.kf_title_2 != blank %}
+      <div class="key-feature-item" style="display: flex; align-items: center; gap: 10px;">
+        <span class="key-feature-icon" style="font-size: 20px; display: inline-flex; align-items: center; justify-content: center;">{{ section.settings.kf_icon_2 }}</span>
+        <span class="key-feature-title" style="font-size: 14px; font-weight: 500; color: #333;">{{ section.settings.kf_title_2 }}</span>
+      </div>
+    {% endif %}
+    {% if section.settings.kf_title_3 != blank %}
+      <div class="key-feature-item" style="display: flex; align-items: center; gap: 10px;">
+        <span class="key-feature-icon" style="font-size: 20px; display: inline-flex; align-items: center; justify-content: center;">{{ section.settings.kf_icon_3 }}</span>
+        <span class="key-feature-title" style="font-size: 14px; font-weight: 500; color: #333;">{{ section.settings.kf_title_3 }}</span>
+      </div>
+    {% endif %}
+    {% if section.settings.kf_title_4 != blank %}
+      <div class="key-feature-item" style="display: flex; align-items: center; gap: 10px;">
+        <span class="key-feature-icon" style="font-size: 20px; display: inline-flex; align-items: center; justify-content: center;">{{ section.settings.kf_icon_4 }}</span>
+        <span class="key-feature-title" style="font-size: 14px; font-weight: 500; color: #333;">{{ section.settings.kf_title_4 }}</span>
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}

@@ -5,7 +5,7 @@
   <div class="top-footer">
     <div class="container container-v1 ">    
       <div class="row">
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="info_footer">
             <div class="title_footer">          
               <h4 class="mb-0 title_border">{{ settings.titlecolum_fv4_1 }}</h4>         
@@ -17,7 +17,7 @@
             </ul>        
           </div>
         </div>
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="info_footer">
             <div class="title_footer">          
               <h4 class="mb-0 title_border">{{ settings.titlecolum_fv4_2 }}</h4>         
@@ -29,7 +29,7 @@
             </ul>        
           </div>
         </div>
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="info_footer info_contact">
             <div class="title_footer ">          
               <h4 class="mb-0 title_border">{{ settings.titlecolum_fv4_3 }}</h4>         
@@ -41,7 +41,7 @@
             </ul>        
           </div>
         </div>
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="info_footer info_contact">
             <div class="title_footer ">          
               <h4 class="mb-0 title_border">{{ settings.titlecolum_fv4_4 }}</h4>         
@@ -66,29 +66,6 @@
               {{ settings.content_colum_fv4_5 }}
             </div>
 
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-12">
-          <div class="info_footer end">
-            <div class="title_footer ">          
-              <h4 class="mb-0 title_border">{{ settings.titlecolum_fv4_5 }}</h4>         
-            </div>
-            {% if settings.content_colum_fv4_4 != blank %}
-            <p class="mb-0 content_footer">{{ settings.content_colum_fv4_4 }}</p>
-            {% endif %}
-
-            {% if settings.newsletter_form_action != blank %}
-            {% assign form_action = settings.newsletter_form_action %}
-            {% else %}
-            {% assign form_action = '#' %}
-            {% endif %}          
-            <form class="needs-validation fv4-form " action="{{ form_action }}" method="post">
-              <div class="mb-0">                           
-                <input type="email" name="EMAIL" class=" text-input" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}">                 
-              </div>
-              <button class="btn" type="submit">{{ 'general.newsletter_form.submit_footer' | t }}</button>
-            </form>                        
           </div>
         </div>
       </div>
@@ -163,7 +140,7 @@
   <div class="top-footer">
     <div class="container container-v1 ">    
       <div class="row">
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="info_footer">
             <div class="title_footer">          
               <h4 class="mb-0 title_border">{{ settings.titlecolum_fv4_1 }}</h4>         
@@ -175,7 +152,7 @@
             </ul>        
           </div>
         </div>
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="info_footer">
             <div class="title_footer">          
               <h4 class="mb-0 title_border">{{ settings.titlecolum_fv4_2 }}</h4>         
@@ -187,7 +164,7 @@
             </ul>        
           </div>
         </div>
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="info_footer info_contact">
             <div class="title_footer ">          
               <h4 class="mb-0 title_border">{{ settings.titlecolum_fv4_3 }}</h4>         
@@ -199,7 +176,7 @@
             </ul>        
           </div>
         </div>
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="info_footer info_contact">
             <div class="title_footer ">          
               <h4 class="mb-0 title_border">{{ settings.titlecolum_fv4_4 }}</h4>         
@@ -242,29 +219,6 @@
               {% endif %}
             </div>
 
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-12">
-          <div class="info_footer end">
-            <div class="title_footer ">          
-              <h4 class="mb-0 title_border">{{ settings.titlecolum_fv4_5 }}</h4>         
-            </div>
-            {% if settings.content_colum_fv4_4 != blank %}
-            <p class="mb-0 content_footer">{{ settings.content_colum_fv4_4 }}</p>
-            {% endif %}
-
-            {% if settings.newsletter_form_action != blank %}
-            {% assign form_action = settings.newsletter_form_action %}
-            {% else %}
-            {% assign form_action = '#' %}
-            {% endif %}          
-            <form class="needs-validation fv4-form " action="{{ form_action }}" method="post">
-              <div class="form-group mb-0">                           
-                <input type="email" name="EMAIL" class="text-input" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}">                 
-              </div>
-              <button class="btn" type="submit">{{ 'general.newsletter_form.submit_footer' | t }}</button>
-            </form>                        
           </div>
         </div>
       </div>

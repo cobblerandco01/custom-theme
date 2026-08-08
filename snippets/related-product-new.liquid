@@ -1,6 +1,6 @@
 <div class="related-product container container-v2">
-  {% if settings.enable_related_product %}
-  {% assign products_limit = settings.related_product_limit | plus: 1 %}
+  {% if section.settings.enable_related_product %}
+  {% assign products_limit = section.settings.related_product_limit | plus: 1 %}
   {% if collection == null or collection.handle == 'frontpage' or collection.handle == 'all' %}
   {% assign found_a_collection = false %}
   {% for c in product.collections %}
@@ -11,7 +11,7 @@
   {% endfor %}
   {% endif %}
   <div class="text-center">
-    <div class="title_heading" >{{ settings.related_product_title }}</div>
+    <div class="title_heading" >{{ section.settings.related_product_title }}</div>
   </div>
   <div class="related-tabs pt-4 pt-lg-5">
     <div class="row js_product_related">

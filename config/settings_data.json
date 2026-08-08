@@ -72,7 +72,7 @@
     "mobile_logo_maxwidth": 100,
     "main_menu_store_mb": "main-menu",
     "hdv_color_text": "#000000",
-    "hdv_color_text_hover": "#fe7250",
+    "hdv_color_text_hover": "#774100",
     "hdv_color_linkchildren": "#000000",
     "hdv_color_linklv2": "#7d7b7b",
     "bg_color_menu_hd": "#fff",
@@ -5242,7 +5242,7 @@
           "color_title": "#ffffff",
           "color_btn": "#ffffff",
           "color_btn_hover": "#ffffff",
-          "bg_btn_hover": "#fe7250",
+          "bg_btn_hover": "#774100",
           "margin_top": "",
           "margin_bottom": ""
         }
@@ -5260,7 +5260,7 @@
           "color_btn": "#000000",
           "bg_btn": "#ffffff",
           "color_btn_hover": "#ffffff",
-          "bg_btn_hover": "#fe7250",
+          "bg_btn_hover": "#774100",
           "margin_top": "30",
           "margin_bottom": ""
         }
@@ -5370,7 +5370,7 @@
               "effect_title2": "bounce",
               "block_buton": "SHOP NOW",
               "color_block_button": "#ffffff",
-              "color_hover_button": "#fe7250",
+              "color_hover_button": "#774100",
               "color_hover_text": "#ffffff",
               "block_url": "shopify://collections/all",
               "effect_title3": "bounce",
@@ -5394,7 +5394,7 @@
               "effect_title2": "bounce",
               "block_buton": "SHOP NOW",
               "color_block_button": "#ffffff",
-              "color_hover_button": "#fe7250",
+              "color_hover_button": "#774100",
               "color_hover_text": "#ffffff",
               "block_url": "shopify://collections/all",
               "effect_title3": "bounce",
@@ -8460,3 +8460,4 @@
     }
   }
 }
+
