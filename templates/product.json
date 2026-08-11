@@ -117,7 +117,7 @@
         "ena_info_sale": true,
         "content_infosale": "",
         "color_content_infosale": "#008000",
-        "ena_countdown": true,
+        "ena_countdown": false,
         "max_product": "30",
         "countdown_text1": "HURRY! ONLY",
         "countdown_text2": "LEFT IN STOCK",
