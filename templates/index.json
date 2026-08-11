@@ -429,44 +429,6 @@
         "margin_bottom": "65"
       }
     },
-    "section_banner_v4_cVDJce": {
-      "type": "section-banner-v4",
-      "name": "BANNER V4",
-      "settings": {
-        "margin_top": "40",
-        "margin_bottom": "40",
-        "title_banner": "Get your Fashion style",
-        "sub_title_banner": "You’ll always be in fashion with our collection of clothing",
-        "button_banner": "Shop now",
-        "img_banner": "shopify://shop_images/IMG_5146.png",
-        "button_banner2": "Women's",
-        "img_banner2": "shopify://shop_images/IMG_5148.png",
-        "button_banner3": "Men's"
-      }
-    },
-    "section_banner_v8_Q4UADi": {
-      "type": "section-banner-v8",
-      "name": "BANNER V8",
-      "settings": {
-        "img_banner1": "shopify://shop_images/IMG_5148.png",
-        "sub_title1": "WEEKLY OFFER",
-        "title_banner1": "UP TO 40% OFFALL FOR FITNESS",
-        "btn_banner1": "SHOP NOW",
-        "url_banner1": "shopify://collections/all",
-        "img_banner2": "shopify://shop_images/IMG_5146.png",
-        "sub_title2": "WEEKLY OFFER",
-        "title_banner2": "UP TO 40% OFFALL FOR FITNESS",
-        "btn_banner2": "SHOP NOW",
-        "url_banner2": "shopify://collections/all",
-        "color_top_title": "#FFFFFF",
-        "color_title": "#F9F9F9",
-        "color_btn": "#FFFFFF",
-        "color_btn_hover": "#fff",
-        "bg_btn_hover": "#DADADA",
-        "margin_top": "20",
-        "margin_bottom": "40"
-      }
-    },
     "section_banner_v9_D6fRHd": {
       "type": "section-banner-v9",
       "name": "BANNER V9",
@@ -717,6 +679,21 @@
         "ins_access_token": "DUMMY_TOKEN_FOR_DEV_TESTING_ONLY",
         "ins_limit_number": "6",
         "item_icon": "fa fa-instagram"
+      }
+    },
+    "section_instagram_v3_whkFx6": {
+      "type": "section-instagram-v3",
+      "disabled": true,
+      "name": "INSTAGRAM V3",
+      "settings": {
+        "title_content": "Sportuo On Instagram",
+        "link_insta": "#sportuo",
+        "ins_userid": "3672948962",
+        "ins_access_token": "3672948962.0f64772.430edb7f711e4665b59777c54d1ed9ce",
+        "ins_limit_number": "6",
+        "item_icon": "fa fa-instagram",
+        "margin_top": "",
+        "margin_bottom": ""
       }
     },
     "page_instagram_Px9gQr": {
@@ -1031,13 +1008,12 @@
     "1657338962051bf203",
     "section_service_v1_4VQzzh",
     "section_info_v1_XgWQ7C",
-    "section_banner_v4_cVDJce",
-    "section_banner_v8_Q4UADi",
     "section_banner_v9_D6fRHd",
     "section_service_v2_Qiwpty",
     "reviews_EbHWjG",
     "165734272602bf9687",
     "about_template_dPqq9d",
+    "section_instagram_v3_whkFx6",
     "page_instagram_Px9gQr",
     "rich_text_g8bdCY",
     "17823692078188a59f",
