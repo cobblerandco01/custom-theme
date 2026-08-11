@@ -1,4 +1,9 @@
 
+<script>
+  window.themeSettings = window.themeSettings || {};
+  window.themeSettings.enableCartPopup = {{ section.settings.enable_addcart_popup | json }};
+</script>
+
 {% if section.settings.spd_style == "pd_large_img" %}
 {% include 'product-details-large-image' %}
 
@@ -430,6 +435,12 @@ addons can override it.
       "type": "checkbox",
       "id": "ena_sticky_addcart",
       "label": "Enable",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_addcart_popup",
+      "label": "Enable Ajax Cart Popup",
       "default": true
     },
     {
