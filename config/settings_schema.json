@@ -377,6 +377,12 @@
     "name": "Popup Add To Cart Success",
     "settings": [
       {
+        "type": "checkbox",
+        "id": "enable_addcart_popup",
+        "label": "Enable Ajax Cart Popup",
+        "default": true
+      },
+      {
         "type": "text",
         "id": "title_1",
         "label": "Heading 1",
@@ -5839,6 +5845,29 @@
         "id": "gmap_longitude",
         "label": "Google Map Longitude",
         "default": "-111.8005377"
+      }
+    ]
+  },
+  {
+    "name": "WhatsApp Button",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_whatsapp",
+        "label": "Enable Sticky WhatsApp Button",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "whatsapp_phone",
+        "label": "WhatsApp Phone Number (with Country Code)",
+        "default": "919876543210"
+      },
+      {
+        "type": "textarea",
+        "id": "whatsapp_message",
+        "label": "Default Message",
+        "default": "Hi! I have a question about a product."
       }
     ]
   },

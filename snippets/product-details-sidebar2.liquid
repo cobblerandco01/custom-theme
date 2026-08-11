@@ -1,4 +1,4 @@
-{% assign on_sale = false %}
+﻿{% assign on_sale = false %}
 {% if product.compare_at_price > product.price %}
 {% assign on_sale = true %}
 {% endif %}
@@ -442,7 +442,7 @@
                   {% endif %}
                   {% endif %}
 
-                  {% if section.settings.ena_info_sale %}
+                  {% if section.settings.ena_info_sale and section.settings.content_infosale != blank %}
                   <div class="list_ul_engo_full">                
                     {{ section.settings.content_infosale }}
                   </div>
@@ -792,4 +792,5 @@
   }); 
 
 </script>
+
 
