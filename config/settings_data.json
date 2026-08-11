@@ -51,7 +51,7 @@
     "ulr_cookie1": "",
     "title_btn_cookie2": "Got it!",
     "lr_cookie": "right",
-    "enable_addcart_popup": true,
+    "enable_addcart_popup": false,
     "title_1": "There are",
     "title_2": "items<br>in your cart",
     "title_also_prod": "With this products also buy:",

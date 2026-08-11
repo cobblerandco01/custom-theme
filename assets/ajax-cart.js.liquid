@@ -164,7 +164,7 @@ var ajaxCart = (function(module, $) {
       cartCostSelector   : null,
       moneyFormat        : '${{ amount }}',
       disableAjaxCart    : false,
-      enableCartPopup    : true,
+      enableCartPopup    : false,
       enableQtySelectors : true
     };
 
@@ -250,7 +250,9 @@ var ajaxCart = (function(module, $) {
 
       ShopifyAPI.getCart(cartUpdateCallback);
     } else {
-      window.location.href = '/cart';
+      $('.js-minicart').addClass('active');
+      $('.bg-minicart').addClass('active');
+      ShopifyAPI.getCart(cartUpdateCallback);
     }
   };
 
