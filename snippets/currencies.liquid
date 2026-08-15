@@ -34,6 +34,18 @@
   });
 
   /* Saving the current price */
+  function cleanPriceElements() {
+    jQuery('span.money, .engoj_price_main, .enj-product-price-compare, .enj-product-price').each(function() {
+      var html = jQuery(this).html();
+      if (html) {
+        var cleanHtml = html.replace(/^\s*INR\s*/i, '').replace(/\s*INR\s*$/i, '');
+        if (cleanHtml !== html) {
+          jQuery(this).html(cleanHtml);
+        }
+      }
+    });
+  }
+
   jQuery('span.money').each(function() {
     var html = jQuery(this).html();
     html = html.replace(/^\s*INR\s*/i, '');
@@ -41,6 +53,7 @@
     jQuery(this).html(html);
     jQuery(this).attr('data-currency-{{ shop.currency }}', html);
   });
+  cleanPriceElements();
 
     // If there's no cookie.
     if (cookieCurrency == null) {
@@ -67,6 +80,7 @@
       var newCurrency = jQuery(this).val();
       Currency.convertAll(Currency.currentCurrency, newCurrency);
       jQuery('.selected-currency').text(Currency.currentCurrency === 'INR' ? 'Rs.' : Currency.currentCurrency);
+      cleanPriceElements();
     });
 
     var original_selectCallback = window.selectCallback;
@@ -74,14 +88,19 @@
       original_selectCallback(variant, selector);
       Currency.convertAll(shopCurrency, jQuery('[name=currencies]').val());
       jQuery('.selected-currency').text(Currency.currentCurrency === 'INR' ? 'Rs.' : Currency.currentCurrency);
+      cleanPriceElements();
     };
 
     $('body').on('ajaxCart.afterCartLoad', function(cart) {
       Currency.convertAll(shopCurrency, jQuery('[name=currencies]').val());
       jQuery('.selected-currency').text(Currency.currentCurrency === 'INR' ? 'Rs.' : Currency.currentCurrency);  
+      cleanPriceElements();
     });
 
     jQuery('.selected-currency').text(Currency.currentCurrency === 'INR' ? 'Rs.' : Currency.currentCurrency);
+
+    // Keep price formats clean of INR for dynamic loads
+    setInterval(cleanPriceElements, 300);
 
 </script>
 
