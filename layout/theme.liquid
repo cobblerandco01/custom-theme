@@ -14,7 +14,8 @@
     {%- if shop_name == 'My Store' or shop_name == 'my-store' or shop_name == 'My Shopify Store' -%}
       {%- assign shop_name = 'Cobbler & Co.' -%}
     {%- endif -%}
-    {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop_name %} &ndash; {{ shop_name }}{% endunless %}
+    {%- assign page_title_clean = page_title | replace: 'My Store', 'Cobbler & Co.' | replace: 'my-store', 'Cobbler & Co.' | replace: 'My Shopify Store', 'Cobbler & Co.' -%}
+    {{ page_title_clean }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title_clean contains shop_name %} &ndash; {{ shop_name }}{% endunless %}
   </title>
 
   {% if page_description %}
