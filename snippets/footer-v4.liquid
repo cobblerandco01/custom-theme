@@ -1,26 +1,92 @@
-{% assign titlecolum_fv4_1 = section.titlecolum_fv4_1 | default: titlecolum_fv4_1 %}
-{% assign menu_fv4_1 = section.menu_fv4_1 | default: menu_fv4_1 %}
-{% assign titlecolum_fv4_2 = section.titlecolum_fv4_2 | default: titlecolum_fv4_2 %}
-{% assign menu_fv4_2 = section.menu_fv4_2 | default: menu_fv4_2 %}
-{% assign titlecolum_fv4_3 = section.titlecolum_fv4_3 | default: titlecolum_fv4_3 %}
-{% assign menu_fv4_3 = section.menu_fv4_3 | default: menu_fv4_3 %}
-{% assign titlecolum_fv4_4 = section.titlecolum_fv4_4 | default: titlecolum_fv4_4 %}
-{% assign fv4_phone = section.settings.fv4_phone | default: settings.fv4_phone %}
-{% assign fv4_email = section.settings.fv4_email | default: settings.fv4_email %}
-{% assign fv4_address = section.settings.fv4_address | default: settings.fv4_address %}
-{% assign content_colum_fv4_5_1 = section.content_colum_fv4_5_1 | default: content_colum_fv4_5_1 %}
-{% assign content_colum_fv4_5 = section.content_colum_fv4_5 | default: content_colum_fv4_5 %}
-
-{% assign enable_fv4_bottom = enable_fv4_bottom %}
-{% if section.enable_fv4_bottom != nil %}
-  {% assign enable_fv4_bottom = section.enable_fv4_bottom %}
+{% assign titlecolum_fv4_1 = settings.titlecolum_fv4_1 %}
+{% if section.settings.titlecolum_fv4_1 != blank %}
+  {% assign titlecolum_fv4_1 = section.settings.titlecolum_fv4_1 %}
 {% endif %}
 
-{% assign fv4_main_logo = section.fv4_main_logo | default: fv4_main_logo %}
-{% assign fv4_main_logo_maxwidth = section.fv4_main_logo_maxwidth | default: fv4_main_logo_maxwidth %}
-{% assign logo_svg4 = section.logo_svg4 | default: logo_svg4 %}
-{% assign fv4_bottom_payment_img = section.fv4_bottom_payment_img | default: fv4_bottom_payment_img %}
-{% assign fv4_bottom_copyright = section.fv4_bottom_copyright | default: fv4_bottom_copyright %}
+{% assign menu_fv4_1 = settings.menu_fv4_1 %}
+{% if section.settings.menu_fv4_1 != blank %}
+  {% assign menu_fv4_1 = section.settings.menu_fv4_1 %}
+{% endif %}
+
+{% assign titlecolum_fv4_2 = settings.titlecolum_fv4_2 %}
+{% if section.settings.titlecolum_fv4_2 != blank %}
+  {% assign titlecolum_fv4_2 = section.settings.titlecolum_fv4_2 %}
+{% endif %}
+
+{% assign menu_fv4_2 = settings.menu_fv4_2 %}
+{% if section.settings.menu_fv4_2 != blank %}
+  {% assign menu_fv4_2 = section.settings.menu_fv4_2 %}
+{% endif %}
+
+{% assign titlecolum_fv4_3 = settings.titlecolum_fv4_3 %}
+{% if section.settings.titlecolum_fv4_3 != blank %}
+  {% assign titlecolum_fv4_3 = section.settings.titlecolum_fv4_3 %}
+{% endif %}
+
+{% assign menu_fv4_3 = settings.menu_fv4_3 %}
+{% if section.settings.menu_fv4_3 != blank %}
+  {% assign menu_fv4_3 = section.settings.menu_fv4_3 %}
+{% endif %}
+
+{% assign titlecolum_fv4_4 = settings.titlecolum_fv4_4 %}
+{% if section.settings.titlecolum_fv4_4 != blank %}
+  {% assign titlecolum_fv4_4 = section.settings.titlecolum_fv4_4 %}
+{% endif %}
+
+{% assign fv4_phone = settings.fv4_phone %}
+{% if section.settings.fv4_phone != blank %}
+  {% assign fv4_phone = section.settings.fv4_phone %}
+{% endif %}
+
+{% assign fv4_email = settings.fv4_email %}
+{% if section.settings.fv4_email != blank %}
+  {% assign fv4_email = section.settings.fv4_email %}
+{% endif %}
+
+{% assign fv4_address = settings.fv4_address %}
+{% if section.settings.fv4_address != blank %}
+  {% assign fv4_address = section.settings.fv4_address %}
+{% endif %}
+
+{% assign content_colum_fv4_5_1 = settings.content_colum_fv4_5_1 %}
+{% if section.settings.content_colum_fv4_5_1 != blank %}
+  {% assign content_colum_fv4_5_1 = section.settings.content_colum_fv4_5_1 %}
+{% endif %}
+
+{% assign content_colum_fv4_5 = settings.content_colum_fv4_5 %}
+{% if section.settings.content_colum_fv4_5 != blank %}
+  {% assign content_colum_fv4_5 = section.settings.content_colum_fv4_5 %}
+{% endif %}
+
+{% assign enable_fv4_bottom = settings.enable_fv4_bottom %}
+{% if section.settings.enable_fv4_bottom != nil %}
+  {% assign enable_fv4_bottom = section.settings.enable_fv4_bottom %}
+{% endif %}
+
+{% assign fv4_main_logo = settings.fv4_main_logo %}
+{% if section.settings.fv4_main_logo != blank %}
+  {% assign fv4_main_logo = section.settings.fv4_main_logo %}
+{% endif %}
+
+{% assign fv4_main_logo_maxwidth = settings.fv4_main_logo_maxwidth %}
+{% if section.settings.fv4_main_logo_maxwidth != blank %}
+  {% assign fv4_main_logo_maxwidth = section.settings.fv4_main_logo_maxwidth %}
+{% endif %}
+
+{% assign logo_svg4 = settings.logo_svg4 %}
+{% if section.settings.logo_svg4 != blank %}
+  {% assign logo_svg4 = section.settings.logo_svg4 %}
+{% endif %}
+
+{% assign fv4_bottom_payment_img = settings.fv4_bottom_payment_img %}
+{% if section.settings.fv4_bottom_payment_img != blank %}
+  {% assign fv4_bottom_payment_img = section.settings.fv4_bottom_payment_img %}
+{% endif %}
+
+{% assign fv4_bottom_copyright = settings.fv4_bottom_copyright %}
+{% if section.settings.fv4_bottom_copyright != blank %}
+  {% assign fv4_bottom_copyright = section.settings.fv4_bottom_copyright %}
+{% endif %}
 
 {% if section.settings.select_fts == "footer_v4" %}
 {% if template contains 'index' %}
