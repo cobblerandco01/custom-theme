@@ -10,7 +10,11 @@
 
   <!-- Title and description ================================================== -->
   <title>
-    {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+    {%- assign shop_name = shop.name -%}
+    {%- if shop_name == 'My Store' or shop_name == 'my-store' or shop_name == 'My Shopify Store' -%}
+      {%- assign shop_name = 'Cobbler & Co.' -%}
+    {%- endif -%}
+    {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop_name %} &ndash; {{ shop_name }}{% endunless %}
   </title>
 
   {% if page_description %}
@@ -217,7 +221,7 @@ Add the page template as a class for easy page or template specific styling.
       addToCartSelector: '.enj-add-to-cart-btn',
       cartCountSelector: '.enj-cartcount',
       cartCostSelector: '.enj-cartcost',
-      moneyFormat: {{ shop.money_format | json }},
+      moneyFormat: {{ shop.money_format | replace: 'INR', '' | replace: 'inr', '' | strip | json }},
       enableCartPopup: window.themeSettings ? window.themeSettings.enableCartPopup : true
     };
       jQuery(function($) {

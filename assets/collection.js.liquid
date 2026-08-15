@@ -227,7 +227,7 @@
           addToCartSelector: '.enj-add-to-cart-btn',
           cartCountSelector: '.enj-cartcount',
           cartCostSelector: '.enj-cartcost',
-          moneyFormat: {{ shop.money_format | json }},
+          moneyFormat: {{ shop.money_format | replace: 'INR', '' | replace: 'inr', '' | strip | json }},
           enableCartPopup: window.themeSettings ? window.themeSettings.enableCartPopup : true
         };
           jQuery(function($) {
@@ -253,7 +253,7 @@
                   addToCartSelector: '.enj-add-to-cart-btn',
                   cartCountSelector: '.enj-cartcount',
                   cartCostSelector: '.enj-cartcost',
-                  moneyFormat: {{ shop.money_format | json }},
+                  moneyFormat: {{ shop.money_format | replace: 'INR', '' | replace: 'inr', '' | strip | json }},
                   enableCartPopup: window.themeSettings ? window.themeSettings.enableCartPopup : true
                 };
                   jQuery(function($) {
