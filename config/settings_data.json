@@ -71,7 +71,7 @@
     "logo_mobile": "shopify://shop_images/cc_381cc60e-e9b1-44cc-81b4-159660e9ca08.png",
     "logo_svgmobile": "",
     "mobile_logo_maxwidth": 100,
-    "main_menu_store_mb": "main-menu",
+    "main_menu_store_mb": "navbar",
     "hdv_color_text": "#000000",
     "hdv_color_text_hover": "#774100",
     "hdv_color_linkchildren": "#000000",
