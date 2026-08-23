@@ -3,7 +3,7 @@
     <ul class="navbar-nav">
       {% assign has_nav_blocks = false %}
       {% for block in section.blocks %}
-        {% if block.type == 'nav_link' %}
+        {% if block.type == 'nav_link' or block.type == 'nav_dropdown' %}
           {% assign has_nav_blocks = true %}
         {% endif %}
       {% endfor %}
@@ -14,6 +14,28 @@
             <li class="nav-item">
               <a href="{{ block.settings.url }}" class="delay03 relative nav-link menu_lv1">{{ block.settings.title }}</a>
             </li>
+          {% elsif block.type == 'nav_dropdown' %}
+            {% assign child_menu = block.settings.menu %}
+            {% if linklists[child_menu].links != blank %}
+              <li class="nav-item dropdown">
+                <a href="{{ block.settings.url }}" class="delay03 nav-link menu_lv1">{{ block.settings.title }}</a>
+                <div class="dropdown-menu list-woman page show">
+                  <div class="list-clothing">
+                    <ul class="mb-0 list-unstyled">
+                      {% for childlink in linklists[child_menu].links %}
+                        <li class="px-3">
+                          <a href="{{ childlink.url }}" class="relative menu_lv1">{{ childlink.title }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a href="{{ block.settings.url }}" class="delay03 relative nav-link menu_lv1">{{ block.settings.title }}</a>
+              </li>
+            {% endif %}
           {% endif %}
         {% endfor %}
       {% else %}
