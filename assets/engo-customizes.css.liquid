@@ -33538,3 +33538,49 @@ a.back-to-top:hover::before{
   width: 100% !important;
   display: block !important;
 }
+
+/* Custom Mega Menu Grid Layout */
+#header .menu ul .nav-item.mega-menu-nav {
+  position: static !important;
+}
+
+#header .menu ul .nav-item .mega-menu-dropdown {
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  position: absolute !important;
+  box-sizing: border-box !important;
+  padding: 40px 0 !important;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.mega-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  align-items: start;
+  text-align: left;
+}
+
+.mega-menu-col {
+  min-width: 0;
+}
+
+.mega-menu-title {
+  font-size: 13px !important;
+  margin-bottom: 15px !important;
+}
+
+.mega-menu-list {
+  padding-left: 0 !important;
+}
+
+.mega-menu-list li {
+  margin-bottom: 8px !important;
+}
+
+.mega-menu-list li a.menu_lv3 {
+  display: inline-block !important;
+  padding: 0 !important;
+}
