@@ -3,7 +3,7 @@
     <ul class="navbar-nav">
       {% assign has_nav_blocks = false %}
       {% for block in section.blocks %}
-        {% if block.type == 'nav_link' or block.type == 'nav_dropdown' %}
+        {% if block.type == 'nav_link' or block.type == 'nav_dropdown' or block.type == 'megamenu_new' %}
           {% assign has_nav_blocks = true %}
         {% endif %}
       {% endfor %}
@@ -28,6 +28,48 @@
                         </li>
                       {% endfor %}
                     </ul>
+                  </div>
+                </div>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a href="{{ block.settings.url }}" class="delay03 relative nav-link menu_lv1">{{ block.settings.title }}</a>
+              </li>
+            {% endif %}
+          {% elsif block.type == 'megamenu_new' %}
+            {% assign child_menu = block.settings.menu %}
+            {% if linklists[child_menu].links != blank %}
+              <li class="nav-item dropdown mega-menu-nav">
+                <a href="{{ block.settings.url }}" class="delay03 nav-link menu_lv1">{{ block.settings.title }}</a>
+                <div class="dropdown-menu mega-menu-dropdown list-woman show">
+                  <div class="container container-v1">
+                    <div class="mega-menu-grid">
+                      {% for childlink in linklists[child_menu].links %}
+                        <div class="mega-menu-col">
+                          <h5 class="mega-menu-title">
+                            <a href="{{ childlink.url }}" class="menu_lv2">{{ childlink.title }}</a>
+                          </h5>
+                          {% assign grand_child_list_handle = childlink.title | handleize %}
+                          {% if linklists[grand_child_list_handle].links != blank %}
+                            <ul class="mega-menu-list mb-0 list-unstyled">
+                              {% for grandchildlink in linklists[grand_child_list_handle].links %}
+                                <li>
+                                  <a href="{{ grandchildlink.url }}" class="menu_lv3">{{ grandchildlink.title }}</a>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          {% elsif childlink.links != blank %}
+                            <ul class="mega-menu-list mb-0 list-unstyled">
+                              {% for grandchildlink in childlink.links %}
+                                <li>
+                                  <a href="{{ grandchildlink.url }}" class="menu_lv3">{{ grandchildlink.title }}</a>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          {% endif %}
+                        </div>
+                      {% endfor %}
+                    </div>
                   </div>
                 </div>
               </li>
