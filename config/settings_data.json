@@ -78,21 +78,21 @@
     "hdv_color_linklv2": "#7d7b7b",
     "bg_color_menu_hd": "#fff",
     "apmenuitem_enable_1": false,
-    "apmenuitem_title_1": "",
+    "apmenuitem_title_1": "foot",
     "apmenuitem_fullwidth_1": false,
     "apmenuitem_width_1": "900",
     "apmenuitem_position_1": "-200px",
-    "apmenuitem_position_orther_1": "",
+    "apmenuitem_position_orther_1": "-300px",
     "apbgimage_enable_1": false,
-    "apmenuitem_bg_image_1": "",
+    "apmenuitem_bg_image_1": "shopify://shop_images/IMG-5218.png",
     "apmenuitem_eblocklinks_1": false,
     "apmenuitem_columns_blocklinks_1": "12",
     "apmenuitem_columns_1": "4",
     "apmenuitem_img_blocklinks_enable_1": false,
-    "apmenuitem_img_blocklinks_1_1": "shopify://shop_images/home1.png",
-    "apmenuitem_url_blocklinks_1_1": "https://bisuth-store-demo.myshopify.com/?preview_theme_id=130355593394",
-    "apmenuitem_img_blocklinks_1_2": "shopify://shop_images/home2.png",
-    "apmenuitem_url_blocklinks_1_2": "https://bisuth-store-demo.myshopify.com/?preview_theme_id=130498068658",
+    "apmenuitem_img_blocklinks_1_1": "shopify://shop_images/IMG-5217.png",
+    "apmenuitem_url_blocklinks_1_1": "shopify://products/shoe-1",
+    "apmenuitem_img_blocklinks_1_2": "shopify://shop_images/IMG-5220.png",
+    "apmenuitem_url_blocklinks_1_2": "shopify://products/brio-tan-milled-leather-sandals-for-men-copy",
     "apmenuitem_img_blocklinks_1_3": "shopify://shop_images/home3.png",
     "apmenuitem_url_blocklinks_1_3": "https://bisuth-store-demo.myshopify.com/?preview_theme_id=130499084466",
     "apmenuitem_img_blocklinks_1_4": "shopify://shop_images/home4.png",
@@ -112,10 +112,10 @@
     "apmenuitem_ehtml_1": false,
     "apmenuitem_columns_blockhtml_1": "12",
     "apmenuitem_thtml_1": "Test",
-    "apmenuitem_lchtml_1": "",
+    "apmenuitem_lchtml_1": "shopify://products/brio-tan-milled-leather-sandals-for-men-copy",
     "apmenuitem_eihtml_1": false,
     "apmenuitem_chtml_1": "",
-    "position_menu_blocklink_1": "1",
+    "position_menu_blocklink_1": "3",
     "position_menu_blockvideo_1": "2",
     "position_menu_blockproduct_1": "3",
     "position_menu_blockhtml_1": "4",
@@ -3960,6 +3960,19 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "nav_dropdown_E8pndb": {
+            "type": "nav_dropdown",
+            "settings": {
+              "title": "Category",
+              "url": "shopify://collections",
+              "menu": "navbar"
+            }
+          }
+        },
+        "block_order": [
+          "nav_dropdown_E8pndb"
+        ],
         "settings": {
           "select_hds": "header_v1",
           "hd_home_color_text": "#343434",
