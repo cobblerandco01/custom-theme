@@ -3961,16 +3961,52 @@
       "header": {
         "type": "header",
         "blocks": {
+          "megamenu_new_zYf7rK": {
+            "type": "megamenu_new",
+            "settings": {
+              "title": "Home",
+              "url": "https://cobblerandco.com/",
+              "menu": ""
+            }
+          },
+          "megamenu_new_wBVqbD": {
+            "type": "megamenu_new",
+            "settings": {
+              "title": "New Arrivals",
+              "url": "shopify://collections/new-arrivals",
+              "menu": ""
+            }
+          },
+          "megamenu_new_HXrEyM": {
+            "type": "megamenu_new",
+            "settings": {
+              "title": "Collections",
+              "url": "shopify://collections",
+              "menu": ""
+            }
+          },
+          "megamenu_new_cW9zqM": {
+            "type": "megamenu_new",
+            "settings": {
+              "title": "About Us",
+              "url": "shopify://pages/about-us",
+              "menu": ""
+            }
+          },
           "nav_dropdown_E8pndb": {
             "type": "nav_dropdown",
             "settings": {
-              "title": "Category",
-              "url": "shopify://collections",
-              "menu": "navbar"
+              "title": "Contact",
+              "url": "shopify://pages/contact",
+              "menu": ""
             }
           }
         },
         "block_order": [
+          "megamenu_new_zYf7rK",
+          "megamenu_new_wBVqbD",
+          "megamenu_new_HXrEyM",
+          "megamenu_new_cW9zqM",
           "nav_dropdown_E8pndb"
         ],
         "settings": {
