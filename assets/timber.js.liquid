@@ -181,7 +181,9 @@ timber.cacheSelectors = function () {
 };
 
 timber.init = function () {
-  FastClick.attach(document.body);
+  if (typeof FastClick !== 'undefined' && !('touchAction' in document.documentElement.style)) {
+    FastClick.attach(document.body);
+  }
   timber.cacheSelectors();
   timber.accessibleNav();
   timber.drawersInit();

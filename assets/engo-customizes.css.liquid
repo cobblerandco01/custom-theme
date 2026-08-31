@@ -33595,4 +33595,26 @@ a.back-to-top:hover::before{
 .sticky_addcart .btn-action .btn-add-stickycart:hover {
   background-color: #402402 !important;
   border-color: #402402 !important;
+}
+
+/* Instant Mobile Search Overlay & Keyboard Focus */
+@media (max-width: 991px) {
+  .search-full-destop .search-eveland.active {
+    transition: opacity 0.1s ease !important;
+  }
+  .search-full-destop .search-eveland.active .drawer-search-top,
+  .search-full-destop .search-eveland.active .wg-search-form {
+    transform: none !important;
+    transition-delay: 0s !important;
+    transition: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+  .search-full-destop .search-eveland .wg-search-form .search-input {
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+    -webkit-user-select: text !important;
+    user-select: text !important;
+  }
 }

@@ -1865,24 +1865,28 @@ jQuery(document).ready(function($) {
   }
 
   function search(){
-    $('.js-search-destop').on('click', function(e) {
-      if (e) e.preventDefault();
+    $(document).on('click touchstart', '.js-search-destop', function(e) {
       $('.js-box-search').addClass('active');
       $('.bg_search_box').addClass('active');
       $('body').addClass('activedestop');
 
       var $input = $('.js-box-search .search-input');
-      $input.focus();
-      setTimeout(function() {
+      if ($input.length) {
         $input.focus();
-      }, 50);
+        setTimeout(function() {
+          $input.focus();
+        }, 10);
+        setTimeout(function() {
+          $input.focus();
+        }, 80);
+      }
     });
-    $('.js-drawer-close').on('click', function() {
-      $('.js-box-search').removeClass('active');
-      $('.bg_search_box').removeClass('active');
-      $('body').removeClass('activedestop');
+
+    $(document).on('click touchstart', '.search-input', function() {
+      $(this).focus();
     });
-    $('.bg_search_box').on('click', function() {
+
+    $(document).on('click touchstart', '.js-drawer-close, .bg_search_box', function(e) {
       $('.js-box-search').removeClass('active');
       $('.bg_search_box').removeClass('active');
       $('body').removeClass('activedestop');
