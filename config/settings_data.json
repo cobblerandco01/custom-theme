@@ -3893,7 +3893,7 @@
           "style_sidebar": "left",
           "show_rating": true,
           "show_sdes": true,
-          "show_social_share": true,
+          "show_social_share": false,
           "show_quantity": true,
           "show_sku": true,
           "show_cate": true,

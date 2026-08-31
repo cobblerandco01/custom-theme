@@ -71,7 +71,7 @@
         "kf_title_4": "30-Day Returns",
         "show_custom_small_desc": false,
         "custom_small_desc_content": "test test test",
-        "show_social_share": true,
+        "show_social_share": false,
         "show_quantity": true,
         "show_sku": true,
         "show_cate": false,
