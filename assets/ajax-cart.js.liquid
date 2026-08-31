@@ -375,16 +375,33 @@ var ajaxCart = (function(module, $) {
       }
     });
 
-    $body.on('click', '.remove-product', function() {
+    $body.on('click', '.remove-product', function(e) {
+      if (e) e.preventDefault();
       var $el = $(this),
           line = $el.data('line'),
-          qty = 0
-      if (line) {
-        updateQuantity(line, qty);
-      } else {
-        $qtySelector.val(qty);
+          qty = 0;
+
+      if (!line) {
+        var href = $el.attr('href');
+        if (href && href.indexOf('line=') !== -1) {
+          var match = href.match(/line=(\d+)/);
+          if (match && match[1]) {
+            line = parseInt(match[1], 10);
+          }
+        }
       }
-    })
+
+      // Visually remove item immediately for instant UI feedback
+      var $itemRow = $el.closest('.minicart_item, .product-mini-cart, li, .d-flex');
+      $itemRow.css({'opacity': '0.3', 'pointer-events': 'none'}).slideUp(150, function() {
+        $(this).remove();
+      });
+
+      if (line) {
+        isUpdating = true;
+        ShopifyAPI.changeItem(line, qty, adjustCartCallback);
+      }
+    });
 
     // Prevent cart from being submitted while quantities are changing
     $body.on('submit', 'form.ajaxcart', function(evt) {
@@ -411,10 +428,7 @@ var ajaxCart = (function(module, $) {
         $row.parent().addClass('is-removed');
       }
 
-      // Slight delay to make sure removed animation is done
-      setTimeout(function() {
-        ShopifyAPI.changeItem(line, qty, adjustCartCallback);
-      }, 250);
+      ShopifyAPI.changeItem(line, qty, adjustCartCallback);
     }
 
     // Save note anytime it's changed
@@ -432,10 +446,8 @@ var ajaxCart = (function(module, $) {
     // Update quantity and price
     updateCountPrice(cart);
 
-    // Reprint cart on short timeout so you don't see the content being removed
-    setTimeout(function() {
-      ShopifyAPI.getCart(buildCart);
-    }, 150)
+    // Re-build cart template immediately with updated cart data
+    buildCart(cart);
   };
 
   createQtySelectors = function() {

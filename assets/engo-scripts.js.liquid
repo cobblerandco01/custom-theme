@@ -1865,10 +1865,17 @@ jQuery(document).ready(function($) {
   }
 
   function search(){
-    $('.js-search-destop').on('click', function() {
+    $('.js-search-destop').on('click', function(e) {
+      if (e) e.preventDefault();
       $('.js-box-search').addClass('active');
       $('.bg_search_box').addClass('active');
       $('body').addClass('activedestop');
+
+      var $input = $('.js-box-search .search-input');
+      $input.focus();
+      setTimeout(function() {
+        $input.focus();
+      }, 50);
     });
     $('.js-drawer-close').on('click', function() {
       $('.js-box-search').removeClass('active');

@@ -8852,7 +8852,7 @@ a:focus,a:hover {
 }
 
 .prod_sticky .content-page-detail .detail-info .btn-action .shop-button:hover {
-    background: #e96d00;
+    background: #402402;
     transition: .3s
 }
 
@@ -17879,18 +17879,20 @@ body.cartover {
     height: auto;
     opacity: 1;
     visibility: visible;
-    transition: all .5s;
+    transition: all .2s ease;
     z-index: 101;
     padding-bottom: 50px
 }
 
 .search-full-destop .search-eveland.active .drawer-search-top {
-    transform: translateY(0)
+    transform: translateY(0);
+    transition: all .2s ease;
 }
 
 .search-full-destop .search-eveland.active .wg-search-form {
     transform: translateY(0);
-    transition-delay: .3s;
+    transition-delay: 0s;
+    transition: all .2s ease;
     opacity: 1;
     visibility: visible
 }
@@ -23415,7 +23417,7 @@ a.link_active{
 }
 
 .sticky_addcart .btn-action .shop-button-amazon:hover,.sticky_addcart .btn-action .shop-button:hover {
-    background: #e96d00
+    background: #402402
 }
 
 .sticky_addcart .btn-action .shop-button-soldout {
@@ -33584,3 +33586,13 @@ a.back-to-top:hover::before{
   display: inline-block !important;
   padding: 0 !important;
 }
+
+/* Product Page Add to Cart Button Hover Color */
+.content-page-detail .detail-info .btn-action .shop-button:hover,
+.content-page-detail .detail-info .btn-action .enj-add-to-cart-btn:hover,
+.content-page-detail .detail-info .btn-action .engoj-btn-addtocart:hover,
+.sticky_addcart .btn-action .shop-button:hover,
+.sticky_addcart .btn-action .btn-add-stickycart:hover {
+  background-color: #402402 !important;
+  border-color: #402402 !important;
+}
