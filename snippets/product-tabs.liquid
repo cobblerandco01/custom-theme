@@ -24,7 +24,13 @@
       {% if section.settings.enable_description_tab %}
       <div id="tab1" class="tab-pane active">
         <div class="detail-tab-desc clearfix">
-          {{ product.description }}
+          {% if section.settings.custom_description_content != blank %}
+            {{ section.settings.custom_description_content }}
+          {% elsif settings.custom_description_content != blank %}
+            {{ settings.custom_description_content }}
+          {% else %}
+            {{ product.description }}
+          {% endif %}
         </div>
       </div>
       {% endif %}
@@ -33,8 +39,9 @@
       <div id="tab2" class="tab-pane">
         <div class="detail-tab-review">
           <div class="care-guide-content">
-            {% if settings.care_guide_content != blank %}
-              {{ settings.care_guide_content }}
+            {% assign care_content = section.settings.care_guide_content | default: settings.care_guide_content %}
+            {% if care_content != blank %}
+              {{ care_content }}
             {% else %}
               <p>Please configure your Care Guide content in the Theme Editor.</p>
             {% endif %}

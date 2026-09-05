@@ -4,10 +4,10 @@
   	<a href="javascript:void(0);" class="btn_size_guide">Size guide</a>
     {% endif %}
     {% if section.settings.show_delivery_return %}
-    <a href="javascript:void(0);" class="btn_delivery">Delivery & Return</a>
+    <a href="{% if section.settings.delivery_page_url != blank %}{{ section.settings.delivery_page_url }}{% else %}javascript:void(0);{% endif %}" class="{% if section.settings.delivery_page_url == blank %}btn_delivery{% endif %}">Delivery & Return</a>
     {% endif %}
     {% if section.settings.show_question %}
-    <a href="javascript:void(0);" class="btn_question">Ask a Question</a>
+    <a href="{% if section.settings.question_page_url != blank %}{{ section.settings.question_page_url }}{% else %}javascript:void(0);{% endif %}" class="{% if section.settings.question_page_url == blank %}btn_question{% endif %}">Ask a Question</a>
     {% endif %}
   </div>
   
@@ -166,7 +166,7 @@
     transform:scale(0);
   }
   .ciloe-size-guide .content_size_guide .layout_size_guide{
-    max-width:1000px;
+    max-width:600px;
     margin:5% auto;
     width:100%;
     background:#fff;
@@ -185,6 +185,11 @@
   }
   .ciloe-size-guide .content_size_guide img{
     margin:0 auto;
+    max-width: 100%;
+    max-height: 450px;
+    height: auto;
+    display: block;
+    object-fit: contain;
   }
   @media (max-width:767px){
     .ciloe-size-guide .content_size_guide .layout_size_guide{

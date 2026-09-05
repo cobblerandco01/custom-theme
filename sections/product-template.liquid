@@ -639,6 +639,11 @@ addons can override it.
       "default": true
     },
     {
+      "type": "url",
+      "id": "delivery_page_url",
+      "label": "Delivery & Return Page Link (Optional)"
+    },
+    {
       "type": "html",
       "id": "addcontent_delivery",
       "label": "Content"
@@ -650,6 +655,11 @@ addons can override it.
       "default": true
     },
     {
+      "type": "url",
+      "id": "question_page_url",
+      "label": "Ask a Question Page Link (Optional)"
+    },
+    {
       "type": "checkbox",
       "id": "enable_description_tab",
       "label": "Tab Description",
@@ -658,25 +668,30 @@ addons can override it.
     {
       "type": "text",
       "id": "destab_title",
-      "label": "Heading",
+      "label": "Description Tab Heading",
       "default": "Description"
+    },
+    {
+      "type": "richtext",
+      "id": "custom_description_content",
+      "label": "Custom Description Content (Optional - overrides product description if set)"
     },
     {
       "type": "checkbox",
       "id": "enable_addition_tab",
-      "label": "Tab Addition",
+      "label": "Tab Additional Features",
       "default": true
     },
     {
       "type": "text",
       "id": "addtab_title",
-      "label": "Heading",
-      "default": "Additional Information"
+      "label": "Additional Features Heading",
+      "default": "Additional Features"
     },
     {
-      "type": "html",
+      "type": "richtext",
       "id": "addtab_content",
-      "label": "Content"
+      "label": "Additional Features Content"
     },
     {
       "type": "checkbox",
@@ -691,7 +706,7 @@ addons can override it.
       "default": "Care Guide"
     },
     {
-      "type": "html",
+      "type": "richtext",
       "id": "care_guide_content",
       "label": "Care Guide Content"
     },

@@ -1,4 +1,4 @@
-﻿{% assign on_sale = false %}
+{% assign on_sale = false %}
 {% if product.compare_at_price > product.price %}
 {% assign on_sale = true %}
 {% endif %}
@@ -140,7 +140,7 @@
                   </div>
                   {% else %}
                   <div class="pd_summary">
-                    <p class=" mb-0 ">{{ product.description | strip_html | truncatewords: 50 }}</p>
+                    <div class=" mb-0 ">{{ product.description }}</div>
                   </div>
                   {% endif %}
                   {% endif %}

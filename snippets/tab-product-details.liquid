@@ -1,36 +1,53 @@
+{% assign enable_desc = section.settings.enable_description_tab | default: settings.enable_description_tab %}
+{% assign desc_title = section.settings.destab_title | default: settings.destab_title | default: "Description" %}
+{% assign custom_desc = section.settings.custom_description_content | default: settings.custom_description_content %}
+
+{% assign enable_add = section.settings.enable_addition_tab | default: settings.enable_addition_tab %}
+{% assign add_title = section.settings.addtab_title | default: settings.addtab_title | default: "Additional Features" %}
+{% assign add_content = section.settings.addtab_content | default: settings.addtab_content %}
+
+{% assign enable_care = section.settings.enable_review_tab | default: settings.enable_review_tab %}
+{% assign care_title = section.settings.reviewtab_title | default: settings.reviewtab_title | default: "Care Guide" %}
+{% assign care_content = section.settings.care_guide_content | default: settings.care_guide_content %}
+
 <div class=" tab-pd-details">
   <div class="bd-tab">
     <div class="container container-v2">
       <ul class="nav nav-tabs tab_prod">
-        {% if settings.enable_description_tab %}
+        {% if enable_desc %}
         <li>
-          <a class="underline_scale active"  data-toggle="tab" href="#des"  >{{ settings.destab_title }}</a>
+          <a class="underline_scale active"  data-toggle="tab" href="#des"  >{{ desc_title }}</a>
         </li>
         {% endif %}
-        {% if settings.enable_addition_tab %}
+        {% if enable_add %}
         <li >
-          <a  class="underline_scale"  data-toggle="tab" href="#add"  >{{ settings.addtab_title }}</a>
+          <a  class="underline_scale"  data-toggle="tab" href="#add"  >{{ add_title }}</a>
         </li>
         {% endif %}
-        {% if settings.enable_review_tab %}
+        {% if enable_care %}
         <li>
-          <a class="underline_scale" data-toggle="tab" href="#review" >{{ settings.reviewtab_title }}</a>
+          <a class="underline_scale" data-toggle="tab" href="#review" >{{ care_title }}</a>
         </li>
         {% endif %}
       </ul>
     </div>
   </div>
   <div class="tab-content container container-v4" >
-    {% if settings.enable_description_tab %}
+    {% if enable_desc %}
     <div class="tab-pane fade show active" id="des">
-      <div class="desc product-desc">{{ product.description }}
+      <div class="desc product-desc">
+        {% if custom_desc != blank %}
+          {{ custom_desc }}
+        {% else %}
+          {{ product.description }}
+        {% endif %}
       </div>      
     </div>
     {% endif %}
-    {% if settings.enable_addition_tab %}
+    {% if enable_add %}
     <div class="tab-pane fade tab-addition" id="add">
-      {% if settings.addtab_content != blank %}
-      {{ settings.addtab_content }}
+      {% if add_content != blank %}
+      <div class="addition-content">{{ add_content }}</div>
       {% else %}
       <div class="">
         <div class="row justify-content-center">
@@ -79,11 +96,11 @@
       {% endif %}
     </div>
     {% endif %}
-    {% if settings.enable_review_tab %}
+    {% if enable_care %}
     <div class="tab-pane fade mt-4" id="review">
       <div class="care-guide-content">
-        {% if settings.care_guide_content != blank %}
-          {{ settings.care_guide_content }}
+        {% if care_content != blank %}
+          {{ care_content }}
         {% else %}
           <p>Please configure your Care Guide content in the Theme Editor.</p>
         {% endif %}
