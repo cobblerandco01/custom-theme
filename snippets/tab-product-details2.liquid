@@ -1,6 +1,6 @@
 {% assign enable_desc = section.settings.enable_description_tab | default: settings.enable_description_tab %}
 {% assign desc_title = section.settings.destab_title | default: settings.destab_title | default: "Description" %}
-{% assign custom_desc = section.settings.custom_description_content | default: settings.custom_description_content %}
+{% assign desc_content = section.settings.destab_content | default: section.settings.custom_description_content | default: settings.destab_content | default: settings.custom_description_content %}
 
 {% assign enable_add = section.settings.enable_addition_tab | default: settings.enable_addition_tab %}
 {% assign add_title = section.settings.addtab_title | default: settings.addtab_title | default: "Additional Features" %}
@@ -32,10 +32,10 @@
     {% if enable_desc %}
     <div class="tab-pane fade show active" id="des">
       <div class="desc product-desc">
-        {% if custom_desc != blank %}
-          {{ custom_desc }}
+        {% if desc_content != blank %}
+          {{ desc_content }}
         {% else %}
-          {{ product.description }}
+          <p>Please configure your Description content in the Theme Editor.</p>
         {% endif %}
       </div>      
     </div>

@@ -24,12 +24,11 @@
       {% if section.settings.enable_description_tab %}
       <div id="tab1" class="tab-pane active">
         <div class="detail-tab-desc clearfix">
-          {% if section.settings.custom_description_content != blank %}
-            {{ section.settings.custom_description_content }}
-          {% elsif settings.custom_description_content != blank %}
-            {{ settings.custom_description_content }}
+          {% assign desc_content = section.settings.destab_content | default: section.settings.custom_description_content | default: settings.destab_content | default: settings.custom_description_content %}
+          {% if desc_content != blank %}
+            {{ desc_content }}
           {% else %}
-            {{ product.description }}
+            <p>Please configure your Description content in the Theme Editor.</p>
           {% endif %}
         </div>
       </div>
