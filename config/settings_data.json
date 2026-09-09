@@ -3985,6 +3985,14 @@
               "menu": ""
             }
           },
+          "megamenu_new_389YpR": {
+            "type": "megamenu_new",
+            "settings": {
+              "title": "Shop",
+              "url": "",
+              "menu": "header"
+            }
+          },
           "megamenu_new_cW9zqM": {
             "type": "megamenu_new",
             "settings": {
@@ -4006,6 +4014,7 @@
           "megamenu_new_zYf7rK",
           "megamenu_new_wBVqbD",
           "megamenu_new_HXrEyM",
+          "megamenu_new_389YpR",
           "megamenu_new_cW9zqM",
           "nav_dropdown_E8pndb"
         ],
