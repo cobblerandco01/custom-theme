@@ -544,7 +544,7 @@
         "review_U9mL3G": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/user.jpg",
+            "image": "shopify://shop_images/user3.jpg",
             "title": "— Priya S.",
             "job": "Verified Buyer, Chappals & Sandals",
             "stars": 5,
@@ -574,7 +574,7 @@
         "review_JbFGPU": {
           "type": "review",
           "settings": {
-            "image": "shopify://shop_images/user2.jpg",
+            "image": "shopify://shop_images/user.jpg",
             "title": "— Kabir A.",
             "job": "Verified Buyer, Derby",
             "stars": 5,
