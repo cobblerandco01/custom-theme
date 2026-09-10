@@ -3981,8 +3981,8 @@
             "type": "megamenu_new",
             "settings": {
               "title": "Collections",
-              "url": "shopify://collections",
-              "menu": ""
+              "url": "",
+              "menu": "megamenu-collection"
             }
           },
           "megamenu_new_389YpR": {
