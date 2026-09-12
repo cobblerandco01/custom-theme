@@ -3976,7 +3976,7 @@
             "type": "megamenu_new",
             "settings": {
               "title": "New Arrivals",
-              "url": "shopify://collections/new-arrivals",
+              "url": "shopify://collections/shoes",
               "menu": ""
             }
           },
