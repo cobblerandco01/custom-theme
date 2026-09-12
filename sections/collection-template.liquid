@@ -211,7 +211,10 @@ Use .grid--rev so that the collection tags appear below the products on mobile
   {% endunless %}
   {% endif %}
 
-  {% if section.settings.card_title_color != blank %}
+  {% assign card_title_col = section.settings.card_title_color | default: settings.card_title_color | default: '#ffffff' %}
+  {% assign card_price_col = section.settings.card_price_color | default: settings.card_price_color | default: '#ffffff' %}
+  {% assign card_bg_col = section.settings.card_bg_color | default: settings.card_bg_color | default: 'transparent' %}
+
   .product-item-v1 .title-product a,
   .product-item-v1 .product-title a,
   .product-item-v1 .product-name a,
@@ -219,26 +222,23 @@ Use .grid--rev so that the collection tags appear below the products on mobile
   .product-item .title-product a,
   .des-font.title-product a,
   .product-title a {
-    color: {{ section.settings.card_title_color }} !important;
+    color: {{ card_title_col }} !important;
   }
-  {% endif %}
 
-  {% if section.settings.card_price_color != blank %}
   .product-item-v1 .price-product .price,
   .product-item-v1 .price-product,
   .product-item-v1 .product-price,
   .product-item .price,
   .price-product .price,
   .product-price .price {
-    color: {{ section.settings.card_price_color }} !important;
+    color: {{ card_price_col }} !important;
   }
-  {% endif %}
 
-  {% if section.settings.card_bg_color != blank %}
+  {% if card_bg_col != blank and card_bg_col != 'transparent' %}
   .product-item-v1,
   .product-item-v1 .product,
   .product-item {
-    background-color: {{ section.settings.card_bg_color }} !important;
+    background-color: {{ card_bg_col }} !important;
   }
   {% endif %}
 </style>
@@ -412,19 +412,19 @@ Use .grid--rev so that the collection tags appear below the products on mobile
       "type": "color",
       "id": "card_title_color",
       "label": "Card Title Color",
-      "default": "#000000"
+      "default": "#ffffff"
     },
     {
       "type": "color",
       "id": "card_price_color",
       "label": "Card Price Color",
-      "default": "#000000"
+      "default": "#ffffff"
     },
     {
       "type": "color",
       "id": "card_bg_color",
       "label": "Card Background Color",
-      "default": "#ffffff"
+      "default": "#000000"
     },
     {
       "type": "select",

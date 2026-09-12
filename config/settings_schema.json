@@ -81,6 +81,29 @@
     ]
   },
   {
+    "name": "Collection Grid Card Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "card_title_color",
+        "label": "Card Title Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "card_price_color",
+        "label": "Card Price Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "card_bg_color",
+        "label": "Card Background Color",
+        "default": "#000000"
+      }
+    ]
+  },
+  {
     "name": "Promo Topbar",
     "settings": [
       {
@@ -5698,7 +5721,7 @@
       {
         "type": "image_picker",
         "id": "bg_error",
-        "label": "Background Image Page",
+        "label": "Background Image Body",
         "info": "1920 x 510px recommended"
       },
       {
