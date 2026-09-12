@@ -267,6 +267,7 @@
     },
     "1657338962051bf203": {
       "type": "section-product-v1",
+      "disabled": true,
       "settings": {
         "title_heading": "From the Atelier",
         "color_title": "#222222",
