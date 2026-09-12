@@ -76,6 +76,7 @@
         "367c8d03-9ba2-4274-9b9d-dd9acf10f5c6": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/user.jpg",
             "title": "Ann Smith",
             "job": "Photographer",
             "stars": 5,
@@ -85,6 +86,7 @@
         "50a98128-b708-48f7-918e-8476f94a7c8f": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/user3.jpg",
             "title": "Saitama One",
             "job": "Photographer",
             "stars": 5,
@@ -94,6 +96,7 @@
         "bab31a3f-07b8-427f-9914-b2cfb04bc0c7": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/user2.jpg",
             "title": "Sara Colinton",
             "job": "Nutricionist",
             "stars": 5,
@@ -103,6 +106,7 @@
         "97586b18-d463-4ffc-b859-b23c11b83c2e": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/user3.jpg",
             "title": "Sara Colinton",
             "job": "Ann Smith",
             "stars": 5,
