@@ -16,7 +16,10 @@
         "bg_breadcrumb": "shopify://shop_images/hero-web-2.webp",
         "bg_color_breadcrumb": "#ffffff",
         "color_breadcrumb": "#ffffff",
-        "select_style_bread": "style_2"
+        "select_style_bread": "style_2",
+        "card_title_color": "#FFFFFF",
+        "card_count_color": "#ffffff",
+        "card_bg_color": ""
       }
     }
   },
