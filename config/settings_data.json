@@ -16,6 +16,8 @@
     "favicon": "shopify://shop_images/favicon.png",
     "bg_color_body": "#ffffff",
     "bg_image_body": "",
+    "card_title_color": "#FFFFFF",
+    "card_bg_color": "#FFFFFF",
     "enable_promo_topbar": false,
     "color_content_promo_topbar": "#fff",
     "content_promo_topbar": "<em>Check our new Christmas Demos!</em> Perfect for Christmas Sale!",
