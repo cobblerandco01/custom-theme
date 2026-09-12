@@ -225,9 +225,24 @@
   .breadcrumb_collection .bread-crumb a i{
     color: {{ section.settings.color_breadcrumb }} !important;
   }
-  .breadcrumb_collection .bread-crumb strong{
-    color: {{ section.settings.color_breadcrumb }} !important;
+  .img_collection .info_col .title_collection,
+  .img_collection .info_col .title_collection a,
+  .list-category .title_collection,
+  .list-category .title_collection a {
+    color: {{ section.settings.card_title_color | default: settings.card_title_color | default: '#ffffff' }} !important;
   }
+
+  .img_collection .info_col .total_item,
+  .list-category .total_item {
+    color: {{ section.settings.card_count_color | default: settings.card_price_color | default: '#ffffff' }} !important;
+  }
+
+  {% if section.settings.card_bg_color != blank %}
+  .img_collection .info_col,
+  .list-category .info_col {
+    background-color: {{ section.settings.card_bg_color }} !important;
+  }
+  {% endif %}
 </style>
 
 {% schema %}
@@ -288,6 +303,27 @@
           "label": "Style 6"
         }
       ]
+    },
+    {
+      "type": "header",
+      "content": "Collection Card Colors"
+    },
+    {
+      "type": "color",
+      "id": "card_title_color",
+      "label": "Card Title Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_count_color",
+      "label": "Card Item Count Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card Overlay Background Color"
     }
   ],
   "presets": [
