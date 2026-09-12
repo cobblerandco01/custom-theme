@@ -157,7 +157,7 @@ Add the page template as a class for easy page or template specific styling.
 
       {% include 'search' %}
       {% include 'minicart' %}
-      {% include 'menu_mobile' %}
+      {% comment %}{% include 'menu_mobile' %}{% endcomment %}
       {% include 'popup-login' %}
       {{ content_for_layout }}
 

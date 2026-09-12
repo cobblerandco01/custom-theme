@@ -56,8 +56,96 @@
       <div role="tabpanel" class="tab-pane show in active tab_children_menu" id="tab_menu_mobile">        
 
         {% assign i = 1 %}
+        {% assign has_nav_blocks = false %}
+        {% for block in section.blocks %}
+          {% if block.type == 'nav_link' or block.type == 'nav_dropdown' or block.type == 'megamenu_new' or block.type == 'custom_link' %}
+            {% assign has_nav_blocks = true %}
+          {% endif %}
+        {% endfor %}
 
-        {% assign main_menu = settings.main_menu_store_mb %}
+        {% if has_nav_blocks %}
+          {% for block in section.blocks %}
+            {% if block.type == 'nav_link' %}
+              <div class="menu-horizon-list ">
+                <a href="{{ block.settings.url }}" title="{{ block.settings.title }}" class="nammenu w-100 menu_lv1 "><span>{{ block.settings.title }}</span></a>
+              </div>
+            {% elsif block.type == 'custom_link' %}
+              <div class="menu-horizon-list ">
+                <a href="{{ block.settings.link_url }}" title="{{ block.settings.link_text }}" class="nammenu w-100 menu_lv1 "><span>{{ block.settings.link_text }}</span></a>
+              </div>
+            {% elsif block.type == 'nav_dropdown' %}
+              {% assign child_menu = block.settings.menu %}
+              {% if linklists[child_menu].links != blank %}
+                <div class="menu-horizon-list">
+                  <a href="{{ block.settings.url }}" title="{{ block.settings.title }}" class="relative nammenu ">{{ block.settings.title }}</a>
+                  <a data-check="c{{ i }}" class="toggle-menumobile js_icon_horizon-menu">
+                    <i class="{% if settings.enable_rtl_mode %}fa fa-angle-left{% else %}fa fa-angle-right{% endif %}"></i>
+                  </a>
+                  <div class="c{{ i }} menu_lv2">
+                    {% if settings.enable_rtl_mode %}
+                    <a href="javascript:void(0)" title="{{ block.settings.title }}" class="js-back back-to"> {{ block.settings.title }} <i class="fa fa-angle-left pr-2"></i></a>
+                    {% else %}
+                    <a href="javascript:void(0)" title="{{ block.settings.title }}" class="js-back back-to"> {{ block.settings.title }} <i class="fa fa-angle-right pl-2"></i> </a>
+                    {% endif %}
+                    {% for childlink in linklists[child_menu].links %}
+                    <h2 class="title_menu_mb title_only_one"><a href="{{ childlink.url }}">{{ childlink.title }}</a></h2>
+                    {% endfor %}
+                  </div>
+                </div>
+                {% assign i = i | plus: 1 %}
+              {% else %}
+                <div class="menu-horizon-list ">
+                  <a href="{{ block.settings.url }}" title="{{ block.settings.title }}" class="nammenu w-100 menu_lv1 "><span>{{ block.settings.title }}</span></a>
+                </div>
+              {% endif %}
+            {% elsif block.type == 'megamenu_new' %}
+              {% assign child_menu = block.settings.menu %}
+              {% if linklists[child_menu].links != blank %}
+                <div class="menu-horizon-list">
+                  <a href="{{ block.settings.url }}" title="{{ block.settings.title }}" class="relative nammenu ">{{ block.settings.title }}</a>
+                  <a data-check="c{{ i }}" class="toggle-menumobile js_icon_horizon-menu">
+                    <i class="{% if settings.enable_rtl_mode %}fa fa-angle-left{% else %}fa fa-angle-right{% endif %}"></i>
+                  </a>
+                  <div class="c{{ i }} menu_lv2">
+                    {% if settings.enable_rtl_mode %}
+                    <a href="javascript:void(0)" title="{{ block.settings.title }}" class="js-back back-to"> {{ block.settings.title }} <i class="fa fa-angle-left pr-2"></i></a>
+                    {% else %}
+                    <a href="javascript:void(0)" title="{{ block.settings.title }}" class="js-back back-to"> {{ block.settings.title }} <i class="fa fa-angle-right pl-2"></i> </a>
+                    {% endif %}
+                    {% for childlink in linklists[child_menu].links %}
+                    {% assign grand_child_list_handle = childlink.title | handleize %}
+                    {% assign sub_links = linklists[grand_child_list_handle].links %}
+                    {% if sub_links == blank and childlink.links != blank %}
+                      {% assign sub_links = childlink.links %}
+                    {% endif %}
+                    {% if sub_links != blank %}
+                    <h2 class="title_menu_mb relative">
+                      <a href="{{ childlink.url }}" title="{{ childlink.title }}" class="delay03 uppercase menu_lv1 "><span>{{ childlink.title }}</span></a>
+                    </h2>
+                    <ul class="list-unstyled mb-0 menu_lv3">
+                      {% for grandchildlink in sub_links %}
+                      <li>
+                        <a href="{{ grandchildlink.url }}" title="{{ grandchildlink.title }}" class="delay03 uppercase menu_lv1 "><span>{{ grandchildlink.title }}</span></a>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                    {% else %}
+                    <h2 class="title_menu_mb title_only_one"><a href="{{ childlink.url }}">{{ childlink.title }}</a></h2>
+                    {% endif %}
+                    {% endfor %}
+                  </div>
+                </div>
+                {% assign i = i | plus: 1 %}
+              {% else %}
+                <div class="menu-horizon-list ">
+                  <a href="{{ block.settings.url }}" title="{{ block.settings.title }}" class="nammenu w-100 menu_lv1 "><span>{{ block.settings.title }}</span></a>
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+
+        {% assign main_menu = section.settings.main_menu_store | default: settings.main_menu_store_mb %}
         {% for link in linklists[main_menu].links %}    
         
         {% assign child_list_handle = link.title | handleize %}
@@ -160,6 +248,8 @@
 
         {% endif %}
         {% endfor %}
+
+        {% endif %}
 
       </div>
       <!-- tab account login-regester-->

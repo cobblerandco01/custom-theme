@@ -20625,9 +20625,30 @@ body.cartover {
     z-index: 3
 }
 
+#header,
+header,
+.jsheader_sticky,
+.header-absolute,
+.header-v1-h1,
+.header-v2-h2,
+.header-v3-h3,
+.header-v4-h4,
+.header-v5-h5,
+.header-v6-h6,
+.header-v1-h1.menu_scroll_v1,
+.header-v2-h2.menu_scroll_v2,
+.header-v3-h3.menu_scroll_v3,
+.header-v4-h4.menu_scroll_v4,
+.header-v5-h5.menu_scroll_v5,
+.header-v6-h6.menu_scroll_v6,
+.menu_moblie,
+.menu_moblie.menu_mobilescroll {
+    z-index: 99999 !important;
+}
+
 .header-v1-h1 {
     transition: background-color .5s ease 0s,padding .5s ease 0s;
-    z-index: 3
+    z-index: 99999 !important;
 }
 
 .header-v1-h1.menu_scroll_v1 {
@@ -20639,7 +20660,7 @@ body.cartover {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 99999 !important;
     border-bottom: none
 }
 
