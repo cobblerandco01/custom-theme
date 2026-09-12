@@ -17,6 +17,7 @@
     "bg_color_body": "#ffffff",
     "bg_image_body": "",
     "card_title_color": "#FFFFFF",
+    "card_price_color": "#FFFFFF",
     "card_bg_color": "#FFFFFF",
     "enable_promo_topbar": false,
     "color_content_promo_topbar": "#fff",
