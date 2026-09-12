@@ -210,6 +210,37 @@ Use .grid--rev so that the collection tags appear below the products on mobile
   }
   {% endunless %}
   {% endif %}
+
+  {% if section.settings.card_title_color != blank %}
+  .product-item-v1 .title-product a,
+  .product-item-v1 .product-title a,
+  .product-item-v1 .product-name a,
+  .product-item .product-title a,
+  .product-item .title-product a,
+  .des-font.title-product a,
+  .product-title a {
+    color: {{ section.settings.card_title_color }} !important;
+  }
+  {% endif %}
+
+  {% if section.settings.card_price_color != blank %}
+  .product-item-v1 .price-product .price,
+  .product-item-v1 .price-product,
+  .product-item-v1 .product-price,
+  .product-item .price,
+  .price-product .price,
+  .product-price .price {
+    color: {{ section.settings.card_price_color }} !important;
+  }
+  {% endif %}
+
+  {% if section.settings.card_bg_color != blank %}
+  .product-item-v1,
+  .product-item-v1 .product,
+  .product-item {
+    background-color: {{ section.settings.card_bg_color }} !important;
+  }
+  {% endif %}
 </style>
 
 
@@ -372,6 +403,28 @@ Use .grid--rev so that the collection tags appear below the products on mobile
           "label": "5 Product Per Row"
         }
       ]
+    },
+    {
+      "type": "header",
+      "content": "Collection Grid Card Colors"
+    },
+    {
+      "type": "color",
+      "id": "card_title_color",
+      "label": "Card Title Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "card_price_color",
+      "label": "Card Price Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card Background Color",
+      "default": "#ffffff"
     },
     {
       "type": "select",
