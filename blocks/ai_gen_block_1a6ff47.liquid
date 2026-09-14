@@ -254,6 +254,7 @@
       {% liquid
         assign slide_enabled_key = 'slide_' | append: i | append: '_enabled'
         assign slide_image_key = 'slide_' | append: i | append: '_image'
+        assign slide_image_mobile_key = 'slide_' | append: i | append: '_image_mobile'
         assign slide_heading_key = 'slide_' | append: i | append: '_heading'
         assign slide_subheading_key = 'slide_' | append: i | append: '_subheading'
         assign slide_button_label_key = 'slide_' | append: i | append: '_button_label'
@@ -264,6 +265,7 @@
 
         assign slide_enabled = block.settings[slide_enabled_key]
         assign slide_image = block.settings[slide_image_key]
+        assign slide_image_mobile = block.settings[slide_image_mobile_key]
         assign slide_heading = block.settings[slide_heading_key]
         assign slide_subheading = block.settings[slide_subheading_key]
         assign slide_button_label = block.settings[slide_button_label_key]
@@ -275,15 +277,23 @@
 
       {% if slide_enabled %}
         <div class="ai-hero-slideshow__slide-{{ ai_gen_id }}" data-slide-index="{{ forloop.index0 }}">
-          {% if slide_image %}
-            <img
-              src="{{ slide_image | image_url: width: 2000 }}"
-              alt="{{ slide_image.alt | escape }}"
-              class="ai-hero-slideshow__slide-image-{{ ai_gen_id }}"
-              loading="lazy"
-              width="{{ slide_image.width }}"
-              height="{{ slide_image.height }}"
-            >
+          {% if slide_image != blank or slide_image_mobile != blank %}
+            <picture>
+              {% if slide_image_mobile != blank %}
+                <source media="(max-width: 768px)" srcset="{{ slide_image_mobile | image_url: width: 800 }}">
+              {% endif %}
+              {% if slide_image != blank %}
+                <source media="(min-width: 769px)" srcset="{{ slide_image | image_url: width: 2000 }}">
+              {% endif %}
+              <img
+                src="{% if slide_image != blank %}{{ slide_image | image_url: width: 2000 }}{% else %}{{ slide_image_mobile | image_url: width: 800 }}{% endif %}"
+                alt="{% if slide_image != blank %}{{ slide_image.alt | escape }}{% else %}{{ slide_image_mobile.alt | escape }}{% endif %}"
+                class="ai-hero-slideshow__slide-image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="{% if slide_image != blank %}{{ slide_image.width }}{% else %}{{ slide_image_mobile.width }}{% endif %}"
+                height="{% if slide_image != blank %}{{ slide_image.height }}{% else %}{{ slide_image_mobile.height }}{% endif %}"
+              >
+            </picture>
           {% else %}
             <div class="ai-hero-slideshow__slide-placeholder-{{ ai_gen_id }}">
               {{ 'hero-apparel-1' | placeholder_svg_tag }}
@@ -750,7 +760,13 @@
     {
       "type": "image_picker",
       "id": "slide_1_image",
-      "label": "Image"
+      "label": "Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_1_image_mobile",
+      "label": "Image (Mobile)",
+      "info": "Portrait or mobile ratio image recommended"
     },
     {
       "type": "text",
@@ -823,7 +839,13 @@
     {
       "type": "image_picker",
       "id": "slide_2_image",
-      "label": "Image"
+      "label": "Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_2_image_mobile",
+      "label": "Image (Mobile)",
+      "info": "Portrait or mobile ratio image recommended"
     },
     {
       "type": "text",
@@ -896,7 +918,13 @@
     {
       "type": "image_picker",
       "id": "slide_3_image",
-      "label": "Image"
+      "label": "Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_3_image_mobile",
+      "label": "Image (Mobile)",
+      "info": "Portrait or mobile ratio image recommended"
     },
     {
       "type": "text",
@@ -969,7 +997,13 @@
     {
       "type": "image_picker",
       "id": "slide_4_image",
-      "label": "Image"
+      "label": "Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_4_image_mobile",
+      "label": "Image (Mobile)",
+      "info": "Portrait or mobile ratio image recommended"
     },
     {
       "type": "text",
@@ -1042,7 +1076,13 @@
     {
       "type": "image_picker",
       "id": "slide_5_image",
-      "label": "Image"
+      "label": "Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_5_image_mobile",
+      "label": "Image (Mobile)",
+      "info": "Portrait or mobile ratio image recommended"
     },
     {
       "type": "text",
