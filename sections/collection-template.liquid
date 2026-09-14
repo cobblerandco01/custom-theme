@@ -211,8 +211,8 @@ Use .grid--rev so that the collection tags appear below the products on mobile
   {% endunless %}
   {% endif %}
 
-  {% assign card_title_col = section.settings.card_title_color | default: settings.card_title_color | default: '#ffffff' %}
-  {% assign card_price_col = section.settings.card_price_color | default: settings.card_price_color | default: '#ffffff' %}
+  {% assign card_title_col = section.settings.card_title_color | default: settings.card_title_color | default: '#111111' %}
+  {% assign card_price_col = section.settings.card_price_color | default: settings.card_price_color | default: '#111111' %}
   {% assign card_bg_col = section.settings.card_bg_color | default: settings.card_bg_color | default: 'transparent' %}
 
   .product-item-v1 .title-product a,
