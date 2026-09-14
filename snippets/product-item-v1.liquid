@@ -413,19 +413,19 @@
 
 
     </div>
-
-    <h4 class="des-font capital title-product mb-0">
-      <a href="{{ product.url | within: collection }}">{{ product.title }}</a> 
-      <p class="price-product mb-0">
-        {% if on_sale %}<s class="price-old">{{ product.compare_at_price | money }}</s>{% endif %}
-        <span class="price">{{ product.price | money }}</span>
-      </p>
-    </h4>
-    <!--     PRICE -->
     {% assign on_sale = false %}
     {% if product.compare_at_price > product.price %}
     {% assign on_sale = true %}
     {% endif %}
+
+    <h4 class="des-font capital title-product mb-0">
+      <a href="{{ product.url | within: collection }}">{{ product.title }}</a> 
+      <p class="price-product mb-0">
+        <span class="price">{{ product.price | money }}</span>
+        {% if on_sale %}<s class="price-old ml-1">{{ product.compare_at_price | money }}</s>{% endif %}
+      </p>
+    </h4>
+    <!--     PRICE -->
 
 
     <!-- END PRODUCT     -->
