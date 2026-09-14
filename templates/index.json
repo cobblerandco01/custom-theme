@@ -233,6 +233,7 @@
     },
     "16573387805329719b": {
       "type": "section-product-v3",
+      "disabled": true,
       "settings": {
         "title_heading": "Most Loved",
         "color_title": "#222222",
