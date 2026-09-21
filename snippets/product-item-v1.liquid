@@ -301,11 +301,11 @@
     <div class="img-product relative">
       <a href="{{ product.url | within: collection }}" class="engoj_find_img">
         <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.featured_image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive" alt="{{ product.featured_image.alt | escape }}">
-        {% for image in product.images %}
-        {% if forloop.last %}
-        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+        {% if product.images.size > 1 %}
+
+        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.images[1].src| image_url: width: 450  }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+
         {% endif %}
-        {% endfor %}
       </a>
 
       <!--     label product -->
@@ -541,11 +541,11 @@
     <div class="img-product relative">
       <a href="{{ product.url | within: collection }}" class="engoj_find_img">
         <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.featured_image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive" alt="{{ product.featured_image.alt | escape }}">
-        {% for image in product.images %}
-        {% if forloop.last %}
-        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+        {% if product.images.size > 1 %}
+
+        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.images[1].src| image_url: width: 450  }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+
         {% endif %}
-        {% endfor %}
       </a>
 
       <!--     label product -->
@@ -774,11 +774,11 @@
     <div class="img-product relative">
       <a href="{{ product.url | within: collection }}" class="engoj_find_img">
         <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.featured_image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive" alt="{{ product.featured_image.alt | escape }}">
-        {% for image in product.images %}
-        {% if forloop.last %}
-        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+        {% if product.images.size > 1 %}
+
+        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.images[1].src| image_url: width: 450  }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+
         {% endif %}
-        {% endfor %}
       </a>
 
       <!--     label product -->
@@ -1018,11 +1018,11 @@
     <div class="img-product relative">
       <a href="{{ product.url | within: collection }}" class="engoj_find_img"> 
         <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.featured_image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive" alt="{{ product.featured_image.alt | escape }}">
-        {% for image in product.images %}
-        {% if forloop.last %}
-        <img loading="lazy" width="" height="" style="width: 100%" datasrc="{{ image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+        {% if product.images.size > 1 %}
+
+        <img loading="lazy" width="" height="" style="width: 100%" datasrc="{{ product.images[1].src| image_url: width: 450  }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+
         {% endif %}
-        {% endfor %}
       </a>
 
       <!--     label product -->
@@ -1259,11 +1259,11 @@
     <div class="img-product relative">
       <a href="{{ product.url | within: collection }}" class="engoj_find_img">
         <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.featured_image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive" alt="{{ product.featured_image.alt | escape }}">
-        {% for image in product.images %}
-        {% if forloop.last %}
-        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+        {% if product.images.size > 1 %}
+
+        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.images[1].src| image_url: width: 450  }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+
         {% endif %}
-        {% endfor %}
       </a>  
       <!--     label product -->
       {% assign product_label_new = false %}
@@ -1502,11 +1502,11 @@
     <div class="img-product relative">
       <a href="{{ product.url | within: collection }}" class="engoj_find_img">
         <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.featured_image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive" alt="{{ product.featured_image.alt | escape }}">
-        {% for image in product.images %}
-        {% if forloop.last %}
-        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+        {% if product.images.size > 1 %}
+
+        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.images[1].src| image_url: width: 450  }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+
         {% endif %}
-        {% endfor %}
       </a>  
       <!--     label product -->
       {% assign product_label_new = false %}
@@ -1744,11 +1744,11 @@
     <div class="img-product relative">
       <a href="{{ product.url | within: collection }}" class="engoj_find_img">
         <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.featured_image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive" alt="{{ product.featured_image.alt | escape }}">
-        {% for image in product.images %}
-        {% if forloop.last %}
-        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+        {% if product.images.size > 1 %}
+
+        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.images[1].src| image_url: width: 450  }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+
         {% endif %}
-        {% endfor %}
       </a>  
       <!--     label product -->
       {% assign product_label_new = false %}
@@ -1979,11 +1979,11 @@
     <div class="img-product relative">
       <a href="{{ product.url | within: collection }}" class="engoj_find_img">
         <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.featured_image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive" alt="{{ product.featured_image.alt | escape }}">
-        {% for image in product.images %}
-        {% if forloop.last %}
-        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ image.src | image_url: width: 450 }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+        {% if product.images.size > 1 %}
+
+        <img loading="lazy" width="" height="" style="width: 100%" data-src="{{ product.images[1].src| image_url: width: 450  }}" src="{{ 'loading.gif' | asset_url }}" class="lazyload img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+
         {% endif %}
-        {% endfor %}
       </a>  
       <!--     label product -->
       {% assign product_label_new = false %}

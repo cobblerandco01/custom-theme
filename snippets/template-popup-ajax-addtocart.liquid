@@ -104,11 +104,11 @@
               <div class="img-product relative">
                 <a href="{{ product.url | within: collection }}" class="engoj_find_img">
                   <img loading="lazy" width="" height=""  data-src="{{ product.featured_image.src | image_url }}" class="lazyload w-100 img-responsive" alt="{{ product.featured_image.alt | escape }}">
-                  {% for image in product.images %}
-                  {% if forloop.last %}
-                  <img loading="lazy" width="" height=""  data-src="{{ image.src | image_url }}" class="lazyload w-100 img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+                  {% if product.images.size > 1 %}
+
+                  <img loading="lazy" width="" height=""  data-src="{{ product.images[1].src| image_url  }}" class="lazyload w-100 img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">
+
                   {% endif %}
-                  {% endfor %}
                 </a>  
                 <!--     label product -->
                 
