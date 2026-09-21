@@ -15,7 +15,7 @@
         "ena_bg_img": true,
         "bg_breadcrumb": "shopify://shop_images/ChatGPT_Image_Sep_14_2026_10_57_40_AM.png",
         "bg_color_breadcrumb": "#ffffff",
-        "color_breadcrumb": "#ffffff",
+        "color_breadcrumb": "#FFFFFF",
         "select_style_bread": "style_2",
         "card_title_color": "#ffffff",
         "card_count_color": "#ffffff",
