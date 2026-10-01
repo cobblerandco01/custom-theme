@@ -24,7 +24,7 @@
     "color_content_promo_topbar": "#FFFEFE",
     "content_promo_topbar": "Free Shipping On All Orders!",
     "text_btn_promo": "Shop Now",
-    "url_btn_promo": "",
+    "url_btn_promo": "shopify://collections/all-products",
     "ena_popup_news": true,
     "select_newletter": "newsletter_v3",
     "title_popup": "Get 20% discount shipped to your inbox",
