@@ -21,7 +21,7 @@
     "card_bg_color": "#ffffff",
     "enable_promo_topbar": true,
     "background_promo": "shopify://shop_images/ChatGPT_Image_Sep_14_2026_10_57_40_AM.png",
-    "color_content_promo_topbar": "#000000",
+    "color_content_promo_topbar": "#FFFFFF",
     "content_promo_topbar": "Free Shipping On All Orders!",
     "text_btn_promo": "Shop Now",
     "url_btn_promo": "shopify://collections/all-products",
