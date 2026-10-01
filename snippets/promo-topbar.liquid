@@ -1,4 +1,4 @@
-<div class="promo_topbar relative text-center lazyload"
+<div class="promo_topbar relative text-center" {% if settings.background_promo != blank %}style="background-image: url('{{ settings.background_promo | image_url }}');"{% endif %}>
   <div class=" relative">
     <span style="color:{{ settings.color_content_promo_topbar }}">{{ settings.content_promo_topbar }}</span>
     <a href="{{ settings.url_btn_promo }}" class="btn_promo">{{ settings.text_btn_promo }}</a>
