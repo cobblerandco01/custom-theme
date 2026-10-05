@@ -478,7 +478,7 @@
     "shop_by_price_title": "Price",
     "shop_by_price_list_tags": "$10 - $20,$20 - $30,$30 - $50,$50 - $100,$100 - $200",
     "shop_by_size_title": "Size",
-    "shop_by_size_list_tags": "S,M,L,XL,XXL",
+    "shop_by_size_list_tags": "S,M,L,XL",
     "shop_by_brand_title": "Brand",
     "shop_by_tag_title": "Tags",
     "banner_url": "shopify://collections/bestsellers",
