@@ -37,6 +37,14 @@
             "block_texticon": "+91 88476 21677"
           }
         },
+        "findget_G4ijcW": {
+          "type": "findget",
+          "settings": {
+            "icon_office": "",
+            "block_textheading": "",
+            "block_texticon": "Call us on (+0123) 456 789"
+          }
+        },
         "286be55d-ca53-46a2-aebd-08a9e376c7f7": {
           "type": "findget",
           "settings": {
@@ -58,6 +66,7 @@
         "c0a16eb4-9d0c-47dc-8f89-0c1e4053140c",
         "findget_gjiGHD",
         "915f7eee-0441-4a4d-bfd1-ec9690a87aae",
+        "findget_G4ijcW",
         "286be55d-ca53-46a2-aebd-08a9e376c7f7",
         "a97700e7-c17f-416a-9d7b-fb94d025e180"
       ],

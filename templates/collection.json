@@ -37,7 +37,7 @@
         "title_heading": "",
         "select_collection": "",
         "products_limit": 10,
-        "ena_filter": true,
+        "ena_filter": false,
         "ena_filter2": false
       }
     }
