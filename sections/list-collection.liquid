@@ -11,7 +11,7 @@
 <div class="wrap-bread-crumb breadcrumb_collection style1">
   <div class="text-center bg_bread " {% if section.settings.ena_bg_img %} style="background-image : url({% if section.settings.bg_breadcrumb != blank %}{{ section.settings.bg_breadcrumb | image_url }} {% else %}//via.placeholder.com/1920x300 {% endif %}); background-position : center; background-size: cover" {% else %}style="background-color : {{ section.settings.bg_color_breadcrumb }}"{% endif %}>
     <div class="title-page">
-      <h2 class="">{{ collection.title }}</h2>
+      <h2 class="">{% if collection.title != blank %}{{ collection.title }}{% else %}{{ page_title }}{% endif %}</h2>
     </div>
     {% include 'breadcrumb' %}
   </div>
@@ -20,7 +20,7 @@
 <div class="wrap-bread-crumb breadcrumb_collection style2">
   <div class="text-center bg-breadcrumb"  {% if section.settings.ena_bg_img %} style="background-image : url({% if section.settings.bg_breadcrumb != blank %}{{ section.settings.bg_breadcrumb | image_url }} {% else %}//via.placeholder.com/1920x300 {% endif %}); background-position : center; background-size: cover" {% else %}style="background-color : {{ section.settings.bg_color_breadcrumb }}"{% endif %}>
     <div class="title-page">
-      <h2 class="">{{ collection.title }}</h2>
+      <h2 class="">{% if collection.title != blank %}{{ collection.title }}{% else %}{{ page_title }}{% endif %}</h2>
     </div>
     {% include 'breadcrumb' %}
   </div>
@@ -29,7 +29,7 @@
 <div class="wrap-bread-crumb breadcrumb_collection style3">
   <div class="text-center bg-breadcrumb"  {% if section.settings.ena_bg_img %} style="background-image : url({% if section.settings.bg_breadcrumb != blank %}{{ section.settings.bg_breadcrumb | image_url }} {% else %}//via.placeholder.com/1920x300 {% endif %}); background-position : center; background-size: cover" {% else %}style="background-color : {{ section.settings.bg_color_breadcrumb }}"{% endif %}>
     <div class="title-page">
-      <h2 class="">{{ collection.title }}</h2>
+      <h2 class="">{% if collection.title != blank %}{{ collection.title }}{% else %}{{ page_title }}{% endif %}</h2>
     </div>
     {% include 'breadcrumb' %}
 
@@ -71,7 +71,7 @@
 <div class="wrap-bread-crumb breadcrumb_collection style4">
   <div class="text-center bg-breadcrumb"  {% if section.settings.ena_bg_img %} style="background-image : url({% if section.settings.bg_breadcrumb != blank %}{{ section.settings.bg_breadcrumb | image_url }} {% else %}//via.placeholder.com/1920x300 {% endif %}); background-position : center; background-size: cover" {% else %}style="background-color : {{ section.settings.bg_color_breadcrumb }}"{% endif %}>
     <div class="title-page">
-      <h2 class="">{{ collection.title }}</h2>
+      <h2 class="">{% if collection.title != blank %}{{ collection.title }}{% else %}{{ page_title }}{% endif %}</h2>
     </div>
     {% include 'breadcrumb' %}
   </div>
@@ -99,7 +99,7 @@
 <div class="wrap-bread-crumb breadcrumb_collection style5">
   <div class="text-center bg-breadcrumb"  {% if section.settings.ena_bg_img %} style="background-image : url({% if section.settings.bg_breadcrumb != blank %}{{ section.settings.bg_breadcrumb | image_url }} {% else %}//via.placeholder.com/1920x300 {% endif %}); background-position : center; background-size: cover" {% else %}style="background-color : {{ section.settings.bg_color_breadcrumb }}"{% endif %}>
     <div class="title-page">
-      <h2 class="">{{ collection.title }}</h2>
+      <h2 class="">{% if collection.title != blank %}{{ collection.title }}{% else %}{{ page_title }}{% endif %}</h2>
     </div>
     {% include 'breadcrumb' %}
 
@@ -136,7 +136,7 @@
 <div class="wrap-bread-crumb breadcrumb_collection style6">
   <div class="text-center bg-breadcrumb"  {% if section.settings.ena_bg_img %} style="background-image : url({% if section.settings.bg_breadcrumb != blank %}{{ section.settings.bg_breadcrumb | image_url }} {% else %}//via.placeholder.com/1920x300 {% endif %}); background-position : center; background-size: cover" {% else %}style="background-color : {{ section.settings.bg_color_breadcrumb }}"{% endif %}>
     <div class="title-page">
-      <h2 class="">{{ collection.title }}</h2>
+      <h2 class="">{% if collection.title != blank %}{{ collection.title }}{% else %}{{ page_title }}{% endif %}</h2>
     </div>
     {% include 'breadcrumb' %}
 
@@ -223,6 +223,12 @@
     color: {{ section.settings.color_breadcrumb }} !important;
   }
   .breadcrumb_collection .bread-crumb a i{
+    color: {{ section.settings.color_breadcrumb }} !important;
+  }
+  .breadcrumb_collection .bread-crumb strong{
+    color: {{ section.settings.color_breadcrumb }} !important;
+  }
+  .breadcrumb_collection .bread-crumb span{
     color: {{ section.settings.color_breadcrumb }} !important;
   }
   .img_collection .info_col .title_collection,
