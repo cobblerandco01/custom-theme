@@ -8,19 +8,108 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- Title and description ================================================== -->
-  <title>
+    <!-- Title and description ================================================== -->
+  {%- capture seo_title -%}
     {%- assign shop_name = shop.name -%}
-    {%- if shop_name == 'My Store' or shop_name == 'my-store' or shop_name == 'My Shopify Store' -%}
+    {%- if shop_name == 'My Store' or shop_name == 'my-store' or shop_name == 'My Shopify Store' or shop_name == blank -%}
       {%- assign shop_name = 'Cobbler & Co.' -%}
     {%- endif -%}
-    {%- assign page_title_clean = page_title | replace: 'My Store', 'Cobbler & Co.' | replace: 'my-store', 'Cobbler & Co.' | replace: 'My Shopify Store', 'Cobbler & Co.' -%}
-    {{ page_title_clean }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title_clean contains shop_name %} &ndash; {{ shop_name }}{% endunless %}
-  </title>
 
-  {% if page_description %}
-  <meta name="description" content="{{ page_description | escape }}">
-  {% endif %}
+    {%- if request.page_type == 'index' or template contains 'index' -%}
+      {%- if page_title != blank and page_title != 'My Store' and page_title != 'my-store' and page_title != 'Cobbler & Co.' -%}
+        {{ page_title | escape }} &ndash; {{ shop_name }}
+      {%- else -%}
+        {{ shop_name }} &ndash; Premium Handcrafted Footwear & Leather Goods
+      {%- endif -%}
+    {%- elsif request.page_type == 'list-collections' or template contains 'list-collections' -%}
+      Collections &ndash; {{ shop_name }}
+    {%- elsif request.page_type == 'collection' or template contains 'collection' -%}
+      {%- if current_tags -%}
+        {%- assign meta_tags = current_tags | join: ', ' -%}
+        {{ collection.title | escape }} ({{ meta_tags }}) &ndash; {{ shop_name }}
+      {%- else -%}
+        {{ collection.title | escape }} &ndash; {{ shop_name }}
+      {%- endif -%}
+    {%- elsif request.page_type == 'product' or template contains 'product' -%}
+      {{ product.title | escape }} &ndash; {{ shop_name }}
+    {%- elsif request.page_type == 'page' or template contains 'page' -%}
+      {{ page.title | escape }} &ndash; {{ shop_name }}
+    {%- elsif request.page_type == 'blog' or template contains 'blog' -%}
+      {%- if current_tags -%}
+        {%- assign meta_tags = current_tags | join: ', ' -%}
+        {{ blog.title | escape }} ({{ meta_tags }}) &ndash; {{ shop_name }}
+      {%- else -%}
+        {{ blog.title | escape }} &ndash; {{ shop_name }}
+      {%- endif -%}
+    {%- elsif request.page_type == 'article' or template contains 'article' -%}
+      {{ article.title | escape }} &ndash; {{ shop_name }}
+    {%- elsif request.page_type == 'cart' or template contains 'cart' -%}
+      Shopping Cart &ndash; {{ shop_name }}
+    {%- elsif request.page_type == 'search' or template contains 'search' -%}
+      {%- if search.performed and search.terms != blank -%}
+        Search results for "{{ search.terms | escape }}" &ndash; {{ shop_name }}
+      {%- else -%}
+        Search &ndash; {{ shop_name }}
+      {%- endif -%}
+    {%- elsif request.page_type == '404' or template contains '404' -%}
+      404 Page Not Found &ndash; {{ shop_name }}
+    {%- else -%}
+      {%- assign clean_title = page_title | replace: 'My Store', shop_name | replace: 'my-store', shop_name | escape -%}
+      {{ clean_title }}{% unless clean_title contains shop_name %} &ndash; {{ shop_name }}{% endunless %}
+    {%- endif -%}
+    {%- if current_page != 1 -%}
+      &ndash; Page {{ current_page }}
+    {%- endif -%}
+  {%- endcapture -%}
+
+  {%- capture seo_description -%}
+    {%- if page_description != blank -%}
+      {{ page_description | strip_html | escape | strip_newlines }}
+    {%- elsif request.page_type == 'index' or template contains 'index' -%}
+      Discover Cobbler & Co. - Premium handcrafted footwear, shoes, boots, and luxury leather goods crafted with timeless style, superior comfort, and exceptional quality.
+    {%- elsif request.page_type == 'list-collections' or template contains 'list-collections' -%}
+      Explore all footwear and leather collections from Cobbler & Co. Handcrafted shoes, boots, and luxury accessories for every occasion.
+    {%- elsif request.page_type == 'collection' or template contains 'collection' -%}
+      {%- if collection.description != blank -%}
+        {{ collection.description | strip_html | escape | truncate: 160 | strip_newlines }}
+      {%- else -%}
+        Shop our {{ collection.title | escape }} collection at Cobbler & Co. Premium handcrafted footwear made with the finest materials and expert craftsmanship.
+      {%- endif -%}
+    {%- elsif request.page_type == 'product' or template contains 'product' -%}
+      {%- if product.description != blank -%}
+        {{ product.description | strip_html | escape | truncate: 160 | strip_newlines }}
+      {%- else -%}
+        Buy {{ product.title | escape }} at Cobbler & Co. Enjoy premium quality, handcrafted construction, and unmatched comfort.
+      {%- endif -%}
+    {%- elsif request.page_type == 'page' or template contains 'page' -%}
+      {%- if page.content != blank -%}
+        {{ page.content | strip_html | escape | truncate: 160 | strip_newlines }}
+      {%- else -%}
+        {{ page.title | escape }} - Read more about {{ page.title | escape }} at Cobbler & Co. Premium handcrafted footwear and leather goods.
+      {%- endif -%}
+    {%- elsif request.page_type == 'article' or template contains 'article' -%}
+      {%- if article.excerpt != blank -%}
+        {{ article.excerpt | strip_html | escape | truncate: 160 | strip_newlines }}
+      {%- elsif article.content != blank -%}
+        {{ article.content | strip_html | escape | truncate: 160 | strip_newlines }}
+      {%- else -%}
+        Read {{ article.title | escape }} on the Cobbler & Co. blog.
+      {%- endif -%}
+    {%- elsif request.page_type == 'blog' or template contains 'blog' -%}
+      Read the latest news, styling guides, and updates from Cobbler & Co. Premium handcrafted footwear and leather craftsmanship.
+    {%- elsif request.page_type == 'cart' or template contains 'cart' -%}
+      Review your shopping cart items and proceed to secure checkout at Cobbler & Co.
+    {%- elsif request.page_type == 'search' or template contains 'search' -%}
+      Find handcrafted shoes, boots, accessories, and more matching "{{ search.terms | escape }}" at Cobbler & Co.
+    {%- elsif request.page_type == '404' or template contains '404' -%}
+      The page you requested could not be found. Explore our latest footwear collections and bestsellers at Cobbler & Co.
+    {%- else -%}
+      Cobbler & Co. &ndash; Premium handcrafted footwear, shoes, boots, and luxury leather goods.
+    {%- endif -%}
+  {%- endcapture -%}
+
+  <title>{{ seo_title | strip }}</title>
+  <meta name="description" content="{{ seo_description | strip }}">
 
   <!-- Helpers ================================================== -->
   {% include 'social-meta-tags' %}

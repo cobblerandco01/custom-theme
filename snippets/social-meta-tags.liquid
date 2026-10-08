@@ -54,8 +54,10 @@
   <meta property="og:image:secure_url" content="https:{{ 'logo.png' | asset_url }}">
   {% endif %}
 {% endif %}
-{% if page_description %}
+{% if page_description != blank %}
   <meta property="og:description" content="{{ page_description | escape }}">
+{% else %}
+  <meta property="og:description" content="{{ seo_description | strip }}">
 {% endif %}
   <meta property="og:url" content="{{ canonical_url }}">
   <meta property="og:site_name" content="{{ shop.name }}">
@@ -80,13 +82,13 @@
 <meta name="twitter:card" content="summary">
 {% if template contains 'product' %}
   <meta name="twitter:title" content="{{ product.title }}">
-  <meta name="twitter:description" content="{{ page_description | truncatewords: 140, '' | escape }}">
+  <meta name="twitter:description" content="{{ seo_description | strip }}">
   <meta name="twitter:image" content="https:{{ product.featured_image.src | image_url: width: 240, height: 240 }}">
   <meta name="twitter:image:width" content="240">
   <meta name="twitter:image:height" content="240">
 {% elsif template contains 'article' %}
   <meta name="twitter:title" content="{{ article.title }}">
-  <meta name="twitter:description" content="{{ page_description | truncatewords: 140, '' | escape }}">
+  <meta name="twitter:description" content="{{ seo_description | strip }}">
   {% comment %}
     Check if content contains an image to add to the card
       - Source: http://blog.viralica.com/2013/09/twitter-product-cards-on-shopify/
